@@ -2,7 +2,7 @@
 
 The templates describing the interventions and situations are all in the context of the recipient and potentially other performers and comparators.
 
-## Intervention Situation Interactions (ISI)
+## Intervention Situation Interactions (ISR)
 A candidate intervention is the amalgamation of a situation and an intervention template.
 This construct is a convenience for reasoning over situations and intervention templates, to make it so that a single now is being considered.
 

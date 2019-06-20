@@ -34,7 +34,7 @@
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
       "name": "",
 
-      "cpo:HasPrecondition":[ 
+      "slowmo:HasPrecondition":[ 
         ""
       ],
 

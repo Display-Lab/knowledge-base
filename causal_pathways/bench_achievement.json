@@ -34,7 +34,7 @@
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
       "name": "Bench Achievement",
 
-      "cpo:HasPrecondition":[
+      "slowmo:HasPrecondition":[
         "http://example.com/slowmo#Achievement", 
         "http://example.com/slowmo#NormativeComparator"
       ],

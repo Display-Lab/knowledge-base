@@ -30,30 +30,31 @@
 
   "@graph": [
     {
-      "@id": "",
+      "@id": "http://example.com/slomo#GoalDiff",
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
-      "name": "",
+      "name": "Goal Diff",
 
       "slowmo:HasPrecondition":[ 
-        ""
+        "http://example.com/slowmo#PerformanceGapNegative", 
+        "http://example.com/slowmo#GoalComparator"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#PerformanceGapSize",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         }
       ],
 
-      "slowmo:ImplementationStrategy": "",
-      "cpo:Mechanism": "",
+      "slowmo:ImplementationStrategy": "show goal discrepancy",
+      "cpo:Mechanism": "goals",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ 
-        "", 
+        "increase effort", 
         "clinical practice is maintained"],
-      "slomo:KeyMessage": ""
+      "slomo:KeyMessage": "You haven't reached the goal yet."
     }
   ]
 }

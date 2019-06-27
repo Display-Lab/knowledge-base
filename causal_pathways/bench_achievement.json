@@ -48,7 +48,7 @@
         }
       ],
 
-      "slowmo:ImplementationStrategy": "show benchmark high performance",
+      "slowmo:ImplementationStrategy": "show benchmark achievement",
       "cpo:Mechanism": "beliefs about capability",
       "cpo:ProximalOutcome": [ "engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ "maintain effort", "clinical practice is maintained"],

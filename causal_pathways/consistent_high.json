@@ -30,30 +30,30 @@
 
   "@graph": [
     {
-      "@id": "",
+      "@id": "http://example.com/slomo#ConsistentHigh",
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
-      "name": "",
+      "name": "Consistent High",
 
       "slowmo:HasPrecondition":[ 
-        ""
+        "http://example.com/slowmo#ConsistentGapPositive"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "",
-          "slowmo:ModeratorScore": 100
+        {"@type": "http://example.com/slowmo#RegulatoryFit",
+          "slowmo:ModeratorScore": 10
         }
       ],
 
-      "slowmo:ImplementationStrategy": "",
-      "cpo:Mechanism": "",
+      "slowmo:ImplementationStrategy": "show consistent above benchmark",
+      "cpo:Mechanism": "beliefs about capability",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ 
-        "", 
+        "maintain effort", 
         "clinical practice is maintained"],
-      "slomo:KeyMessage": ""
+      "slomo:KeyMessage": "You have consistently provided high quality care about X for X months."
     }
   ]
 }

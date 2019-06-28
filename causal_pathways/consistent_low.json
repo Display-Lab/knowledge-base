@@ -30,30 +30,30 @@
 
   "@graph": [
     {
-      "@id": "",
+      "@id": "http://example.com/slomo#ConsistentLow",
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
-      "name": "",
+      "name": "Consistent Low",
 
       "slowmo:HasPrecondition":[ 
-        ""
+        "http://example.com/slowmo#ConsistentGapNegative"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "",
-          "slowmo:ModeratorScore": 100
+        {"@type": "http://example.com/slowmo#RegulatoryFit",
+          "slowmo:ModeratorScore": 10
         }
       ],
 
-      "slowmo:ImplementationStrategy": "",
-      "cpo:Mechanism": "",
+      "slowmo:ImplementationStrategy": "show consistent below benchmark",
+      "cpo:Mechanism": "subjective norms",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ 
-        "", 
+        "increase effort", 
         "clinical practice is maintained"],
-      "slomo:KeyMessage": ""
+      "slomo:KeyMessage": "Your performance of X has remained low."
     }
   ]
 }

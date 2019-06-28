@@ -30,30 +30,34 @@
 
   "@graph": [
     {
-      "@id": "",
+      "@id": "http://example.com/slomo#BenchDiff",
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
-      "name": "",
+      "name": "Bench Diff",
 
       "slowmo:HasPrecondition":[ 
-        ""
+        "http://example.com/slowmo#PerformanceGapNegative", 
+        "http://example.com/slowmo#NormativeComparator"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#RegulatoryFit",
+          "slowmo:ModeratorScore": 100
+        },
+        {"@type": "http://example.com/slowmo#PerformanceGapSize",
           "slowmo:ModeratorScore": 100
         }
       ],
 
-      "slowmo:ImplementationStrategy": "",
-      "cpo:Mechanism": "",
+      "slowmo:ImplementationStrategy": "show benchmark discrepancy",
+      "cpo:Mechanism": "subjective norms",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ 
-        "", 
+        "increase effort", 
         "clinical practice is maintained"],
-      "slomo:KeyMessage": ""
+      "slomo:KeyMessage": "You are not a top performer"
     }
   ]
 }

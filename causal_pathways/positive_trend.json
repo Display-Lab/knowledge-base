@@ -30,30 +30,30 @@
 
   "@graph": [
     {
-      "@id": "",
+      "@id": "http://example.com/slomo#PositiveTrend",
       "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
-      "name": "",
+      "name": "Positive Trend",
 
       "slowmo:HasPrecondition":[ 
-        ""
+        "http://example.com/slowmo#PerformanceTrendPositive"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "",
-          "slowmo:ModeratorScore": 100
+        {"@type": "http://example.com/slowmo#RegulatoryFit",
+          "slowmo:ModeratorScore": 10
         }
       ],
 
-      "slowmo:ImplementationStrategy": "",
-      "cpo:Mechanism": "",
+      "slowmo:ImplementationStrategy": "show positive trend",
+      "cpo:Mechanism": "velocity",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
       "cpo:DistalOutcome": [ 
-        "", 
+        "maintain effort", 
         "clinical practice is maintained"],
-      "slomo:KeyMessage": ""
+      "slomo:KeyMessage": "Your performance has increased by X%"
     }
   ]
 }

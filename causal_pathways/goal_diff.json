@@ -8,6 +8,8 @@
     "cpo:OutcomePrecondition":     "http://purl.obolibrary.org/obo/cpo_0000055",
     "cpo:Mechanism":         "http://purl.obolibrary.org/obo/cpo#cpo_0000001",
     "cpo:Moderator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000005",
+    "cpo:CognitiveModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000008",
+    "cpo:OrganizationalModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000009",
     "cpo:ProximalOutcome":   "http://purl.obolibrary.org/obo/cpo#cpo_0000006",
     "cpo:DistalOutcome":     "http://purl.obolibrary.org/obo/cpo_0000007",
     "psdo": "http://purl.obolibrary.org/obo/psdo.owl#",
@@ -22,6 +24,7 @@
     "slowmo:PerformanceGapSize":       "http://example.com/slowmo#PerformanceGapSize",
     "slowmo:HasPrecondition":   "http://example.com/slowmo#HasPrecondition",
     "slowmo:HasModerator":      "http://example.com/slowmo#HasModerator",
+    "slowmo:InterventionContent":      "http://example.com/slowmo#InterventionContent",
     "slowmo:ModeratorScore":    "http://example.com/slowmo#ModeratorScore",
     "slowmo:Habituation":       "http://example.com/slowmo#Habituation",
     "slowmo:Achievement":       "http://example.com/slowmo#Achievement",
@@ -31,30 +34,38 @@
   "@graph": [
     {
       "@id": "http://example.com/slowmo#GoalDiff",
-      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
+      "@type": "cpo:CausalPathway",
       "name": "Goal Diff",
 
-      "slowmo:HasPrecondition":[ 
-        "http://example.com/slowmo#PerformanceGapNegative", 
-        "http://example.com/slowmo#GoalComparator"
+      "slowmo:ImplementationStrategy": "Show distance to goal",
+
+      "slowmo:InterventionContent": ["BCT 2.2 Feedback on behavior", "BCT 1.6 Discrepancy between current behavior and goal"],
+
+      "cpo:Mechanism": ["Goals", "Feedback processes", "Motivation"],
+
+      "slowmo:HasPrecondition":[
+        "psdo:NegativePerformanceGapContent",
+        "psdo:GoalComparatorContent"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "http://example.com/slowmo#PerformanceGapSize",
-          "slowmo:ModeratorScore": 100
+        {"cpo:CognitiveModerator": "slowmo:Habituation",
+          "slowmo:ModeratorScore": [100, 50, 30, 20, 10]
         },
-        {"@type": "http://example.com/slowmo#Habituation",
-          "slowmo:ModeratorScore": 100
+        {"@type": "http://example.com/slowmo#PerformanceGapSize",
+          "slowmo:ModeratorScore": null
+        },
+        {"@type":   "cpo:CognitiveModerator",
+        "cpo:CognitiveModerator": "slowmo:RegulatoryFit",
+          "slowmo:ModeratorScore": null
         }
       ],
 
-      "slowmo:ImplementationStrategy": "show goal discrepancy",
-      "cpo:Mechanism": "goals",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
-      "cpo:DistalOutcome": [ 
-        "increase effort", 
-        "clinical practice is maintained"],
-      "slomo:KeyMessage": "You haven't reached the goal yet."
+
+      "cpo:DistalOutcome": "improve performance",
+
+      "slowmo:ExampleKeyMessage": "Your performance is X% from reaching the goal."
     }
   ]
 }

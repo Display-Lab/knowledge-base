@@ -8,6 +8,8 @@
     "cpo:OutcomePrecondition":     "http://purl.obolibrary.org/obo/cpo_0000055",
     "cpo:Mechanism":         "http://purl.obolibrary.org/obo/cpo#cpo_0000001",
     "cpo:Moderator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000005",
+    "cpo:CognitiveModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000008",
+    "cpo:OrganizationalModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000009",
     "cpo:ProximalOutcome":   "http://purl.obolibrary.org/obo/cpo#cpo_0000006",
     "cpo:DistalOutcome":     "http://purl.obolibrary.org/obo/cpo_0000007",
     "psdo": "http://purl.obolibrary.org/obo/psdo.owl#",
@@ -22,6 +24,7 @@
     "slowmo:PerformanceGapSize":       "http://example.com/slowmo#PerformanceGapSize",
     "slowmo:HasPrecondition":   "http://example.com/slowmo#HasPrecondition",
     "slowmo:HasModerator":      "http://example.com/slowmo#HasModerator",
+    "slowmo:InterventionContent":      "http://example.com/slowmo#InterventionContent",
     "slowmo:ModeratorScore":    "http://example.com/slowmo#ModeratorScore",
     "slowmo:Habituation":       "http://example.com/slowmo#Habituation",
     "slowmo:Achievement":       "http://example.com/slowmo#Achievement",
@@ -31,30 +34,35 @@
   "@graph": [
     {
       "@id": "http://example.com/slowmo#HighBench",
-      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
+      "@type": "cpo:CausalPathway",
       "name": "High Bench",
 
+      "slowmo:ImplementationStrategy": "Show performance above benchmark",
+
+      "slowmo:InterventionContent": ["BCT 2.2 Feedback on behavior", "BCT 6.2 Social comparison"],
+
+      "cpo:Mechanism": ["Feedback processes", "Motivation", "Norms"],
+
       "slowmo:HasPrecondition":[ 
-        "http://example.com/slowmo#PerformanceGapPositive", 
-        "http://example.com/slowmo#NormativeComparator"
+	"psdo:PositivePerformanceGapContent",
+	"psdo:SocialComparatorContent"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "http://example.com/slowmo#Habituation",
-          "slowmo:ModeratorScore": 100
+        {"cpo:CognitiveModerator": "slowmo:Habituation",
+          "slowmo:ModeratorScore": [100, 50, 30, 20, 10] 
         },
-        {"@type": "http://example.com/slowmo#RegulatoryFit",
-          "slowmo:ModeratorScore": 10
+        {"@type":   "cpo:CognitiveModerator",
+	"cpo:CognitiveModerator": "slowmo:RegulatoryFit",
+          "slowmo:ModeratorScore": null
         }
       ],
 
-      "slowmo:ImplementationStrategy": "show benchmark high performance",
-      "cpo:Mechanism": "beliefs about capability",
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
-      "cpo:DistalOutcome": [ 
-        "maintain effort", 
-        "clinical practice is maintained"],
-      "slomo:KeyMessage": "You are a top performer."
+
+      "cpo:DistalOutcome": "sustain performance",
+
+      "slowmo:ExampleKeyMessage": "You are a top performer."
     }
   ]
 }

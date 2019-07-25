@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>High Bench</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#HighBench",
+  "@type": "causal pathway",
+  "name": "High Bench",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#PerformanceGapPositive",
+    "http://example.com/slowmo#NormativeComparator"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#RegulatoryFit",
+      "slowmo:ModeratorScore": 10
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show benchmark high performance",
+  "cpo:Mechanism": "beliefs about capability",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "maintain effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "You are a top performer."
+}
+    </pre>
+  </body>
+</html>

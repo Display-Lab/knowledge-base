@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Goal Diff</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#GoalDiff",
+  "@type": "causal pathway",
+  "name": "Goal Diff",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#PerformanceGapNegative",
+    "http://example.com/slowmo#GoalComparator"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#PerformanceGapSize",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show goal discrepancy",
+  "cpo:Mechanism": "goals",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "increase effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "You haven't reached the goal yet."
+}
+    </pre>
+  </body>
+</html>

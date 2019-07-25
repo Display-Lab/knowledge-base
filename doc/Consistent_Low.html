@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Consistent Low</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#ConsistentLow",
+  "@type": "causal pathway",
+  "name": "Consistent Low",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#ConsistentGapNegative"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#RegulatoryFit",
+      "slowmo:ModeratorScore": 10
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show consistent below benchmark",
+  "cpo:Mechanism": "subjective norms",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "increase effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "Your performance of X has remained low."
+}
+    </pre>
+  </body>
+</html>

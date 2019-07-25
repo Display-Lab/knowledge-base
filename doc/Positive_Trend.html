@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Positive Trend</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#PositiveTrend",
+  "@type": "causal pathway",
+  "name": "Positive Trend",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#PerformanceTrendPositive"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#RegulatoryFit",
+      "slowmo:ModeratorScore": 10
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show positive trend",
+  "cpo:Mechanism": "velocity",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "maintain effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "Your performance has increased by X%"
+}
+    </pre>
+  </body>
+</html>

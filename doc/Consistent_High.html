@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Consistent High</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#ConsistentHigh",
+  "@type": "causal pathway",
+  "name": "Consistent High",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#ConsistentGapPositive"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#RegulatoryFit",
+      "slowmo:ModeratorScore": 10
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show consistent above benchmark",
+  "cpo:Mechanism": "beliefs about capability",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "maintain effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "You have consistently provided high quality care about X for X months."
+}
+    </pre>
+  </body>
+</html>

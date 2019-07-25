@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Goal Achievement</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#GoalAchievement",
+  "@type": "causal pathway",
+  "name": "Goal Achievement",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#Achievement",
+    "http://example.com/slowmo#GoalComparator"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show goal achievement",
+  "cpo:Mechanism": "goals",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "maintain effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "You reached the goal this month."
+}
+    </pre>
+  </body>
+</html>

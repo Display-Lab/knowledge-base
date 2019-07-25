@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Bench Diff</h1>
+    <pre>
+    {
+  "@id": "http://example.com/slomo#BenchDiff",
+  "@type": "causal pathway",
+  "name": "Bench Diff",
+  "slowmo:HasPrecondition": [
+    "http://example.com/slowmo#PerformanceGapNegative",
+    "http://example.com/slowmo#NormativeComparator"
+  ],
+  "slowmo:HasModerator": [
+    {
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#RegulatoryFit",
+      "slowmo:ModeratorScore": 100
+    },
+    {
+      "@type": "http://example.com/slowmo#PerformanceGapSize",
+      "slowmo:ModeratorScore": 100
+    }
+  ],
+  "slowmo:ImplementationStrategy": "show benchmark discrepancy",
+  "cpo:Mechanism": "subjective norms",
+  "cpo:ProximalOutcome": [
+    "engagement",
+    "acceptibility",
+    "appropriateness"
+  ],
+  "cpo:DistalOutcome": [
+    "increase effort",
+    "clinical practice is maintained"
+  ],
+  "slomo:KeyMessage": "You are not a top performer"
+}
+    </pre>
+  </body>
+</html>

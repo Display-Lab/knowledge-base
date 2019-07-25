@@ -3,53 +3,74 @@
     "@vocab": "http://schema.org/",
     "cpo": "http://example.com/cpo#",
     "cpo:CausalPathway":     "http://purl.obolibrary.org/obo/cpo_0000029",
-    "cpo:Mechanism":         "http://example.com/cpo#cpo_0000001",
-    "cpo:Moderator":         "http://example.com/cpo#cpo_0000005",
-    "cpo:ProximalOutcome":   "http://example.com/cpo#cpo_0000006",
-    "cpo:DistalOutcome":     "http://example.com/cpo#cpo_0000007",
+    "cpo:Precondition":     "http://purl.obolibrary.org/obo/cpo_0000002",
+    "cpo:MechanismPrecondition":     "http://purl.obolibrary.org/obo/cpo_0000054",
+    "cpo:OutcomePrecondition":     "http://purl.obolibrary.org/obo/cpo_0000055",
+    "cpo:Mechanism":         "http://purl.obolibrary.org/obo/cpo#cpo_0000001",
+    "cpo:Moderator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000005",
+    "cpo:CognitiveModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000008",
+    "cpo:OrganizationalModerator":         "http://purl.obolibrary.org/obo/cpo#cpo_0000009",
+    "cpo:ProximalOutcome":   "http://purl.obolibrary.org/obo/cpo#cpo_0000006",
+    "cpo:DistalOutcome":     "http://purl.obolibrary.org/obo/cpo_0000007",
+    "cpo:ImplementationStrategy": "http://purl.obolibrary.org/obo/cpo_0000053",
+    "psdo": "http://purl.obolibrary.org/obo/psdo.owl#",
+    "psdo:PositivePerformanceGapContent":   "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000104",
+    "psdo:NegativePerformanceGapContent":   "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000105",
+    "psdo:PositivePerformanceTrendContent": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000099",
+    "psdo:NegativePerformanceTrendContent": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000100",
+    "psdo:SocialComparatorContent": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000095",
+    "psdo:GoalComparatorContent": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000094",
+    "psdo:StandardComparatorContent": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000096",
     "slowmo": "http://example.com/slowmo#",
-    "slowmo:PerformanceGapPositive":   "http://example.com/slowmo#PerformanceGapPositive",
-    "slowmo:PerformanceGapNegative":   "http://example.com/slowmo#PerformanceGapNegative",
-    "slowmo:PerformanceTrendPositive": "http://example.com/slowmo#PerformanceTrendPositive",
-    "slowmo:PerformanceTrendNegative": "http://example.com/slowmo#PerformanceTrendNegative",
-    "slowmo:NormativeComparator":      "http://example.com/slowmo#NormativeComparator",
     "slowmo:PerformanceGapSize":       "http://example.com/slowmo#PerformanceGapSize",
     "slowmo:HasPrecondition":   "http://example.com/slowmo#HasPrecondition",
     "slowmo:HasModerator":      "http://example.com/slowmo#HasModerator",
+    "slowmo:InterventionContent":      "http://example.com/slowmo#InterventionContent",
     "slowmo:ModeratorScore":    "http://example.com/slowmo#ModeratorScore",
     "slowmo:Habituation":       "http://example.com/slowmo#Habituation",
-    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit",
-    "slowmo:SelfEfficacy":      "http://example.com/slowmo#SelfEfficacy",
     "slowmo:Achievement":       "http://example.com/slowmo#Achievement",
-    "slowmo:Habituation":       "http://example.com/slowmo#Habituation"
+    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit",
+    "slowmo:ConsecutivePositivePerformanceGapContent":     "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent",
+    "slowmo:ConsecutiveNegativePerformanceGapContent":     "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"
   },
+
 
   "@graph": [
     {
-      "@id": "http://example.com/slomo#ConsistentHigh",
-      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
+      "@id": "http://example.com/slowmo#ConsistentHigh",
+      "@type": "cpo:CausalPathway",
       "name": "Consistent High",
 
-      "slowmo:HasPrecondition":[ 
-        "http://example.com/slowmo#ConsistentGapPositive"
+      "cpo:ImplementationStrategy": "Show performance consistently above benchmark",
+
+      "slowmo:InterventionContent": ["BCT 2.2 Feedback on behavior", "BCT 6.2 Social comparison"],
+
+      "cpo:Mechanism": ["Feedback processes", "Motivation", "Norms"],
+
+
+      "slowmo:HasPrecondition":[
+        "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent",
+        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000096"
       ],
 
       "slowmo:HasModerator":[
-        {"@type": "http://example.com/slowmo#Habituation",
+        {"@type":   "http://example.com/slowmo#RegulatoryFit",
           "slowmo:ModeratorScore": 100
         },
-        {"@type": "http://example.com/slowmo#RegulatoryFit",
-          "slowmo:ModeratorScore": 10
-        }
-      ],
 
-      "slowmo:ImplementationStrategy": "show consistent above benchmark",
-      "cpo:Mechanism": "beliefs about capability",
+        {"@type": "slowmo:Habituation",
+          "slowmo:ModeratorScore": 100
+        }
+
+      ],
+      
       "cpo:ProximalOutcome": ["engagement", "acceptibility", "appropriateness"],
-      "cpo:DistalOutcome": [ 
-        "maintain effort", 
-        "clinical practice is maintained"],
-      "slomo:KeyMessage": "You have consistently provided high quality care about X for X months."
+
+      "cpo:DistalOutcome": "sustain performance",
+
+      "slowmo:ExampleKeyMessage": "Your performance has been consistently high for X months."
     }
   ]
 }
+
+

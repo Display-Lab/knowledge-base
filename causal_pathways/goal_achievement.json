@@ -29,7 +29,7 @@
     "slowmo:ModeratorScore":    "http://example.com/slowmo#ModeratorScore",
     "slowmo:Habituation":       "http://example.com/slowmo#Habituation",
     "slowmo:Achievement":       "http://example.com/slowmo#Achievement",
-    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit"
+    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit",
     "slowmo:ConsecutivePositivePerformanceGapContent":     "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent",
     "slowmo:ConsecutiveNegativePerformanceGapContent":     "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"
   },

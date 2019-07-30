@@ -38,7 +38,7 @@
   "@graph": [
     {
       "@id": "http://example.com/slowmo#ConsistentHigh",
-      "@type": "cpo:CausalPathway",
+      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
       "name": "Consistent High",
 
       "cpo:ImplementationStrategy": "Show performance consistently above benchmark",

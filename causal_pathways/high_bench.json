@@ -29,7 +29,7 @@
     "slowmo:ModeratorScore":    "http://example.com/slowmo#ModeratorScore",
     "slowmo:Habituation":       "http://example.com/slowmo#Habituation",
     "slowmo:Achievement":       "http://example.com/slowmo#Achievement",
-    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit"
+    "slowmo:RegulatoryFit":     "http://example.com/slowmo#RegulatoryFit",
     "slowmo:ConsecutivePositivePerformanceGapContent":     "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent",
     "slowmo:ConsecutiveNegativePerformanceGapContent":     "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"
   },
@@ -37,7 +37,7 @@
   "@graph": [
     {
       "@id": "http://example.com/slowmo#HighBench",
-      "@type": "cpo:CausalPathway",
+      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
       "name": "High Bench",
 
       "cpo:ImplementationStrategy": "Show performance above benchmark",
@@ -56,7 +56,7 @@
           "slowmo:ModeratorScore": 100
         },
 
-        {"@type": "slowmo:Habituation",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         }
 

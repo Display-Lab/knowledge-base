@@ -37,7 +37,7 @@
   "@graph": [
     {
       "@id": "http://example.com/slowmo#ConsistentLow",
-      "@type": "cpo:CausalPathway",
+      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
       "name": "Consistent Low",
 
       "cpo:ImplementationStrategy": "Show performance consistently below benchmark",
@@ -58,7 +58,7 @@
           "slowmo:ModeratorScore": 100
         },
 
-        {"@type": "slowmo:Habituation",
+        {"@type": "http://example.com/slowmo#Habituation",
           "slowmo:ModeratorScore": 100
         }
       ],

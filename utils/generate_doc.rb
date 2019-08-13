@@ -174,7 +174,6 @@ cps_html = cps_subbed.map{|cp| generate_cp_html cp}
 # Create list of file names
 cps_paths = cp_list.map{|cp| generate_cp_html_path cp}
 
-binding.pry
 # Write html to disk
 Hash[cps_paths.zip(cps_html)].each do |path,html|
   File.open(path, 'w'){|file| file << html }

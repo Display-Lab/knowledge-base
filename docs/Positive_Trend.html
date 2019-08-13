@@ -4,34 +4,27 @@
     <h1>Positive Trend</h1>
     <pre>
     {
-  "@id": "http://example.com/slomo#PositiveTrend",
+  "@id": "http://example.com/slowmo#PositiveTrend",
   "@type": "causal pathway",
   "name": "Positive Trend",
+  "cpo:ImplementationStrategy": "Show positive trend",
+  "slowmo:InterventionContent": [
+    "Velocity feedback (FIT)"
+  ],
+  "cpo:Mechanism": [
+    "Motivation"
+  ],
   "slowmo:HasPrecondition": [
-    "http://example.com/slowmo#PerformanceTrendPositive"
+    "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000099"
   ],
   "slowmo:HasModerator": [
     {
-      "@type": "http://example.com/slowmo#Habituation",
-      "slowmo:ModeratorScore": 100
-    },
-    {
       "@type": "http://example.com/slowmo#RegulatoryFit",
-      "slowmo:ModeratorScore": 10
+      "slowmo:ModeratorScore": 100
     }
   ],
-  "slowmo:ImplementationStrategy": "show positive trend",
-  "cpo:Mechanism": "velocity",
-  "cpo:ProximalOutcome": [
-    "engagement",
-    "acceptibility",
-    "appropriateness"
-  ],
-  "cpo:DistalOutcome": [
-    "maintain effort",
-    "clinical practice is maintained"
-  ],
-  "slomo:KeyMessage": "Your performance has increased by X%"
+  "cpo:DistalOutcome": "Improve performance",
+  "slowmo:ExampleKeyMessage": "Your performance has increased by X%."
 }
     </pre>
   </body>

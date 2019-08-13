@@ -4,34 +4,27 @@
     <h1>Negative Trend</h1>
     <pre>
     {
-  "@id": "http://example.com/slomo#NegativeTrend",
+  "@id": "http://example.com/slowmo#NegativeTrend",
   "@type": "causal pathway",
   "name": "Negative Trend",
+  "cpo:ImplementationStrategy": "Show negative trend",
+  "slowmo:InterventionContent": [
+    "Velocity feedback (FIT)"
+  ],
+  "cpo:Mechanism": [
+    "Motivation"
+  ],
   "slowmo:HasPrecondition": [
-    "http://example.com/slowmo#PerformanceTrendNegative"
+    "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000100"
   ],
   "slowmo:HasModerator": [
     {
-      "@type": "http://example.com/slowmo#Habituation",
+      "@type": "http://example.com/slowmo#RegulatoryFit",
       "slowmo:ModeratorScore": 100
-    },
-    {
-      "@type": "http://example.com/slowmo#SelfEfficacy",
-      "slowmo:ModeratorScore": 10
     }
   ],
-  "slowmo:ImplementationStrategy": "show negative trend",
-  "cpo:Mechanism": "velocity",
-  "cpo:ProximalOutcome": [
-    "engagement",
-    "acceptibility",
-    "appropriateness"
-  ],
-  "cpo:DistalOutcome": [
-    "increase effort",
-    "clinical practice is maintained"
-  ],
-  "slomo:KeyMessage": "Your performance has decreased by X%."
+  "cpo:DistalOutcome": "Improve performance",
+  "slowmo:ExampleKeyMessage": "Your performance has decreased by X%."
 }
     </pre>
   </body>

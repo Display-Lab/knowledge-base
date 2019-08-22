@@ -17,7 +17,7 @@ PSDO_URI = "https://raw.githubusercontent.com/Display-Lab/psdo/master/psdo.owl"
 SLOWMO_URI = "" # skip slomo until it's syntax is fixed
 
 CP_RELATIVE_DIR = File.join(File.dirname(__FILE__), '..', 'causal_pathways' )
-CP_RELATIVE_DOCS_DIR = File.join(File.dirname(__FILE__), '..', 'doc' )
+CP_RELATIVE_DOCS_DIR = File.join(File.dirname(__FILE__), '..', 'docs' )
 
 CP_DIR = File.absolute_path CP_RELATIVE_DIR
 CP_DOCS = File.absolute_path CP_RELATIVE_DOCS_DIR
@@ -148,6 +148,8 @@ end
 puts "Generating."
 
 # Load Ontologies
+#   Grab from hard coded local location for now.
+#   Use fetch_ontology to grap from remote
 cpo_owl  = retrieve_ontology CPO_URI
 psdo_owl = retrieve_ontology PSDO_URI
 

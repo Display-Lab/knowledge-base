@@ -4,35 +4,40 @@
     <h1>High Bench</h1>
     <pre>
     {
-  "@id": "http://example.com/slomo#HighBench",
+  "@id": "http://example.com/slowmo#HighBench",
   "@type": "causal pathway",
   "name": "High Bench",
+  "cpo:ImplementationStrategy": "Show performance above benchmark",
+  "slowmo:InterventionContent": [
+    "BCT 2.2 Feedback on behavior",
+    "BCT 6.2 Social comparison"
+  ],
+  "cpo:Mechanism": [
+    "Feedback processes",
+    "Motivation",
+    "Norms"
+  ],
   "slowmo:HasPrecondition": [
-    "http://example.com/slowmo#PerformanceGapPositive",
-    "http://example.com/slowmo#NormativeComparator"
+    "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000104",
+    "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000095"
   ],
   "slowmo:HasModerator": [
     {
-      "@type": "http://example.com/slowmo#Habituation",
+      "@type": "http://example.com/slowmo#RegulatoryFit",
       "slowmo:ModeratorScore": 100
     },
     {
-      "@type": "http://example.com/slowmo#RegulatoryFit",
-      "slowmo:ModeratorScore": 10
+      "@type": "http://example.com/slowmo#Habituation",
+      "slowmo:ModeratorScore": 100
     }
   ],
-  "slowmo:ImplementationStrategy": "show benchmark high performance",
-  "cpo:Mechanism": "beliefs about capability",
   "cpo:ProximalOutcome": [
     "engagement",
     "acceptibility",
     "appropriateness"
   ],
-  "cpo:DistalOutcome": [
-    "maintain effort",
-    "clinical practice is maintained"
-  ],
-  "slomo:KeyMessage": "You are a top performer."
+  "cpo:DistalOutcome": "sustain performance",
+  "slowmo:ExampleKeyMessage": "You are a top performer."
 }
     </pre>
   </body>

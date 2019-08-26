@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "http://example.com/app#ComparisonBarGraphHOR",
+      "@type": "http://example.com/slowmo#EmailTemplate",
+      "name": "Email Template"
+    }
+  ]
+}

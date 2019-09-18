@@ -47,7 +47,7 @@
       "cpo:Mechanism": ["Motivation"],
 
       "slowmo:HasPrecondition":[
-        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000100"
+        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000100"}
       ],
 
       "slowmo:HasModerator":[

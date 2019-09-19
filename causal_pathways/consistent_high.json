@@ -1,7 +1,7 @@
 {
   "@context": {
     "@vocab": "http://schema.org/",
-    "cpo": "http://example.com/cpo#",
+    "cpo": "http://purl.obolibrary.org/obo/",
     "cpo:CausalPathway":     "http://purl.obolibrary.org/obo/cpo_0000029",
     "cpo:Precondition":     "http://purl.obolibrary.org/obo/cpo_0000002",
     "cpo:MechanismPrecondition":     "http://purl.obolibrary.org/obo/cpo_0000054",

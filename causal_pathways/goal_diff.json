@@ -47,8 +47,8 @@
       "cpo:Mechanism": ["Goals", "Feedback processes", "Motivation"],
 
       "slowmo:HasPrecondition":[
-        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000105",
-        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000094"
+        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000105"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000094"}
       ],
 
       "slowmo:HasModerator":[

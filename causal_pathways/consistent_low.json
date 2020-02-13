@@ -47,9 +47,9 @@
       "cpo:Mechanism": ["Feedback processes", "Motivation", "Norms"],
 
       "slowmo:HasPrecondition":[
-        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000105",
-        "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent",
-        "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000095"
+        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000105"},
+        {"@type": "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000095"}
       ],
 
 

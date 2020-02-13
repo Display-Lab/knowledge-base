@@ -49,7 +49,7 @@
 
       "slowmo:HasPrecondition":[
         {"@type": "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent"},
-        {"@type": "http://purl.obolibrary.org/obo/psdo.owl/psdo_0000096"}
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000096"}
       ],
 
       "slowmo:HasModerator":[

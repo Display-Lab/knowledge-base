@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "@vocab":                                           "http://schema.org/",
+    "obo":                                              "http://purl.obolibrary.org/obo/",
+    "cpo:Mechanism":                                    "http://purl.obolibrary.org/obo/cpo_0000001",
+    "cpo:Precondition":                                 "http://purl.obolibrary.org/obo/cpo_0000002",
+    "cpo:Moderator":                                    "http://purl.obolibrary.org/obo/cpo_0000005",
+    "cpo:ProximalOutcome":                              "http://purl.obolibrary.org/obo/cpo_0000006",
+    "cpo:DistalOutcome":                                "http://purl.obolibrary.org/obo/cpo_0000007",
+    "cpo:CognitiveModerator":                           "http://purl.obolibrary.org/obo/cpo_0000008",
+    "cpo:OrganizationalModerator":                      "http://purl.obolibrary.org/obo/cpo_0000009",
+    "cpo:CausalPathway":                                "http://purl.obolibrary.org/obo/cpo_0000029",
+    "cpo:ImplementationStrategy":                       "http://purl.obolibrary.org/obo/cpo_0000053",
+    "cpo:MechanismPrecondition":                        "http://purl.obolibrary.org/obo/cpo_0000054",
+    "cpo:OutcomePrecondition":                          "http://purl.obolibrary.org/obo/cpo_0000055",
+    "psdo:GoalComparatorContent":                       "http://purl.obolibrary.org/obo/psdo_0000094",
+    "psdo:SocialComparatorContent":                     "http://purl.obolibrary.org/obo/psdo_0000095",
+    "psdo:StandardComparatorContent":                   "http://purl.obolibrary.org/obo/psdo_0000096",
+    "psdo:PositivePerformanceTrendContent":             "http://purl.obolibrary.org/obo/psdo_0000099",
+    "psdo:NegativePerformanceTrendContent":             "http://purl.obolibrary.org/obo/psdo_0000100",
+    "psdo:PositivePerformanceGapContent":               "http://purl.obolibrary.org/obo/psdo_0000104",
+    "psdo:NegativePerformanceGapContent":               "http://purl.obolibrary.org/obo/psdo_0000105",
+    "psdo:AchievementContent":                          "http://purl.obolibrary.org/obo/psdo_0000112",
+    "psdo:LossContent":                                 "http://purl.obolibrary.org/obo/psdo_0000113",
+    "slowmo":                                           "http://example.com/slowmo#",
+    "slowmo:PerformanceGapSize":                        "http://example.com/slowmo#PerformanceGapSize",
+    "slowmo:TrendSlope":                                "http://example.com/slowmo#TrendSlope",
+    "slowmo:HasPrecondition":                           "http://example.com/slowmo#HasPrecondition",
+    "slowmo:HasModerator":                              "http://example.com/slowmo#HasModerator",
+    "slowmo:InterventionContent":                       "http://example.com/slowmo#InterventionContent",
+    "slowmo:ModeratorScore":                            "http://example.com/slowmo#ModeratorScore",
+    "slowmo:Habituation":                               "http://example.com/slowmo#Habituation",
+    "slowmo:Achievement":                               "http://example.com/slowmo#Achievement",
+    "slowmo:RegulatoryFit":                             "http://example.com/slowmo#RegulatoryFit",
+    "slowmo:TimeSinceLastLoss":                         "http://example.com/slowmo#TimeSinceLastLoss",
+    "slowmo:TimeSinceLastAchievement":                  "http://example.com/slowmo#TimeSinceLastAchievement",
+    "slowmo:ConsecutivePositivePerformanceGapContent":  "http://example.com/slowmo#ConsecutivePositivePerformanceGapContent",
+    "slowmo:ConsecutiveNegativePerformanceGapContent":  "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"
+  },
+
+  "@graph": [
+    {
+      "@id": "http://feedbacktailor.org/ftkb#GoalStayedWorse",
+      "@type": "http://purl.obolibrary.org/obo/cpo_0000029",
+      "name": "goal stayed worse",
+
+      "cpo:ImplementationStrategy": "Show a performance that remained worse than that of a goal comparator",
+
+      "slowmo:InterventionContent": ["Discrepancy between current behavior and goal (1.6)", "BCT 2.2 Feedback on behavior", "BCT 2.7 Feedback on outcomes of behavior"],
+
+      "cpo:Mechanism": ["knowledge", "goals"],
+
+      "slowmo:HasPrecondition":[
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000094"},
+        {"@type": "http://example.com/slowmo#ConsecutiveNegativePerformanceGapContent"}
+      ],
+
+
+      "slowmo:HasModerator":[
+
+        {"@type": "http://example.com/slowmo#RegulatoryFit"
+        },
+
+        {"@type": "http://example.com/slowmo#Habituation"
+        },
+
+        {"@type": "http://example.com/slowmo#PerformanceGapSize"
+        }
+
+      ],
+
+      "cpo:ProximalOutcome": ["clinical process performance improvement"],
+
+      "cpo:DistalOutcome": ["clinical outcome performance improvement"],
+
+      "slomo:ExampleKeyMessage": "You have not yet reached the goal"
+    }
+  ]
+}
+
+
+
+                                                                                                                                                                                                 82,0-1        Bot
+
+
+

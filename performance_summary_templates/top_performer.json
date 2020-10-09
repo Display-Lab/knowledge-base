@@ -1,0 +1,32 @@
+ {
+  "@context": {
+    "@vocab": 						"http://schema.org/",
+    "obo":                                              "http://purl.obolibrary.org/obo/",
+    "slowmo":                                           "http://example.com/slowmo#",
+    "psdo:PerformanceSummaryDocument": 			"http://purl.obolibrary.org/obo/psdo_0000098",
+    "psdo:PositivePerformanceGapContent":		"http://purl.obolibrary.org/obo/psdo_0000104",
+    "psdo:RecipientContent":				"http://purl.obolibrary.org/obo/psdo_0000097",
+    "psdo:SocialComparatorContent":			"http://purl.obolibrary.org/obo/psdo_0000095",
+    "IAO:IsAbout":		                        "http://purl.obolibrary.org/obo/IAO_0000136"
+ 
+  },
+
+  "@graph": [
+    {
+      "@id": "http://feedbacktailor.org/ftkb#TopPerformer",
+      "@type": "http://purl.obolibrary.org/obo/psdo_0000098",
+      "name": "top performer",
+
+      "IAO:IsAbout":[
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000104"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000095"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000097"}
+      ],
+
+      "slomo:ExampleKeyMessage": "You are a top performer."
+	
+    }
+  ]
+}
+
+

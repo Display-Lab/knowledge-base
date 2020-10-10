@@ -1,0 +1,35 @@
+ {
+  "@context": {
+    "@vocab": 						"http://schema.org/",
+    "obo":                                              "http://purl.obolibrary.org/obo/",
+    "slowmo":                                           "http://example.com/slowmo#",
+    "psdo:PerformanceSummaryDocument": 			"http://purl.obolibrary.org/obo/psdo_0000098",
+    "psdo:PositivePerformanceGapContent":		"http://purl.obolibrary.org/obo/psdo_0000104",
+    "psdo:RecipientContent":				"http://purl.obolibrary.org/obo/psdo_0000097",
+    "psdo:SocialComparatorContent":			"http://purl.obolibrary.org/obo/psdo_0000095",
+    "psdo:PerformanceSummaryDisplay":			"http://purl.obolibrary.org/obo/psdo_0000003",
+    "psdo:PerformanceSummaryTextualEntity":		"http://purl.obolibrary.org/obo/psdo_0000110",
+    "IAO:IsAbout":		                        "http://purl.obolibrary.org/obo/IAO_0000136"
+
+  },
+
+  "@graph": [
+    {
+      "@id": "http://feedbacktailor.org/ftkb#TopPerformer",
+      "@type": "http://example.com/slowmo#EmailTemplate",
+      "name": "top performer",
+
+      "IAO:IsAbout":[
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000104"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000095"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000097"}
+      ],
+
+      "psdo:PerformanceSummaryTextualEntity": "You are a top performer this month for the measure [measure_details]",
+      "psdo:PerformanceSummaryDisplay": "https://github.com/Display-Lab/card-study/blob/master/cards/fig_comp_bar.R"
+	
+    }
+  ]
+}
+
+

@@ -1,0 +1,35 @@
+ {
+  "@context": {
+    "@vocab": 						"http://schema.org/",
+    "obo":                                              "http://purl.obolibrary.org/obo/",
+    "slowmo":                                           "http://example.com/slowmo#",
+    "foaf":			 			"http://xmlns.com/foaf/spec/",
+    "bcio":						"http://humanbehaviourchange.org/ontology/bcio_upper_level.owl",
+    "foaf:Person":					"http://xmlns.com/foaf/spec/#term_Person",
+    "foaf:Group":					"http://xmlns.com/foaf/spec/#term_Group",
+    "foaf:Organization":				"http://xmlns.com/foaf/spec/#term_Organization",
+    "foaf:name":					"http://xmlns.com/foaf/spec/#term_name",
+    "foaf:name":					"http://humanbehaviourchange.org/ontology/bcio_upper_level.owl"
+
+  },
+
+  "@graph": [
+    {
+      "@id": "http://feedbacktailor.org/ftkb#PersonRecipient",
+      "@type": "http://example.com/slowmo#Performer",
+      "name": "person recipient",
+
+      "IAO:IsAbout":[
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000104"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000095"},
+        {"@type": "http://purl.obolibrary.org/obo/psdo_0000097"}
+      ],
+
+      "psdo:PerformanceSummaryTextualEntity": "You are a top performer this month for the measure [measure_details]",
+      "psdo:PerformanceSummaryDisplay": "https://github.com/Display-Lab/card-study/blob/master/cards/fig_comp_bar.R"
+	
+    }
+  ]
+}
+
+

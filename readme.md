@@ -1,8 +1,12 @@
 # Precision Feedback Knowledge Base
 
-The Precision Feedback Knowledge Base is a set of theoretical statements about how performance feedback messages influence behavior. The statements describe causal pathway models (i.e. logic models) that link the information content of performance feedback with its expected influence on behavior. The focus of the knowledge base is on the influence of motivating information, such as performance comparisons, trends, achievement, and loss as the key information content of feedback interventions.
+The Precision Feedback Knowledge Base describes the influence of motivating information, such as performance comparisons, trends, achievement, and loss as the key information content of feedback interventions. These elements of motivating information are represented in models of factors affecting the success of feedback interventions. The models for feedback intervention success serve dual purposes of 1) explaining how we believe feedback interventions influence behavior (i.e. program theory), and 2) configuring a precision feedback system that uses the models to generate feedback emails. 
 
-The knowledge base can be used by a precision feedback system to identify information content in performance data that may be delivered in an engaging and motivating feedback message. For example, if a feedback recipient is performing below average (i.e. has a negative performance gap for a benchmark comparator), but is improving, (i.e. has a positive trend) these features could be used to determine the set of candidate messages that are available, given the causal pathways that depend on those features to influence the recipient's future practice.
+These models are a kind of causal pathway diagram (i.e. causal pathways) that links the motivating information in performance data with email text and visual displays that can be used to deliver the information. The models are implemented semantically in a computer-processable format using a linked-data approach (JSON-LD).
+
+Each causal pathway in the knowledgebase is illustrated by a vignette that demonstrates how the pathway is used by a precision feedback system, together with the following inputs: a feedback recipient's performance data, feedback preferences, and a collection of email templates.
+ 
+The knowledge base can be used by a precision feedback system to prioritize motivating feedback messages. For example, if a person (the feedback recipient) is performing below average but is improving, a precision feedback system could use information about the recipient's preferences to determine whether or not to deliver one of the following messages: "You are not a top performer", "Your performance is improving", "Your performance is approaching the goal", or "You may have an opportunity to improve."
 
 This project is supported by a grant from the National Library of Medicine: "A knowledge-based message tailoring system" (1K01 LM012528-01). This work is not peer-reviewed.
 
@@ -10,7 +14,7 @@ This project is supported by a grant from the National Library of Medicine: "A k
 ## Causal pathways
 
 The causal pathways are located under the /causal_pathways directory.
-Each pathway is described in a json file.
+Each pathway is described in a corresponding vignette directory.
 
 
 ## Version

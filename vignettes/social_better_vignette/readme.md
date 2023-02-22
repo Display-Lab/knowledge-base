@@ -77,7 +77,7 @@ The expected outcome of the successful influence of an email that uses the socia
 ## Message templates
 Message templates represent a possible tailored motivational message that a precision feedback system can send. There are two message templates that the Precision Feedback Pipeline can access for this vignette: 
 
-A. The top_10_performer message template contains the following message:
+A. The [top_10_performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template contains the following message:
 "Congratulations on your high performance last month! You were a top performer for the measure [performance measure name]. Your performance was [recipient performance level], above the Top 10% peer benchmark of [Top 10% Benchmark performance level]". 
 This message template is about a positive performance gap set and a social comparator element (the MPOG Top 10% Benchmark), and has the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
@@ -85,7 +85,7 @@ This message template is about a positive performance gap set and a social compa
 3. MPOG Top 10% Benchmark Comparator (TODO)
 4. Display format compatibility: Line_chart_ID_TODO, Bar_chart_ID_TODO, Text-only
 
-B. The top_25_performer message template contains the following message: 
+B. The [top_25_performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template contains the following message: 
 "Congrats on your high performance for the measure [performance measure name]! Your performance was [recipient performance level], above the Top 25% peer benchmark of [Top 25% Benchmark performance level]". 
 This message template is about a positive performance gap set and a social comparator element (the MPOG Top 25% Peer Benchmark), and has the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)

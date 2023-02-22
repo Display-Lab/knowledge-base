@@ -82,16 +82,16 @@ A. The [top_10_performer](https://github.com/Display-Lab/knowledge-base/blob/soc
 This message template is about a positive performance gap set and a social comparator element (the MPOG Top 10% Benchmark), and has the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. MPOG Top 10% Benchmark Comparator (TODO)
-4. Display format compatibility: Line_chart_ID_TODO, Bar_chart_ID_TODO, Text-only
+3. MPOG Top 10% Benchmark Comparator
+4. Display format compatibility: Line chart, bar chart
 
 B. The [top_25_performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template contains the following message: 
 "Congrats on your high performance for the measure [performance measure name]! Your performance was [recipient performance level], above the Top 25% peer benchmark of [Top 25% Benchmark performance level]". 
 This message template is about a positive performance gap set and a social comparator element (the MPOG Top 25% Peer Benchmark), and has the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. MPOG Top 25% Benchmark Comparator (TODO)
-4. Display format compatibility: Line_chart_ID_TODO, Bar_chart_ID_TODO, Text-only
+3. MPOG Top 25% Benchmark Comparator
+4. Display format compatibility: Line chart, bar chart
 
 
 ## Software Pipeline (Precision Feedback Pipeline)

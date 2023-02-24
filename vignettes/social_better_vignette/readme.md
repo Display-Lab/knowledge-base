@@ -1,32 +1,27 @@
 # Social Better Vignette
 
-
 ## Introduction
-Clinical performance feedback commonly includes peer comparison because it helps providers to understand how their care differs from the norm, and may motivate them to improve the care they provide to align with peers. Peer comparison feedback may also motivate providers to maintain a social status of being a high performer, once they have achieved it. The Social Better Causal Pathway specifies feedback messages that are capable of motivating providers through the delivery of information about high performance, relative to peers. This vignette serves the purpose of illustrating how a precision feedback system uses the Social Better Causal Pathway to motivate providers, and illustrates the process of generating research data about precision feedback for the study of feedback systems in healthcare. This vignette is written for clinical feedback system stakeholders, including feedback system developers, researchers, healthcare professionals and leaders, and patients.
-
-## Context: Precision feedback emails in a quality improvement network
-A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. Precision feedback is an kind of feedback intervention that prioritizes motivating performance information and customizes its delivery based on the preferences of the feedback recipient, or that of their population segment. Emails with precision feedback about various performance measures are sent each month to anesthesia providers in approximately 35 healthcare institutions. One performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [SUS-04 : Fresh Gas Flow, less than or equal to 2L/min](https://spec.mpog.org/Spec/Public/63).
-
-## Healthcare professionals and Healthcare Organizations (Personas)
-Alice is an attending anesthesiologist at Midwest Medicine, a medical-school affiliated hospital. She is motivated to continue improving her practice and that of her team, and who values setting new goals for her and her team to reach. MPOG has not yet elicited preferences from Alice about precision feedback. An organizational preference profile for anesthesia providers at Midwest Medicine has been developed from a cluster analysis of a sample of providers who have taken an online preference survey, and these results are used for Alice and any other anesthesia provider who has not yet taken a preference survey. This profile prioritizes feedback messages about changes in performance involving the achievement of peer benchmarks, drops in performance below a peer average, and improvement towards the peer benchmark, as well as time-series visualization in bar charts and line charts. The Midwest Medicine Anesthesia Provider Preference Profile is a set of relative utilities for attributes of feedback messages that a precision feedback system uses to prioritize performance information and feedback display format.
-
-Bob is a CRNA at Danville Hospital, a community hospital. He cares deeply about the safety of his patients and the efficiency of his team to provide the best care for patients in his community. He is proud of his team's record of providing high-quality and exceptionally safe care, and the quality awards that his hospital has received in recognition of their exceptional work. Bob prefers to receive notifications about any potential quality issues or significant problems, such as adverse events, that may require special attention from him and his team. Bob prefers to receive these in a brief sentence that does not require him to look at a chart, but which helps him understand that there is some follow-up required to dig into the details of one or more operative cases. Bob took a feedback preference survey which generated a set of relative utilities for feedback message attributes that a precision feedback system can use.
-
+Clinical performance feedback commonly includes peer comparison because it helps providers to understand how their care differs from the norm, and may motivate them to improve the care they provide to align with peers. Peer comparison feedback may also motivate providers to maintain a social status of being a high performer, once they have achieved it. The Social Better Causal Pathway specifies feedback messages that are capable of motivating providers through the delivery of information about high performance, relative to peers. This vignette serves the purpose of illustrating how a precision feedback system uses the Social Better Causal Pathway to motivate providers.
 
 ## Data
 
 ### Performance data
-MPOG has received data about Alice and Bob's operative cases and that of their peers for analysis, to measure care quality and outcomes. MPOG analyses the data for each performance measure, and calculates the following performance information for the measure SUS-04:
+MPOG has received data for January 2023 about Alice and Bob's operative cases and that of their peers for analysis, to measure care quality and outcomes. MPOG analyses the data for each performance measure, and calculates the following performance information for the measure SUS-04:
 
 ### Individual healthcare professionals
 Alice has a performance level of 97% for January 2023. 
+
 Bob has a performance level of 94% for January 2023.
 
 ### Comparators
-The top 25% peer benchmark at Midwest Medicine for January 2023 is 93%.
-The top 10% peer benchmark at Midwest Medicine for January 2023 is 96%.
-The top 25% peer benchmark at Danville Hospital for January 2023 is 93%.
-The top 10% peer benchmark at Danville Hospital for January 2023 is 95%.
+The top 25% peer benchmark at Midwest Medicine for January 2023 is 93%. The performance level for this comparator is calculated as the 75th percentile for all anesthesia providers at Midwest Medicine (http://purl.obolibrary.org/obo/psdo_0000128). 
+
+The top 10% peer benchmark at Midwest Medicine for January 2023 is 96%. The performance level for this comparator is calculated as the 90th percentile for all anesthesia providers at Midwest Medicine (http://purl.obolibrary.org/obo/psdo_0000129).
+
+The top 25% peer benchmark at Danville Hospital for January 2023 is 93%. The performance level for this comparator is calculated as the 75th percentile for all anesthesia providers at Midwest Medicine (http://purl.obolibrary.org/obo/psdo_0000128).
+
+The top 10% peer benchmark at Danville Hospital for January 2023 is 95%. The performance level for this comparator is calculated as the 90th percentile for all anesthesia providers at Midwest Medicine (http://purl.obolibrary.org/obo/psdo_0000129).
+
 
 ### Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
@@ -77,21 +72,21 @@ The expected outcome of the successful influence of an email that uses the socia
 ## Message templates
 Message templates represent a possible tailored motivational message that a precision feedback system can send. There are two message templates that the Precision Feedback Pipeline can access for this vignette: 
 
-A. The [top_10_performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template contains the following message:
-"Congratulations on your high performance last month! You were a top performer for the measure [performance measure name]. Your performance was [recipient performance level], above the Top 10% peer benchmark of [Top 10% Benchmark performance level]". 
-This message template is about a positive performance gap set and a social comparator element (the MPOG Top 10% Benchmark), and has the following metadata:
+A. The [Top 10 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template contains the following message:
+"Congratulations on your high performance last month! Your performance was above the 90th percentile of [Top 10% Benchmark performance level] for the measure [performance measure name]. Your performance was [recipient performance level]."
+This message template is about a positive performance gap set and a social comparator element (the MPOG Top 10% Benchmark), and is specified to be about (http://purl.obolibrary.org/obo/IAO_0000136) the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. MPOG Top 10% Benchmark Comparator
-4. Display format compatibility: Line chart, bar chart
+3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
 
-B. The [top_25_performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template contains the following message: 
-"Congrats on your high performance for the measure [performance measure name]! Your performance was [recipient performance level], above the Top 25% peer benchmark of [Top 25% Benchmark performance level]". 
-This message template is about a positive performance gap set and a social comparator element (the MPOG Top 25% Peer Benchmark), and has the following metadata:
+B. The [Top 25 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template contains the following message: 
+"Congrats on your high performance for the measure [performance measure name]! Your performance was [recipient performance level], above the 75th percentile benchmark [Top 25% Benchmark performance level] of your peers." 
+This message template is about a positive performance gap set and a social comparator element (the Top 25% Peer Benchmark), and has the following metadata:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. MPOG Top 25% Benchmark Comparator
-4. Display format compatibility: Line chart, bar chart
+3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
 
 
 ## Software Pipeline (Precision Feedback Pipeline)
@@ -101,16 +96,64 @@ This data set should result in the following annotations:
 
 Alice: Annotations indicate the presence of information content about a social comparator and a positive performance gap for both the Top 10% and Top 25% Benchmarks.
 1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) with MPOG Top 10% Benchmark Comparator (TODO)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) with MPOG Top 25% Benchmark Comparator (TODO)
+2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 Bob: Annotations indicate the presence of information content about a social comparator and a positive performance gap for the Top 25% Benchmark.
 1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) with MPOG Top 25% Benchmark Comparator (TODO)
+2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 
 ### Candidate Message Generation (Candidate Smasher)
 For both Alice and Bob, their annotations above are associated with the metadata from each candidate message, so that two candidate messages are created for each person.
+
+Alice's candidate messages:
+A. Candidate A has the following annotations:
+ Message is about:
+	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+	3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+ Alice's performance is about:
+	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+	2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+B. Candidate B has the following annotations:
+ Message is about:
+	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+	3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+ Alice's performance is about:
+	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+	2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+
+Bob's candidate messages:
+A. Candidate A has the following annotations:
+ Message is about:
+	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+	3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+ Bob's performance is about:
+	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+	2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+B. Candidate B has the following annotations:
+ Message is about:
+	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+	3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+ Bob's performance is about:
+	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+	2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 ### Candidate Message Preconditions Evaluation (Think Pudding)
 For Alice, both candidates are matched with the causal pathway Social Better, and are indicated as acceptable for ranking in the next stage of the pipeline.

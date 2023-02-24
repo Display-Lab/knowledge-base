@@ -109,51 +109,61 @@ Bob: Annotations indicate the presence of information content about a social com
 For both Alice and Bob, their annotations above are associated with the metadata from each candidate message, so that two candidate messages are created for each person.
 
 Alice's candidate messages:
+
 A. Candidate A has the following annotations:
- Message is about:
-	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-	3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
- Alice's performance is about:
-	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-	2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+Message is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Alice's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 B. Candidate B has the following annotations:
- Message is about:
-	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-	3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
- Alice's performance is about:
-	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-	2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+Message is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Alice's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 
 Bob's candidate messages:
+
 A. Candidate A has the following annotations:
- Message is about:
-	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-	3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
- Bob's performance is about:
-	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-	2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+Message is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Bob's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 B. Candidate B has the following annotations:
- Message is about:
-	1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-	2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-	3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-	4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
- Bob's performance is about:
-	1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-	2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-	3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+Message is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Bob's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
 ### Candidate Message Preconditions Evaluation (Think Pudding)
 For Alice, both candidates are matched with the causal pathway Social Better, and are indicated as acceptable for ranking in the next stage of the pipeline.

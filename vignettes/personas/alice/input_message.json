@@ -20,7 +20,7 @@
     },
 
   "Performance_data":[
-      ["Staff_Number","Measure_Name","Month","Passed_Count","Flagged_Count","Denominator","peer_average_comparator","peer_75th_percentile_benchmark","peer_90th_percentile_benchmark"],
+      ["Staff_Number","Measure","Month","Passed_Count","Flagged_Count","Denominator","peer_average_comparator","peer_75th_percentile_benchmark","peer_90th_percentile_benchmark"],
       [1,"SUS04","2022-02-01",7,1,8,89,94,97],
       [1,"SUS04","2022-03-01",8,2,10,90,93,95],
       [1,"SUS04","2022-04-01",18,3,21,92,95,98],

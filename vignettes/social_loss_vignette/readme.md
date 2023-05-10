@@ -119,7 +119,7 @@ A. The [Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/b
 5. Peer average comparator (http://purl.obolibrary.org/obo/PSDO_0000126)
 6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
 
-B. The [Lost Top 10 Benchmark](https://github.com/Display-Lab/knowledge-base/blob/social_loss/message_templates/lost_top_10_benchmark.json) message template contains the following message: "You are no longer a top performer for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+B. The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template contains the following message: "You are no longer a top performer for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
@@ -172,7 +172,7 @@ Alice's annotations from this month:
 
 B. Candidate B has the following annotations:
 
-The [Lost Top 10 Benchmark](https://github.com/Display-Lab/knowledge-base/blob/social_loss/message_templates/lost_top_10_benchmark.json) message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
 3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
@@ -208,7 +208,7 @@ Bob's performance is about:
 
 B. Candidate B has the following annotations:
 
-The [Lost Top 10 Benchmark](https://github.com/Display-Lab/knowledge-base/blob/social_loss/message_templates/lost_top_10_benchmark.json) message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
 3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)

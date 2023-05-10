@@ -37,9 +37,34 @@ Bob, a CRNA at Danville Hospital, has the following performance data over the la
 
 ## Preference data
 
-Alice's preference data: (TODO)
+Alice's preference data:
 
-Bob's preference data: (TODO)
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |12.97730392	 |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |6.164377638	 |Performance is consistently high (no recent change).                            |
+|Worsening             	|-22.23023886	|Performance is worsening.                                                       |
+|Improving	             |3.325883377	 |Performance is improving.                                                       |
+|Social los             |9.956127768	 |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |-7.710484647	|Performance has remained below average (no recent change).                      |
+|Social better	         |-1.61124312	 |Performance is high this month.                                                 |
+|Social worse	          |-14.86794533	|Performance is low this month.                                                  |
+|Social approach	       |13.9962123	  |Performance is improving, getting closer to the peer benchmark.                 |
+
+
+Bob's preference data:
+
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |-2.92114	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |-12.76936	   |Performance is consistently high (no recent change).                            |
+|Worsening             	|1.06977     	|Performance is worsening.                                                       |
+|Improving	             |-0.26266	    |Performance is improving.                                                       |
+|Social loss            |2.72075	     |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |9.97743	     |Performance has remained below average (no recent change).                      |
+|Social better	         |-5.97766	    |Performance is high this month.                                                 |
+|Social worse	          |-0.05277	    |Performance is low this month.                                                  |
+|Social approach	       |-0.24384	    |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 # Precision feedback message generation

@@ -49,7 +49,7 @@ Alice's preference data:
 |Social stayed worse	   |-7.710484	   |Performance has remained below average (no recent change).                      |
 |Social better	         |-1.61124	    |Performance is high this month.                                                 |
 |Social worse	          |-14.86794	   |Performance is low this month.                                                  |
-|Social approach	       |13.99621. 	  |Performance is improving, getting closer to the peer benchmark.                 |
+|Social approach	       |13.99621 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Bob's preference data:

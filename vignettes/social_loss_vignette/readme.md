@@ -41,15 +41,15 @@ Alice's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social gain	           |12.97730392	 |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social stayed better   |6.164377638	 |Performance is consistently high (no recent change).                            |
-|Worsening             	|-22.23023886	|Performance is worsening.                                                       |
-|Improving	             |3.325883377	 |Performance is improving.                                                       |
-|Social los             |9.956127768	 |Performance was previously high, but it has dropped below the peer average.     |
-|Social stayed worse	   |-7.710484647	|Performance has remained below average (no recent change).                      |
-|Social better	         |-1.61124312	 |Performance is high this month.                                                 |
-|Social worse	          |-14.86794533	|Performance is low this month.                                                  |
-|Social approach	       |13.9962123	  |Performance is improving, getting closer to the peer benchmark.                 |
+|Social gain	           |12.97730	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |6.164377	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|-22.23023	   |Performance is worsening.                                                       |
+|Improving	             |3.325883	    |Performance is improving.                                                       |
+|Social los             |9.956127	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |-7.710484	   |Performance has remained below average (no recent change).                      |
+|Social better	         |-1.61124	    |Performance is high this month.                                                 |
+|Social worse	          |-14.86794	   |Performance is low this month.                                                  |
+|Social approach	       |13.99621. 	  |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Bob's preference data:

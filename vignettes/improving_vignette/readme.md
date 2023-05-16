@@ -4,13 +4,30 @@ A healthcare quality improvement consortium called the Multicenter Perioperative
 
 ## Personas
 
-Alice is an attending anesthesiologist at Midwest Medicine, a medical-school affiliated hospital. She is motivated to continue improving her practice and that of her team, and who values setting new goals for her and her team to reach. MPOG has not yet elicited preferences from Alice about precision feedback. An organizational preference profile for anesthesia providers at Midwest Medicine has been developed from a cluster analysis of a sample of providers who have taken an online preference survey, and these results are used for Alice and any other anesthesia provider who has not yet taken a preference survey. This profile prioritizes feedback messages about changes in performance involving the achievement of peer benchmarks, drops in performance below a peer average, and improvement towards the peer benchmark, as well as time-series visualization in bar charts and line charts. The Midwest Medicine Anesthesia Provider Preference Profile is a set of relative utilities for attributes of feedback messages that a precision feedback system uses to prioritize performance information and feedback display format.
+Deepa is a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, a medical-school affiliated hospital. She is committed to delivering the best possible care to her patients. She values the quality of patient care and always strives to improve it by working collaboratively with her team. Deepa is passionate about using data to enhance patient outcomes and regularly reviews feedback reports to identify areas for improvement. Deepa is specifically interested in knowing when her performance is worsening compared to her peers and goals. She values the insights that data can provide and prefers to receive feedback reports that are easy to interpret and act upon. Deepa prefers to receive feedback reports in the form of line charts, which allow her to easily visualize trends over time. She believes that line charts are more effective than other types of charts because they provide a clear and concise representation of data. 
 
-Bob is a CRNA at Max Community Hospital. He cares deeply about the safety of his patients and the efficiency of his team to provide the best care for patients in his community. He is proud of his team's record of providing high-quality and exceptionally safe care, and the quality awards that his hospital has received in recognition of their exceptional work. Bob prefers to receive notifications about any potential quality issues or significant problems, such as adverse events, that may require special attention from him and his team. Bob prefers to receive these in a brief sentence that does not require him to look at a chart, but which helps him understand that there is some follow-up required to dig into the details of one or more operative cases. Bob took a feedback preference survey which generated a set of relative utilities for feedback message attributes that a precision feedback system can use.
+Gaile is a resident at Midwest Medicine, a medical-school affiliated hospital. Gaile is always interested in improving their practice and continuing to learn to care for patients to the best of their ability. Gaile has not yet taken the preference survey, so an organizational preference profile of residents at Midwest Medicine is used to generate precision feedback for the group. The resident profile prioritizes positive encouragement with gain-framing messages so that those early in their career feel motivated to continue providing high quality care. The resident profile also prioritizes social comparison, as residents often want to know how they are performing relative to the group overall. Finally, visualizations that are easy to understand at a quick glance are also included, given the busy schedule and time constraints of this group.
 
+### Healthcare professional performance
+Deepa's performance rate for BP-03 has level of 75% for November 2023, 74% for December 2023, and 77% for January 2023. Gaile's performance is 72% for November 2023, 75% for December 2023, and 74% for January 2023. 
 
-## Performance data
-Alice's performance rate for SUS-04 has level of 75% for November 2023, 74% for December 2023, and 77% for January 2023. Bob's performance is 72% for November 2023, 75% for December 2023, and 74% for January 2023. 
+Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 12 months for BP-03:
+
+|Month|Performance Level|Top 10% Benchmark|Peer Average|
+|-----|-----------------|-----------------|------------|
+|Oct  |              88%|               93|          86|
+|Nov  |              89%|               96|          88|
+|Dec  |              87%|               95|          87|
+|Jan  |              86%|               97|          87|
+
+Gaile, a resident at Midwest Medicine, has the following performance data over the last 12 months for BP-03:
+
+|Month|Performance Level|Top 10% Benchmark|Peer Average|
+|-----|-----------------|-----------------|------------|
+|Oct  |              97%|               94|          85|
+|Nov  |              96%|               95|          87|
+|Dec  |              95%|               96|          86|
+|Jan  |              98%|               97|          84|
 
 ## Recipient annotations
 This data set should result in an annotation that there is information content about a positive performance trend for Alice:

@@ -38,7 +38,7 @@ The performance_improving template is about a positive performance trend set:
 1. Positive performance trend set (http://purl.obolibrary.org/obo/psdo_0000120)
 
 ## Resulting candidates
-The candidate produced for Alice has:
+The candidate produced for Deepa has:
 1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
 2. Positive performance trend set (http://purl.obolibrary.org/obo/psdo_0000120)
 

@@ -11,19 +11,23 @@ Gaile is a resident at Midwest Medicine, a medical-school affiliated hospital. G
 ### Healthcare professional performance
 Deepa's performance rate for BP-03 has level of 75% for November 2023, 74% for December 2023, and 77% for January 2023. Gaile's performance is 72% for November 2023, 75% for December 2023, and 74% for January 2023. 
 
-Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 12 months for BP-03:
+Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
+|Aug  |                 |                 |            |
+|Sep  |                 |                 |            |
 |Oct  |              88%|               93|          86|
 |Nov  |              89%|               96|          88|
 |Dec  |              87%|               95|          87|
 |Jan  |              86%|               97|          87|
 
-Gaile, a resident at Midwest Medicine, has the following performance data over the last 12 months for BP-03:
+Gaile, a resident at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
+|Aug  |                 |                 |            |
+|Sep  |                 |                 |            |
 |Oct  |              97%|               94|          85|
 |Nov  |              96%|               95|          87|
 |Dec  |              95%|               96|          86|

@@ -1,12 +1,11 @@
 # Improving Causal Pathway Vignette
 
-A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [SUS-04 : Fresh Gas Flow, less than or equal to 2L/min](https://spec.mpog.org/Spec/Public/63).
+## Introduction
 
-## Personas
+A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
-Deepa is a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, a medical-school affiliated hospital. She is committed to delivering the best possible care to her patients. She values the quality of patient care and always strives to improve it by working collaboratively with her team. Deepa is passionate about using data to enhance patient outcomes and regularly reviews feedback reports to identify areas for improvement. Deepa is specifically interested in knowing when her performance is worsening compared to her peers and goals. She values the insights that data can provide and prefers to receive feedback reports that are easy to interpret and act upon. Deepa prefers to receive feedback reports in the form of line charts, which allow her to easily visualize trends over time. She believes that line charts are more effective than other types of charts because they provide a clear and concise representation of data. 
-
-Gaile is a resident at Midwest Medicine, a medical-school affiliated hospital. Gaile is always interested in improving their practice and continuing to learn to care for patients to the best of their ability. Gaile has not yet taken the preference survey, so an organizational preference profile of residents at Midwest Medicine is used to generate precision feedback for the group. The resident profile prioritizes positive encouragement with gain-framing messages so that those early in their career feel motivated to continue providing high quality care. The resident profile also prioritizes social comparison, as residents often want to know how they are performing relative to the group overall. Finally, visualizations that are easy to understand at a quick glance are also included, given the busy schedule and time constraints of this group.
+## Performance Data
+MPOG has received operative case data from last month about Deepa and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
 
 ### Healthcare professional performance
 Deepa's performance rate for BP-03 has level of 75% for November 2023, 74% for December 2023, and 77% for January 2023. Gaile's performance is 72% for November 2023, 75% for December 2023, and 74% for January 2023. 
@@ -32,6 +31,12 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 |Nov  |              96%|               95|          87|
 |Dec  |              95%|               96|          86|
 |Jan  |              98%|               97|          84|
+
+## Preference data
+Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
+
+Deepa's preference data: (TODO)
+Bob's preference data: (TODO)
 
 ## Recipient annotations
 This data set should result in an annotation that there is information content about a positive performance trend for Alice:

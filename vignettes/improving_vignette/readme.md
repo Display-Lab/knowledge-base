@@ -35,7 +35,7 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Deepa's preference data:
+Deepa's preference data: (TODO)
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
 |Social gain	           |0.00000	      |Performance was previously low, but it has improved to reach the peer benchmark.|
@@ -49,7 +49,7 @@ Deepa's preference data:
 |Social approach	       |0.00000 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
-Bob's preference data:
+Gaile's preference data: (TODO)
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|

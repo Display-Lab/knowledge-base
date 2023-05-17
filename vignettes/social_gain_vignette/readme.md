@@ -1,0 +1,163 @@
+# Social Gain Vignette
+
+## Introduction
+This vignette illustrates the process for creating precision feedback messages about a recipient's performance rising above a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Gain Causal Pathway, which specifies feedback messages that are capable of motivating providers through the delivery of information about performance improving <sub> verify this </sub>. Motivation from these messages can arise from: **TODO** . Example messages that use Social Gain are **TODO** and **TODO**.
+
+This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is "http://purl.obolibrary.org/obo/psdo_0000126" which reprsents a peer average comparator, and which is defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+
+## Performance Data
+Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [PONV-05: Post-operative Nausea and Vomiting Prophylaxis: Adults](https://spec.mpog.org/Spec/Public/53).
+
+### Benchmark comparators
+MPOG calculates performance benchmarks and averages for each institution. One comparator is a Top 10% Benchmark (http://purl.obolibrary.org/obo/psdo_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another comparator is the peer average (http://purl.obolibrary.org/obo/psdo_0000126), which is the mean performance for all providers at an insitution, for each measure.
+
+### Healthcare professional performance
+**TODO:** *verify correct personas and performance data*
+Alice, an attending anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for PONV-05:
+
+|Month|Performance Level|Top 10% Benchmark|Peer Average|
+|-----|-----------------|-----------------|------------|
+|Oct  |              88%|               93|          86|
+|Nov  |              89%|               96|          88|
+|Dec  |              87%|               95|          87|
+|Jan  |              86%|               97|          87|
+|Feb  |              81%|               94|          86|
+|Mar  |              78%|               96|          88|
+
+Bob, a CRNA at Danville Hospital, has the following performance data over the last 6 months for PONV-05:
+
+|Month|Performance Level|Top 10% Benchmark|Peer Average|
+|-----|-----------------|-----------------|------------|
+|Oct  |              97%|               94|          85|
+|Nov  |              96%|               95|          87|
+|Dec  |              95%|               96|          86|
+|Jan  |              98%|               97|          84|
+|Feb  |              95%|               95|          85|
+|Mar  |              91%|               96|          87|
+
+
+## Preference data
+**TODO:** *verify correct personas and preference data*
+Alice's preference data:
+
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |12.97730	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |6.164377	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|-22.23023	   |Performance is worsening.                                                       |
+|Improving	             |3.325883	    |Performance is improving.                                                       |
+|Social loss             |9.956127	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |-7.710484	   |Performance has remained below average (no recent change).                      |
+|Social better	         |-1.61124	    |Performance is high this month.                                                 |
+|Social worse	          |-14.86794	   |Performance is low this month.                                                  |
+|Social approach	       |13.99621 	   |Performance is improving, getting closer to the peer benchmark.                 |
+
+
+Bob's preference data:
+
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |-2.92114	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |-12.76936	   |Performance is consistently high (no recent change).                            |
+|Worsening             	|1.06977     	|Performance is worsening.                                                       |
+|Improving	             |-0.26266	    |Performance is improving.                                                       |
+|Social loss            |2.72075	     |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |9.97743	     |Performance has remained below average (no recent change).                      |
+|Social better	         |-5.97766	    |Performance is high this month.                                                 |
+|Social worse	          |-0.05277	    |Performance is low this month.                                                  |
+|Social approach	       |-0.24384	    |Performance is improving, getting closer to the peer benchmark.                 |
+
+
+# Precision feedback message generation
+To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: 1) A knowledge base, 2) A software pipeline, and 3) A web service.
+
+## Precision Feedback Knowledge Base
+The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
+
+## Social Gain Causal Pathway
+This pathway describes the influence of feedback interventions that show the message recipient that their performance has become better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+
+### Preconditions
+Preconditions for social gain are factors that are necessary for the success of the feedback intervention using this pathway. The social gain pathway has the following preconditions:
+
+Information content preconditions:
+1. **TODO**
+
+Message preconditions:
+1. **TODO**
+ 
+### Moderators
+Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
+1. **TODO**
+
+### Mechanisms
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
+1. **TODO**
+
+### Outcomes
+The expected outcome of the successful influence of an email that uses the social gain pathway is clinical process performance improvement.
+
+## Message templates
+Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
+
+**TODO:** *Pull message templates, format to standard set by social loss vignette*
+
+## Software Pipeline (Precision Feedback Pipeline)
+**TODO**
+
+### Recipient annotations (Bitstomach)
+The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
+
+Alice's annotations indicate the presence of the following in her performance data this month:
+1. **TODO**
+
+Bob's annotations indicate the presence of the following in his performance data this month:
+1. **TODO**
+
+
+### Candidate Message Generation (Candidate Smasher)
+The second stage of the pipeline creates possible messages by associating the annotations for Alice and Bob with each message template, so that two candidate messages are created for each person.
+
+Alice's candidate messages:
+
+A. Candidate A has the following annotations:
+
+The [**TODO**](**TODO**) message template [is about](**TODO**) the following features of performance data:
+1. **TODO**
+
+Alice's annotations from this month:
+1. **TODO**
+
+B. Candidate B has the following annotations:
+
+The [**TODO**](**TODO**) message template [is about] (**TODO**) the following features of performance data:
+TODO
+
+Alice's annotations from this month:
+TODO
+
+Bob's candidate messages:
+
+A. Candidate A has the following annotations:
+
+TODO
+
+Bob's performance is about:
+TODO
+
+B. Candidate B has the following annotations:
+
+TODO
+
+Bob's performance is about:
+TODO
+
+### Candidate Message Preconditions Evaluation (Think Pudding)
+TODO
+
+### Candidate Message Moderator Evaluation and Selection (Esteemer)
+TODO
+
+### Message Generation and Delivery (Pictoralist)
+TODO
+

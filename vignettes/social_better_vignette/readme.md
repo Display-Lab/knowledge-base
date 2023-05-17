@@ -8,22 +8,14 @@ MPOG has received operative case data from last month about Alice and Bob's case
 
 ### Healthcare professionals
 Alice has a performance level of 97%.
- 
-Bob has a performance level of 94%.
 
 ### Benchmark comparators
 Alice's peer benchmarks for last month are 93% for the top 25% peer benchmark (75th percentile http://purl.obolibrary.org/obo/psdo_0000128), and 96% for the top 10% peer benchmark (90th percentile http://purl.obolibrary.org/obo/psdo_0000129).
-
-Bob's peer benchmarks for last month are 93% for the top 25% peer benchmark (75th percentile http://purl.obolibrary.org/obo/psdo_0000128), and 95% for the top 10% peer benchmark (90th percentile http://purl.obolibrary.org/obo/psdo_0000129).
-
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
 Alice's preference data: (TODO)
-Bob's preference data: (TODO)
-
-
 
 # Precision feedback system
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data, to select an optimal precision feedback message. 
@@ -75,15 +67,6 @@ This message template is about a positive performance gap set and a social compa
 3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
 4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
 
-B. The [Top 25 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template contains the following message: 
-"Congrats on your high performance for the measure [performance measure name]! Your performance was [recipient performance level], above the 75th percentile benchmark [Top 25% Benchmark performance level] of your peers." 
-This message template is about a positive performance gap set and a social comparator element (the Top 25% Peer Benchmark), and has the following metadata:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
-
-
 ## Software Pipeline (Precision Feedback Pipeline)
 
 ### Recipient annotations (Bitstomach)
@@ -93,12 +76,6 @@ Alice's annotations indicate the presence of information content about a social 
 1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
 2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
 3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-
-Bob's annotations indicate the presence of information content about a social comparator and a positive performance gap for the Top 25% Benchmark, but with a negative gap for the Top 10% Benchmark:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-
 
 ### Candidate Message Generation (Candidate Smasher)
 The second stage of the pipeline creates possible messages by associating the annotations for Alice and Bob with each message template, so that two candidate messages are created for each person.
@@ -131,44 +108,11 @@ Alice's performance is about:
 2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
 3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
 
-
-Bob's candidate messages:
-
-A. Candidate A has the following annotations:
-
-The [Top 10 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template is about:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
-
-Bob's performance is about:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-
-B. Candidate B has the following annotations:
-
-The [Top 25 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message is about:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
-
-Bob's performance is about:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-
 ### Candidate Message Preconditions Evaluation (Think Pudding)
 For Alice, both candidates have matching preconditions with social better, and are indicated as acceptable for ranking in the next stage of the pipeline:
 
 1. Candidate A acceptable by social better
 2. Candidate B acceptable by social better
-
-For Bob, candidate B's preconditions match with social better, and is indicated as acceptable, but Candidate A is not because Bob's performance level is below the benchmark. The following assertions are made for Bob:
-
-1. Candidate B acceptable by social better
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 TODO

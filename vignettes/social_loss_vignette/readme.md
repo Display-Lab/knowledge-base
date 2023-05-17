@@ -45,7 +45,7 @@ Alice's preference data:
 |Social stayed better   |6.164377	    |Performance is consistently high (no recent change).                            |
 |Worsening             	|-22.23023	   |Performance is worsening.                                                       |
 |Improving	             |3.325883	    |Performance is improving.                                                       |
-|Social los             |9.956127	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social loss             |9.956127	    |Performance was previously high, but it has dropped below the peer average.     |
 |Social stayed worse	   |-7.710484	   |Performance has remained below average (no recent change).                      |
 |Social better	         |-1.61124	    |Performance is high this month.                                                 |
 |Social worse	          |-14.86794	   |Performance is low this month.                                                  |

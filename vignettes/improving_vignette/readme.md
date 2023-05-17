@@ -35,8 +35,35 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Deepa's preference data: (TODO)
-Bob's preference data: (TODO)
+Deepa's preference data:
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |0.00000	      |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |0.00000	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|0.00000	   |Performance is worsening.                                                       |
+|Improving	             |0.00000	    |Performance is improving.                                                       |
+|Social los             |0.00000	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |0.00000	   |Performance has remained below average (no recent change).                      |
+|Social better	         |0.00000	    |Performance is high this month.                                                 |
+|Social worse	          |0.00000	   |Performance is low this month.                                                  |
+|Social approach	       |0.00000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+
+
+Bob's preference data:
+
+|Motivating information |Utility value|Description                                                                     |
+|-----------------------|-------------|--------------------------------------------------------------------------------|
+|Social gain	           |-2.92114	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |-12.76936	   |Performance is consistently high (no recent change).                            |
+|Worsening             	|1.06977     	|Performance is worsening.                                                       |
+|Improving	             |-0.26266	    |Performance is improving.                                                       |
+|Social loss            |2.72075	     |Performance was previously high, but it has dropped below the peer average.     |
+|Social stayed worse	   |9.97743	     |Performance has remained below average (no recent change).                      |
+|Social better	         |-5.97766	    |Performance is high this month.                                                 |
+|Social worse	          |-0.05277	    |Performance is low this month.                                                  |
+|Social approach	       |-0.24384	    |Performance is improving, getting closer to the peer benchmark.                 |
+
+The above tables were taken from Social Loss Vignette - PG
 
 ## Recipient annotations
 This data set should result in an annotation that there is information content about a positive performance trend for Alice:

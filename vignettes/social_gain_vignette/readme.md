@@ -3,7 +3,7 @@
 ## Introduction
 This vignette illustrates the process for creating precision feedback messages about a recipient's performance rising above a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Gain Causal Pathway, which specifies feedback messages that may motivate providers by delivering information about their performance improving. Motivation from these messages can arise from the recognition of a gain of social status as a top or above-average performer. Example messages that use social gain are "you reached the top 10% peer benchmark" and "your performance has increased above the peer average".
 
-This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is a [peer average comperator]("http://purl.obolibrary.org/obo/psdo_0000126"), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is http://purl.obolibrary.org/obo/psdo_0000126, an ID that points to a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
 Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [OPIOID: Opioid Equivalency](https://spec.mpog.org/Spec/Public/37).
@@ -77,16 +77,16 @@ This pathway describes the influence of feedback interventions informing the rec
 Preconditions for social gain are factors necessary for the success of the precision feedback intervention using this pathway. The social gain pathway has the following preconditions:
 
 Information content preconditions:
-1. [Positive gap content](https://imgur.com/I1EeK7L) **placeholder link**
-2. [Social comparator content](http://purl.obolibrary.org/obo/psdo_0000095) **link broken?**
-3. [Positive trend content](https://imgur.com/I1EeK7L) **placeholder link**
-4. [Achievement content](https://imgur.com/I1EeK7L) **placeholder link**
+1. [Positive performance gap content](http://purl.obolibrary.org/obo/PSDO_0000104) - prefixIRI PSDO:0000104
+2. [Social comparator content](http://purl.obolibrary.org/obo/psdo_0000095) - prefixIRI PSDO:0000095
+3. [Positive trend content](http://purl.obolibrary.org/obo/PSDO_0000099) - prefixIRI PSDO:0000099
+4. [Achievement content](http://purl.obolibrary.org/obo/PSDO_0000112) - prefixIRI PSDO:0000112
 
 Message preconditions:
-1. [Positive gap set](https://imgur.com/I1EeK7L) **placeholder link**
-2. [Social comparator set](https://imgur.com/I1EeK7L) **placeholder link**
-3. [Positive trend set](https://imgur.com/I1EeK7L) **placeholder link**
-4. [Achievement set](https://imgur.com/I1EeK7L) **placeholder link**
+1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117) - prefixIRI PSDO:0000117
+2. [Social comparator set](http://purl.obolibrary.org/obo/PSDO_0000045) - prefixIRI PSDO:0000045
+3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120) - prefixIRI PSDO:0000120
+4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121) - prefixIRI PSDO:0000120
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:

@@ -86,29 +86,44 @@ Message preconditions:
 1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117) - prefixIRI PSDO:0000117
 2. [Social comparator set](http://purl.obolibrary.org/obo/PSDO_0000045) - prefixIRI PSDO:0000045
 3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120) - prefixIRI PSDO:0000120
-4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121) - prefixIRI PSDO:0000120
+4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121) - prefixIRI PSDO:0000121
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
 1. **Habituation** - How many times has the recipient previously received this message in the last year?
-2. **Regulatory fit** - ***TODO***
+2. **Regulatory fit** - To what extent is the message aligned to the behavior/task's characteristics, context, and recipient personality (motivated by bad outcome prevention vs. good outcome promotion).
 3. **Gap size** - How large is the gap between the recipient's performance level and that of the social comparator?
-4. **Slope of trend** - Rate of change of the performance measure over time
-5. **Time since last loss** - ***Todo***
+4. **Slope of trend** - Derivative of the performance measure in the time domain
+5. **Time since last loss**
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
-1. **TODO**
+1. **Awareness (knowledge)** - The message may change the recipient's awareness of their newfound or increased high performance relative to their peers.
+2. **Subjective norms** - The message may influence the recipient by creating or reinforcing their perception of their newfound top-performer status within their peer group.
+3. **Motivation** - The message may motivate the recipient to work to maintain their new status as a top performer.
+
 
 ### Outcomes
-The expected outcome of the successful influence of an email that uses the social gain pathway is clinical process performance improvement.
+A successful precision feedback intervention leveraging the social gain pathway should increase clinical process performance improvement.
 
 ## Message templates
-Message templates represent a possible motivational message that a precision feedback system can send. There are three message templates that the precision feedback system can access for this vignette: 
+Message templates represent possible motivational messages that a precision feedback system can send. There are three message templates that the precision feedback system can access for this vignette: 
 
-You reached the top 10% peer benchmark this month for the measure [Measure name]. 
-You reached the top 25% peer benchmark this month for the measure [Measure name].
-Your performance is above the peer average this month for the measure [Measure name]. 
++ [Top 10% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg) message: <sub>placeholder link</sub>
+> You reached the top 10% peer benchmark this month for the measure [Measure name].
+
+This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. *todo* - need clarification on finding these, making sure everything is correct.
++ [Top 25% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg) <sub>placeholder link</sub>
+> You reached the top 25% peer benchmark this month for the measure [Measure name].
+
+This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. *todo* 
++ [Above Peer Average](https://i.imgur.com/I1EeK7L.jpeg) <sub>placeholder link</sub>
+> Your performance is above the peer average this month for the measure [Measure name].
+
+This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. *todo*
 
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**

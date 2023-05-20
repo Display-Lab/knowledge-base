@@ -3,7 +3,7 @@
 ## Introduction
 This vignette illustrates the process for creating precision feedback messages about a recipient's performance dropping below a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Loss Causal Pathway, which specifies feedback messages that are capable of motivating providers through the delivery of information about performance worsening. Motivation from these messages can arise from the recognition of a loss of social status as a top or above-average performer. Example messages that use Social Loss are "You are no longer a top performer" and "Your performance has dropped below the peer average".
 
-This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is "http://purl.obolibrary.org/obo/psdo_0000126" which reprsents a peer average comparator, and which is defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is "http://purl.obolibrary.org/obo/psdo_0000126" which represents a peer average comparator, and which is defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
 Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [PONV-05: Post-operative Nausea and Vomiting Prophylaxis: Adults](https://spec.mpog.org/Spec/Public/53).
@@ -93,40 +93,44 @@ Message preconditions:
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
-1. Habituation: How many times has the recipient previously received this message in the last year?
-2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
-3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator?
-4. Slope of trend
-5. Time since last achievement
+1. **Habituation** - How many times has the recipient previously received this message in the last year?
+2. **Regulatory fit** - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. **Gap size** - How large is the gap between the recipient's performance level and that of the social comparator?
+4. **Slope of trend**
+5. **Time since last achievement**
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
-1. Awareness (knowledge): The message may change the recipient's awareness of their high performance, relative to peers.
-2. Subjective norms: The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
-3. Motivation: The message may motivate the recipient to work to  maintain their status as a top performer.
+1. **Awareness (knowledge)**: The message may change the recipient's awareness of their high performance, relative to peers.
+2. **Subjective norms**: The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
+3. **Motivation**: The message may motivate the recipient to work to  maintain their status as a top performer.
 
 ### Outcomes
 The expected outcome of the successful influence of an email that uses the social loss pathway is clinical process performance improvement.
 
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
+**[Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json)** message:
+> Your performance dropped below the peer average for the measure [measure name].
 
-A. The [Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template contains the following message: "Your performance dropped below the peer average for the measure [measure name]". This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
-3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
-4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
-5. Peer average comparator (http://purl.obolibrary.org/obo/PSDO_0000126)
-6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Negative performance gap set] (http://purl.obolibrary.org/obo/PSDO_0000116)
+2. [Negative performance trend set] (http://purl.obolibrary.org/obo/PSDO_0000119)
+3. [Social comparator element] (http://purl.obolibrary.org/obo/PSDO_0000045)
+4. [Loss set] (http://purl.obolibrary.org/obo/PSDO_0000122)
+5. [Peer average comparator] (http://purl.obolibrary.org/obo/PSDO_0000126)
+Display format compatability: [Line Graph](http://purl.obolibrary.org/obo/IAO_0000573), [Bar Chart](http://purl.obolibrary.org/obo/STATO_0000166)
 
-B. The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template contains the following message: "You are no longer a top performer for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+**[No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json)** message:
+> You are no longer a top performer for the measure [measure name].
 
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
-3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
-4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
-5. Top 10% Benchmark comparator (http://purl.obolibrary.org/obo/PSDO_0000129)
-6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Negative performance gap set] (http://purl.obolibrary.org/obo/PSDO_0000116)
+2. [Negative performance trend set] (http://purl.obolibrary.org/obo/PSDO_0000119)
+3. [Social comparator element] (http://purl.obolibrary.org/obo/PSDO_0000045)
+4. [Loss set] (http://purl.obolibrary.org/obo/PSDO_0000122)
+5. [Top 10% Benchmark Comparator] (http://purl.obolibrary.org/obo/PSDO_0000129)
+Display format compatability: [Line Graph](http://purl.obolibrary.org/obo/IAO_0000573), [Bar Chart](http://purl.obolibrary.org/obo/STATO_0000166)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 

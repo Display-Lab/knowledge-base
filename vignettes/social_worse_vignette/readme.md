@@ -15,53 +15,53 @@ Deepa, a nurse anesthetist (CRNA) at Midwest Medicine, has the following perform
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              86%|               93|          87|
+|Nov  |              88%|               95|          88|
+|Dec  |              88%|               94|          87|
+|Jan  |              90%|               97|          88|
+|Feb  |              89%|               95|          86|
+|Mar  |              87%|               95|          85|
 
 Eugene, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              90%|               93|          87|
+|Nov  |              89%|               95|          88|
+|Dec  |              91%|               94|          87|
+|Jan  |              92%|               97|          88|
+|Feb  |              95%|               95|          86|
+|Mar  |              93%|               95|          85|
 
 ## Preference data
 Deepa's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |-5.64820	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.01254	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.1987	   |Performance is worsening.                                                       |
+|Improving	             |-9.5648	    |Performance is improving.                                                       |
+|Social Loss             |10.1248	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |2.79345	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |1.64862	    |Performance is high this month.                                                 |
+|Social Worse	          |12.8645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.2458 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Eugene's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |10.4659	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-11.3618	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.6598	   |Performance is worsening.                                                       |
+|Improving	             |7.58489	    |Performance is improving.                                                       |
+|Social Loss             |8.46823	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |-3.64987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |-8.64669	    |Performance is high this month.                                                 |
+|Social Worse	          |12.1645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.6889 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: a knowledge base, a software pipeline, and a web service.
@@ -99,12 +99,16 @@ Mechanisms are factors that the intervention operates through to influence the f
 The expected outcome of a successful social worse pathway intervention, as with any precision feedback intervention, is clinical performance improvement.
 
 ## Message templates
-Message templates represent possible motivational messages that a precision feedback system may send. There are two(?) <sub> Todo </sub> message templates that the precision feedback system can access for this vignette: 
+Message templates represent possible motivational messages that a precision feedback system may send. There is one message template that the precision feedback system can access for this vignette: 
 
-The *Todo: message name?* message reads: 
+**[Not Top Performer](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
 > You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) *todo*...
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Negative performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
+2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
+3. [Peer 90th percentile benchmark](http://purl.obolibrary.org/obo/PSDO_0000129)
+
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**
 

@@ -65,7 +65,70 @@ Gaile's preference data: (TODO)
 
 The above tables were taken from Social Loss Vignette - PG
 
-## Recipient annotations
+# Precision feedback message generation
+To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: 1) A knowledge base, 2) A software pipeline, and 3) A web service.
+
+## Precision Feedback Knowledge Base
+The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
+
+## Improving Causal Pathway
+This pathway describes the influence of feedback interventions that show the message recipient that their performance has (TODO). The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+
+### Preconditions (TODO)
+Preconditions for social loss are factors that are necessary for the success of the feedback intervention using this pathway. The social loss pathway has the following preconditions:
+
+Information content preconditions:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105)
+3. Negative performance trend content (http://purl.obolibrary.org/obo/psdo_0000100)
+4. Loss content (http://purl.obolibrary.org/obo/psdo_0000113)
+
+Message preconditions:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
+3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
+4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
+ 
+### Moderators (TODO)
+Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
+1. Habituation: How many times has the recipient previously received this message in the last year?
+2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator?
+4. Slope of trend
+5. Time since last achievement
+
+### Mechanisms (TODO)
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
+1. Awareness (knowledge): The message may change the recipient's awareness of their high performance, relative to peers.
+2. Subjective norms: The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
+3. Motivation: The message may motivate the recipient to work to  maintain their status as a top performer.
+
+### Outcomes (TODO)
+The expected outcome of the successful influence of an email that uses the social loss pathway is clinical process performance improvement.
+
+## Message templates (TODO)
+Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
+
+A. The [Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template contains the following message: "Your performance dropped below the peer average for the measure [measure name]". This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
+3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
+4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
+5. Peer average comparator (http://purl.obolibrary.org/obo/PSDO_0000126)
+6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+B. The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template contains the following message: "You are no longer a top performer for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
+3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
+4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
+5. Top 10% Benchmark comparator (http://purl.obolibrary.org/obo/PSDO_0000129)
+6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+## Software Pipeline (Precision Feedback Pipeline)
+
+## Recipient annotations (Bitstomach)
 This data set should result in an annotation that there is information content about a positive performance trend for Alice:
 1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
 

@@ -16,53 +16,53 @@ Chikondi, a resident physician at Max Community Hospital, has the following perf
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              84%|               94|          85|
+|Nov  |              85%|               95|          87|
+|Dec  |              85%|               93|          85|
+|Jan  |              87%|               96|          88|
+|Feb  |              88%|               97|          87|
+|Mar  |              91%|               95|          86|
 
 Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              95%|               94|          85|
+|Nov  |              95%|               95|          87|
+|Dec  |              94%|               93|          85|
+|Jan  |              92%|               96|          88|
+|Feb  |              94%|               97|          87|
+|Mar  |              97%|               95|          86|
 
 ## Preference data
 Chikondi's preference data (note that she has *not* completed the individual preference survey):
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |11.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.0000	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|12.0000	   |Performance is worsening.                                                       |
+|Improving	             |11.0000	    |Performance is improving.                                                       |
+|Social Loss             |08.0000	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |-9.0000	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |1.5000	    |Performance is high this month.                                                 |
+|Social Worse	          |-3.0000	   |Performance is low this month.                                                  |
+|Social Approach	       |02.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Fahad's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |-8.1654	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.2514	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.5498	   |Performance is worsening.                                                       |
+|Improving	             |-5.2654	    |Performance is improving.                                                       |
+|Social Loss             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |01.5484	    |Performance is high this month.                                                 |
+|Social Worse	          |10.5656	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: a knowledge base, a software pipeline, and a web service.
@@ -109,21 +109,35 @@ A successful precision feedback intervention leveraging the social gain pathway 
 ## Message templates
 Message templates represent possible motivational messages that a precision feedback system can send. There are three message templates that the precision feedback system can access for this vignette: 
 
-+ [Top 10% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg) message: <sub>placeholder link</sub>
+**[Top 10% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
 > You reached the top 10% peer benchmark this month for the measure [Measure name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. *todo* - need clarification on finding these, making sure everything is correct.
-+ [Top 25% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg) <sub>placeholder link</sub>
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
+2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
+3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
+4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
+5. [Peer 90th percentile benchmark](http://purl.obolibrary.org/obo/PSDO_0000129)
+
+**[Top 25% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
 > You reached the top 25% peer benchmark this month for the measure [Measure name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. *todo* 
-+ [Above Peer Average](https://i.imgur.com/I1EeK7L.jpeg) <sub>placeholder link</sub>
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
+2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
+3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
+4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
+5. [Peer 75th percentile benchmark](http://purl.obolibrary.org/obo/PSDO_0000128)
+
+**[Achieve Peer Average](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
 > Your performance is above the peer average this month for the measure [Measure name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. *todo*
+This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
+2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
+3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
+4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
+5. [Peer average comparator](http://purl.obolibrary.org/obo/PSDO_0000126)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**

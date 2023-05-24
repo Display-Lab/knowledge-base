@@ -51,8 +51,8 @@
       "rdfs:label": "social comparator element"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000124",
-      "rdfs:label": "90th percentile benchmark"
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000129",
+      "rdfs:label": "peer 90th percentile benchmark"
     }
   ],
   "Name": {

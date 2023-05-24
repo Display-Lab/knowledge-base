@@ -1,14 +1,14 @@
 # Social Worse Vignette
 ## Introduction
-This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance falling below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
+This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance being below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
 
-This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is http://purl.obolibrary.org/obo/psdo_0000126, an ID that points to a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such a data entity is a [peer average comparator (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology (GitHub)](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
-Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop](https://spec.mpog.org/Spec/Public/5).
+Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop (MPOG)](https://spec.mpog.org/Spec/Public/5).
 
 ### Benchmark comparators
-MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another comparator is the [peer average](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution for a given measure.
+MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another is the [peer average comparator (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution for a given measure.
 
 ### Healthcare professional performance
 Deepa, a nurse anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
@@ -76,12 +76,12 @@ This pathway describes the influence of feedback interventions informing the rec
 Several preconditions are necessary for the success of feedback intervention using the social worse causal pathway. They are subdivided into informational and message preconditions, and are as follows:
 
 Information content preconditions:
-1. [Negative performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
-2. [Social comparator content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+1. [Negative performance gap content (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+2. [Social comparator content (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
 
 Message preconditions:
-1. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
-2. [Social comparator set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+1. [Negative performance gap set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+2. [Social comparator set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
@@ -96,18 +96,18 @@ Mechanisms are factors that the intervention operates through to influence the f
 3. **Motivation** - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
 
 ### Outcomes
-The expected outcome of a successful social worse pathway intervention, as with any precision feedback intervention, is clinical performance improvement.
+The expected outcome of a successful social worse pathway intervention is clinical performance improvement.
 
 ## Message templates
 Message templates represent possible motivational messages that a precision feedback system may send. There is one message template that the precision feedback system can access for this vignette: 
 
-**[Not Top Performer]** <sub>Todo - JSON template in Github, link here</sub> message:
+**[Not Top Performer message (GitHub)](** <sub>Todo - JSON template in Github, link here</sub>
 > You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
 
-This message template [[is about]](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
-1. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
-2. [Social comparator element](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
-3. [Peer 90th percentile benchmark](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+This message template [[is about] (BioPortal)](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Negative performance gap set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+2. [Social comparator element (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+3. [Peer 90th percentile benchmark (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**

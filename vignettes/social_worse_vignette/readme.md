@@ -1,67 +1,67 @@
 # Social Worse Vignette
 ## Introduction
-This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance falling below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
+This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance being below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
 
-This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is http://purl.obolibrary.org/obo/psdo_0000126, an ID that points to a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such a data entity is a [peer average comparator (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology (GitHub)](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
-Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop](https://spec.mpog.org/Spec/Public/5).
+Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop (MPOG)](https://spec.mpog.org/Spec/Public/5).
 
 ### Benchmark comparators
-MPOG calculates performance benchmarks and averages for each institution. One comparator is a [top 10% benchmark](http://purl.obolibrary.org/obo/psdo_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another comparator is the [peer average](http://purl.obolibrary.org/obo/psdo_0000126), which is the mean performance for all providers at an insitution for a given measure.
+MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another is the [peer average comparator (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution for a given measure.
 
 ### Healthcare professional performance
 Deepa, a nurse anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              86%|               93|          87|
+|Nov  |              88%|               95|          88|
+|Dec  |              88%|               94|          87|
+|Jan  |              90%|               97|          88|
+|Feb  |              89%|               95|          86|
+|Mar  |              87%|               95|          85|
 
 Eugene, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              90%|               93|          87|
+|Nov  |              89%|               95|          88|
+|Dec  |              91%|               94|          87|
+|Jan  |              92%|               97|          88|
+|Feb  |              95%|               95|          86|
+|Mar  |              93%|               95|          85|
 
 ## Preference data
 Deepa's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |-5.64820	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.01254	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.1987	   |Performance is worsening.                                                       |
+|Improving	             |-9.5648	    |Performance is improving.                                                       |
+|Social Loss             |10.1248	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |2.79345	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |1.64862	    |Performance is high this month.                                                 |
+|Social Worse	          |12.8645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.2458 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Eugene's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |10.4659	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-11.3618	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.6598	   |Performance is worsening.                                                       |
+|Improving	             |7.58489	    |Performance is improving.                                                       |
+|Social Loss             |8.46823	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |-3.64987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |-8.64669	    |Performance is high this month.                                                 |
+|Social Worse	          |12.1645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.6889 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: a knowledge base, a software pipeline, and a web service.
@@ -76,12 +76,12 @@ This pathway describes the influence of feedback interventions informing the rec
 Several preconditions are necessary for the success of feedback intervention using the social worse causal pathway. They are subdivided into informational and message preconditions, and are as follows:
 
 Information content preconditions:
-1. [Negative performance gap content](http://purl.obolibrary.org/obo/PSDO_0000105) - prefixIRI PSDO:0000105
-2. [Social comparator content](http://purl.obolibrary.org/obo/psdo_0000095) - prefixIRI PSDO:0000095
+1. [Negative performance gap content (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+2. [Social comparator content (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
 
 Message preconditions:
-1. [Negative performance gap set](http://purl.obolibrary.org/obo/PSDO_0000116) - prefixIRI PSDO:0000116
-2. [Social comparator set](http://purl.obolibrary.org/obo/PSDO_0000045) - prefixIRI PSDO:0000045
+1. [Negative performance gap set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+2. [Social comparator set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
@@ -96,15 +96,19 @@ Mechanisms are factors that the intervention operates through to influence the f
 3. **Motivation** - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
 
 ### Outcomes
-The expected outcome of a successful social worse pathway intervention, as with any precision feedback intervention, is clinical performance improvement.
+The expected outcome of a successful social worse pathway intervention is clinical performance improvement.
 
 ## Message templates
-Message templates represent possible motivational messages that a precision feedback system may send. There are two(?) <sub> Todo </sub> message templates that the precision feedback system can access for this vignette: 
+Message templates represent possible motivational messages that a precision feedback system may send. There is one message template that the precision feedback system can access for this vignette: 
 
-The *Todo: message name?* message reads: 
+**[Not Top Performer message (GitHub)](** <sub>Todo - JSON template in Github, link here</sub>
 > You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) *todo*...
+This message template [[is about] (BioPortal)](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Negative performance gap set (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+2. [Social comparator element (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+3. [Peer 90th percentile benchmark (BioPortal)](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**
 

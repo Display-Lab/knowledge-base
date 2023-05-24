@@ -3,13 +3,13 @@
 ## Introduction
 This vignette illustrates the process for creating precision feedback messages about a recipient's performance dropping below a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Loss Causal Pathway, which specifies feedback messages that are capable of motivating providers through the delivery of information about performance worsening. Motivation from these messages can arise from the recognition of a loss of social status as a top or above-average performer. Example messages that use Social Loss are "You are no longer a top performer" and "Your performance has dropped below the peer average".
 
-This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is "http://purl.obolibrary.org/obo/psdo_0000126" which represents a peer average comparator, and which is defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)" which represents a peer average comparator, and which is defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
 Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [PONV-05: Post-operative Nausea and Vomiting Prophylaxis: Adults](https://spec.mpog.org/Spec/Public/53).
 
 ### Benchmark comparators
-MPOG calculates performance benchmarks and averages for each institution. One comparator is a Top 10% Benchmark (http://purl.obolibrary.org/obo/psdo_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another comparator is the peer average (http://purl.obolibrary.org/obo/psdo_0000126), which is the mean performance for all providers at an insitution, for each measure.
+MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile Benchmark](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another is the [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure.
 
 ### Healthcare professional performance
 Alice, an attending anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for PONV-05:
@@ -80,16 +80,16 @@ This pathway describes the influence of feedback interventions that show the mes
 Preconditions for social loss are factors that are necessary for the success of the feedback intervention using this pathway. The social loss pathway has the following preconditions:
 
 Information content preconditions:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105)
-3. Negative performance trend content (http://purl.obolibrary.org/obo/psdo_0000100)
-4. Loss content (http://purl.obolibrary.org/obo/psdo_0000113)
+1. [Social comparator content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. [Negative performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+3. [Negative performance trend content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000100)
+4. [Loss content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000113)
 
 Message preconditions:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
-3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
-4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
+1. [Social comparator element](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Negative performance trend set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000119)
+4. [Loss set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000122)
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
@@ -113,24 +113,23 @@ Message templates represent a possible motivational message that a precision fee
 **[Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json)** message:
 > Your performance dropped below the peer average for the measure [measure name].
 
-This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Negative performance gap set] (http://purl.obolibrary.org/obo/PSDO_0000116)
-2. [Negative performance trend set] (http://purl.obolibrary.org/obo/PSDO_0000119)
-3. [Social comparator element] (http://purl.obolibrary.org/obo/PSDO_0000045)
-4. [Loss set] (http://purl.obolibrary.org/obo/PSDO_0000122)
-5. [Peer average comparator] (http://purl.obolibrary.org/obo/PSDO_0000126)
-Display format compatability: [Line Graph](http://purl.obolibrary.org/obo/IAO_0000573), [Bar Chart](http://purl.obolibrary.org/obo/STATO_0000166)
-
+This message template [[is about]](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+2. [Negative performance trend set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000119)
+3. [Social comparator element](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+4. [Loss set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000122)
+5. [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+Display format compatability: [Line Graph](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
 **[No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json)** message:
 > You are no longer a top performer for the measure [measure name].
 
-This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Negative performance gap set] (http://purl.obolibrary.org/obo/PSDO_0000116)
-2. [Negative performance trend set] (http://purl.obolibrary.org/obo/PSDO_0000119)
-3. [Social comparator element] (http://purl.obolibrary.org/obo/PSDO_0000045)
-4. [Loss set] (http://purl.obolibrary.org/obo/PSDO_0000122)
-5. [Top 10% Benchmark Comparator] (http://purl.obolibrary.org/obo/PSDO_0000129)
-Display format compatability: [Line Graph](http://purl.obolibrary.org/obo/IAO_0000573), [Bar Chart](http://purl.obolibrary.org/obo/STATO_0000166)
+This message template [[is about]](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+2. [Negative performance trend set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000119)
+3. [Social comparator element](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+4. [Loss set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000122)
+5. [peer 90th percentile comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+Display format compatability: [Line Graph](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 
@@ -138,19 +137,18 @@ Display format compatability: [Line Graph](http://purl.obolibrary.org/obo/IAO_00
 The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
 
 Alice's annotations indicate the presence of the following in her performance data this month:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Peer Average Comparator (http://purl.obolibrary.org/obo/psdo_0000126)
-4. Negative performance trend content (http://purl.obolibrary.org/obo/psdo_0000100)
-5. Loss content (http://purl.obolibrary.org/obo/psdo_0000113) regarding comparator Peer Average Comparator (http://purl.obolibrary.org/obo/psdo_0000126)
+1. [Social comparator content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. [Negative performance trend content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000100)
+3. [Negative performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105) *regarding comparator:* [peer 90th percentile comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+4. [Negative performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105) *regarding comparator:* [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+5. [Loss content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000113) *regarding comparator:* [Peer Average Comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 Bob's annotations indicate the presence of the following in his performance data this month:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Negative performance gap content (http://purl.obolibrary.org/obo/psdo_0000105) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Peer Average Comparator (http://purl.obolibrary.org/obo/psdo_0000126)
-4. Negative performance trend content (http://purl.obolibrary.org/obo/psdo_0000100)
-5. Loss content (http://purl.obolibrary.org/obo/psdo_0000113) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-
+1. [Social comparator content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. [Negative performance trend content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000100)
+3. [Negative performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105) *regarding comparator:* [peer 90th percentile comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+4. [Positive performance gap content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104) *regarding comparator:* [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+5. [Loss content](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000113) *regarding comparator:* [peer 90th percentile comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
 ### Candidate Message Generation (Candidate Smasher)
 The second stage of the pipeline creates possible messages by associating the annotations for Alice and Bob with each message template, so that two candidate messages are created for each person.
@@ -159,7 +157,7 @@ Alice's candidate messages:
 
 A. Candidate A has the following annotations:
 
-The [Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+The [Drop Below Peer Average](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template [[is about]](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following features of performance data:
 1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
 2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
 3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
@@ -176,13 +174,13 @@ Alice's annotations from this month:
 
 B. Candidate B has the following annotations:
 
-The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Negative performance gap set (http://purl.obolibrary.org/obo/psdo_0000116)
-3. Negative performance trend set (http://purl.obolibrary.org/obo/psdo_0000119)
-4. Loss set (http://purl.obolibrary.org/obo/psdo_0000122)
-5. Top 10% Benchmark comparator (http://purl.obolibrary.org/obo/PSDO_0000129)
-6. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+The [No Longer Top Performer](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/no_longer_top_performer.json) message template [[is about]](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Negative performance gap set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+2. [Negative performance trend set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000119)
+3. [Social comparator element](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+4. [Loss set](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000122)
+5. [Peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+Display format compatability: [Line Graph](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
 
 Alice's annotations from this month:
 1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)

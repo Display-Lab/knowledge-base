@@ -2,13 +2,13 @@
 ## Introduction
 This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance falling below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
 
-This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is http://purl.obolibrary.org/obo/psdo_0000126, an ID that points to a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains examples of data features and other entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such an entity is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group.
 
 ## Performance Data
-Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop](https://spec.mpog.org/Spec/Public/5).
+Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [GLU-01 : High Glucose Treated, Intraop<sub>(MPOG)</sub>](https://spec.mpog.org/Spec/Public/5).
 
 ### Benchmark comparators
-MPOG calculates performance benchmarks and averages for each institution. One comparator is a [top 10% benchmark](http://purl.obolibrary.org/obo/psdo_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another comparator is the [peer average](http://purl.obolibrary.org/obo/psdo_0000126), which is the mean performance for all providers at an insitution for a given measure.
+MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another is the [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure.
 
 ### Healthcare professional performance
 Deepa, a nurse anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
@@ -34,6 +34,8 @@ Eugene, a resident anesthesiologist at Midwest Medicine, has the following perfo
 |Mar  |              xx%|               xx|          xx|
 
 ## Preference data
+Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
+
 Deepa's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
@@ -73,15 +75,15 @@ The knowledge base contains the following components: causal pathways, message t
 This pathway describes the influence of feedback interventions informing the recipient that their performance is worse than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
 ### Preconditions
-Several preconditions are necessary for the success of feedback intervention using the social worse causal pathway. They are subdivided into informational and message preconditions, and are as follows:
+There are several preconditions that are necessary for the success of feedback intervention using the social worse causal pathway. They are subdivided into informational and message preconditions, and are as follows:
 
 Information content preconditions:
-1. [Negative performance gap content](http://purl.obolibrary.org/obo/PSDO_0000105) - prefixIRI PSDO:0000105
-2. [Social comparator content](http://purl.obolibrary.org/obo/psdo_0000095) - prefixIRI PSDO:0000095
+1. [Social comparator content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. [Negative performance gap content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
 
 Message preconditions:
-1. [Negative performance gap set](http://purl.obolibrary.org/obo/PSDO_0000116) - prefixIRI PSDO:0000116
-2. [Social comparator set](http://purl.obolibrary.org/obo/PSDO_0000045) - prefixIRI PSDO:0000045
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
@@ -99,12 +101,18 @@ Mechanisms are factors that the intervention operates through to influence the f
 The expected outcome of a successful social worse pathway intervention, as with any precision feedback intervention, is clinical performance improvement.
 
 ## Message templates
-Message templates represent possible motivational messages that a precision feedback system may send. There are two(?) <sub> Todo </sub> message templates that the precision feedback system can access for this vignette: 
+Message templates represent a possible motivational message that a precision feedback system can send. There is one message template that the precision feedback system can currently access for this vignette: 
 
-The *Todo: message name?* message reads: 
+The **[not top performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message** reads:
 > You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
 
-This message template [is about](http://purl.obolibrary.org/obo/IAO_0000136) *todo*...
+This message template [[is about] <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+4. Display format compatability: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
+
+
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**
 

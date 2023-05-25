@@ -3,7 +3,7 @@
 ## Introduction
 This vignette illustrates the process for creating precision feedback messages about a recipient's performance dropping below a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Loss Causal Pathway, which specifies feedback messages that are capable of motivating providers through the delivery of information about performance worsening. Motivation from these messages can arise from the recognition of a loss of social status as a top or above-average performer. Example messages that use Social Loss are "You are no longer a top performer" and "Your performance has dropped below the peer average".
 
-This vignette also contains example data and unique identifiers for the features of data and other entities that a precision feedback system uses to reason about the potential success of a precision feedback message. An example of a unique identifier is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126) which represents a peer average comparator, and which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains examples of the features of data and other entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such an entity is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
 ## Performance Data
 Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [PONV-05: Post-operative Nausea and Vomiting Prophylaxis: Adults <sub>(MPOG)</sub>](https://spec.mpog.org/Spec/Public/53).
@@ -106,7 +106,7 @@ Mechanisms are factors that the intervention operates through to influence the f
 3. **Motivation**: The message may motivate the recipient to work to  maintain their status as a top performer.
 
 ### Outcomes
-The expected outcome of the successful influence of an email that uses the social loss pathway is clinical process performance improvement.
+The expected outcome of a successful social loss pathway precision feedback intervention is clinical process performance improvement.
 
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 

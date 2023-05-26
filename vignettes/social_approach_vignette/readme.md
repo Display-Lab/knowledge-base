@@ -99,7 +99,7 @@ Mechanisms are factors that the intervention operates through to influence the f
 1. `Awareness (knowledge)` - The message may change the recipient's awareness of their performance increasing and nearing a high performance benchmark relative to their peers.
 2. `Subjective norms` - The message may influence the recipient by creating or reinforcing their proximity to top/high-performer status within their peer group.
 3. `Motivation` - The message may motivate the recipient to keep up their recent performance increase to reach new social status.
-4. `Optimism` - *WIP* The message may inlfuence the recipient to continue to be optimistic about their ability to improve their performance.
+4. `Optimism` - *WIP* The message may influence the recipient to continue to be optimistic about their ability to improve their performance.
 
 ### Outcomes
 A successful precision feedback intervention leveraging the social approach pathway should increase clinical process performance improvement.

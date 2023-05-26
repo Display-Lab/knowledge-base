@@ -83,7 +83,7 @@
     "@value": "Text-only, bar chart, line chart"
   },
   "Short message ID": {
-    "@value": "8",
+    "@value": "7",
     "@type": "xsd:decimal"
   }
 }

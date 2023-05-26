@@ -51,27 +51,40 @@
       "rdfs:label": "social comparator element"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000129",
-      "rdfs:label": "peer 90th percentile benchmark"
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000120",
+      "rdfs:label": "positive performance trend set"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000121",
+      "rdfs:label": "achievement set"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000128",
+      "rdfs:label": "peer 75th percentile benchmark"
     }
   ],
   "Name": {
-    "@value": "Top Performer"
+    "@value": "Achieved Top 25 Peer Benchmark"
   },
   "Message text": [
     {
-      "@value": "You are a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], above the [comparator name]."
+      "@value": "You reached the top 25% peer benchmark this month for the measure [Measure name]."
     }
   ],
   "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
-  "schema:name": "Top Performer",
+  "schema:name": "Achieved Top 25 Peer Benchmark",
   "schema:description": "specification for a possible precision feedback message",
-  "pav:createdOn": "2023-04-26T14:24:19-07:00",
+  "pav:createdOn": "2023-04-26T14:32:04-07:00",
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2023-05-01T07:28:16-07:00",
-  "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "@id": "https://repo.metadatacenter.org/template-instances/55d6b537-7a50-48ae-b97a-01e479bee34d",
+  "pav:lastUpdatedOn": "2023-05-24T12:30:29-07:00",
+  "oslc:modifiedBy": "https://metadatacenter.org/users/b62c6dfa-e33c-40fa-aa02-021e4b9bb00b",
+  "pav:derivedFrom": "https://repo.metadatacenter.org/template-instances/5c49f6e6-b95f-4eb9-baa9-dac580e33e20",
+  "@id": "https://repo.metadatacenter.org/template-instances/75bd50a3-c11b-4a61-96e6-eee1f34eff78",
   "Display compatibility": {
     "@value": "Text-only, bar chart, line chart"
+  },
+  "Short message ID": {
+    "@value": "3",
+    "@type": "xsd:decimal"
   }
 }

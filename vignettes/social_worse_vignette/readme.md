@@ -1,6 +1,7 @@
 # Social Worse Vignette
 ## Introduction
-This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance falling below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
+This vignette delineates the process for creating precision feedback messages about a recipient's performance worsening in comparison with their peers. These messages use the Social Worse causal pathway, which provides negative feedback that may motivate providers by delivering information about their recent performance being below a specified social comparator for a given month. An example messages that uses the social worse pathway is "you are not a top performer this month".
+
 
 This vignette also contains examples of data features and other entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such an entity is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group.
 
@@ -15,23 +16,23 @@ Deepa, a nurse anesthetist (CRNA) at Midwest Medicine, has the following perform
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              86%|               93|          87|
+|Nov  |              88%|               95|          88|
+|Dec  |              88%|               94|          87|
+|Jan  |              90%|               97|          88|
+|Feb  |              89%|               95|          86|
+|Mar  |              87%|               95|          85|
 
 Eugene, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for the GLU-01 measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              xx%|               xx|          xx|
-|Dec  |              xx%|               xx|          xx|
-|Jan  |              xx%|               xx|          xx|
-|Feb  |              xx%|               xx|          xx|
-|Mar  |              xx%|               xx|          xx|
+|Oct  |              90%|               93|          87|
+|Nov  |              89%|               95|          88|
+|Dec  |              91%|               94|          87|
+|Jan  |              92%|               97|          88|
+|Feb  |              95%|               95|          86|
+|Mar  |              93%|               95|          85|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
@@ -40,30 +41,30 @@ Deepa's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |-5.64820	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.01254	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.1987	   |Performance is worsening.                                                       |
+|Improving	             |-9.5648	    |Performance is improving.                                                       |
+|Social Loss             |10.1248	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |2.79345	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |1.64862	    |Performance is high this month.                                                 |
+|Social Worse	          |12.8645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.2458 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Eugene's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |00.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |00.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|00.0000	   |Performance is worsening.                                                       |
-|Improving	             |00.0000	    |Performance is improving.                                                       |
-|Social Loss             |00.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |00.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |00.0000	    |Performance is high this month.                                                 |
-|Social Worse	          |00.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |00.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |10.4659	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-11.3618	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.6598	   |Performance is worsening.                                                       |
+|Improving	             |7.58489	    |Performance is improving.                                                       |
+|Social Loss             |8.46823	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |-3.64987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |-8.64669	    |Performance is high this month.                                                 |
+|Social Worse	          |12.1645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.6889 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: a knowledge base, a software pipeline, and a web service.
@@ -84,7 +85,7 @@ Information content preconditions:
 Message preconditions:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
 2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
- 
+
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
 1. **Habituation** - How many times has the recipient previously received this message in the last year?
@@ -98,9 +99,10 @@ Mechanisms are factors that the intervention operates through to influence the f
 3. **Motivation** - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
 
 ### Outcomes
-The expected outcome of a successful social worse pathway intervention, as with any precision feedback intervention, is clinical performance improvement.
+The expected outcome of a successful social worse pathway intervention is clinical performance improvement.
 
 ## Message templates
+
 Message templates represent a possible motivational message that a precision feedback system can send. There is one message template that the precision feedback system can currently access for this vignette: 
 
 The **[not top performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message** reads:
@@ -111,7 +113,6 @@ This message template [[is about] <sub>(BP)</sub>](https://bioportal.bioontology
 2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
 3. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 4. Display format compatability: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
-
 
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**

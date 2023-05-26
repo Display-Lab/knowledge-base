@@ -1,6 +1,6 @@
 # Improving Causal Pathway Vignette
 
-## Introduction
+## Introduction 
 
 A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
@@ -65,9 +65,101 @@ Gaile's preference data: (TODO)
 
 The above tables were taken from Social Loss Vignette - PG
 
-## Recipient annotations
+# Precision feedback message generation
+To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: 1) A knowledge base, 2) A software pipeline, and 3) A web service.
+
+## Precision Feedback Knowledge Base
+The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
+
+## Improving Causal Pathway
+This pathway describes the influence of feedback interventions that show the message recipient that their performance has improved. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+
+### Preconditions 
+Preconditions for improving are factors that are necessary for the success of the feedback intervention using this pathway. The improving pathway has the following preconditions:
+
+Information content preconditions:
+1. Positive performance trend content (http://purl.obolibrary.org/obo/PSDO_0000099)
+
+Message preconditions:
+1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
+ 
+### Moderators 
+Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
+1. Habituation: How many times has the recipient previously received this message in the last year?
+2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator?
+
+### Mechanisms 
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
+1. Habituation: How many times has the recipient previously received this message in the last year?
+2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator? (TODO)
+
+### Outcomes
+The expected outcome of the successful influence of an email that uses the improving pathway is clinical process performance improvement.
+
+## Message templates (TODO)
+Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
+
+A. The [Performance Improving](https://github.com/Display-Lab/knowledge-base/...json TODO) message template contains the following message: "Your performance is improving this month for the measure [measure name].". This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
+2. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166), text only (TODO ?)
+
+B. The [Congrats Improved Performance](https://github.com/Display-Lab/knowledge-base/blob/...json TODO) message template contains the following message: "Congratulations on your improved performance this month for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+
+1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
+2. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166), text only (TODO ?)
+
+## Software Pipeline (Precision Feedback Pipeline) TODO
+
+## Recipient annotations (Bitstomach)
 This data set should result in an annotation that there is information content about a positive performance trend for Alice:
 1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
+
+### Candidate Message Generation (Candidate Smasher)
+The second stage of the pipeline creates possible messages by associating the annotations for Alice and Bob with each message template, so that two candidate messages are created for each person.
+
+Alice's candidate messages:
+
+A. Candidate A has the following annotations:
+
+The [Top 10 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Alice's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+B. Candidate B has the following annotations:
+
+The [Top 25 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template is about:
+1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
+2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
+3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+
+Alice's performance is about:
+1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
+2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
+3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+
+### Candidate Message Preconditions Evaluation (Think Pudding)
+For Alice, both candidates have matching preconditions with social better, and are indicated as acceptable for ranking in the next stage of the pipeline:
+
+1. Candidate A acceptable by social better
+2. Candidate B acceptable by social better
+
+### Candidate Message Moderator Evaluation and Selection (Esteemer)
+TODO
+
+### Message Generation and Delivery (Pictoralist)
+TODO
+
+## Existing notes below 5/23 - HC
 
 ## Template annotations
 The performance_improving template is about a positive performance trend set:

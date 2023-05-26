@@ -43,35 +43,43 @@
   "@type": "http://data.bioontology.org/ontologies/PSDO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000002",
   "is_about": [
     {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000117",
-      "rdfs:label": "positive performance gap set"
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000116",
+      "rdfs:label": "negative performance gap set"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000129",
+      "rdfs:label": "peer 90th percentile benchmark"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000045",
       "rdfs:label": "social comparator element"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000129",
-      "rdfs:label": "peer 90th percentile benchmark"
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000120",
+      "rdfs:label": "positive performance trend set"
     }
   ],
   "Name": {
-    "@value": "Top Performer"
+    "@value": "Approach Top 10 Peer Benchmark"
   },
   "Message text": [
     {
-      "@value": "You are a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], above the [comparator name]."
+      "@value": "Your performance is approaching the top 10% peer benchmark this month for the measure [Measure name]."
     }
   ],
   "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
-  "schema:name": "Top Performer",
+  "schema:name": "Approach Top 10 Peer Benchmark",
   "schema:description": "specification for a possible precision feedback message",
-  "pav:createdOn": "2023-04-26T14:24:19-07:00",
+  "pav:createdOn": "2023-04-26T15:21:34-07:00",
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2023-05-01T07:28:16-07:00",
-  "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "@id": "https://repo.metadatacenter.org/template-instances/55d6b537-7a50-48ae-b97a-01e479bee34d",
+  "pav:lastUpdatedOn": "2023-05-24T12:32:15-07:00",
+  "oslc:modifiedBy": "https://metadatacenter.org/users/b62c6dfa-e33c-40fa-aa02-021e4b9bb00b",
+  "@id": "https://repo.metadatacenter.org/template-instances/17a4e0f8-5fc1-44bb-b243-8b4a33be1238",
   "Display compatibility": {
     "@value": "Text-only, bar chart, line chart"
+  },
+  "Short message ID": {
+    "@value": "11",
+    "@type": "xsd:decimal"
   }
 }

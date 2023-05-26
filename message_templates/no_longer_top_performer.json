@@ -81,5 +81,9 @@
   "@id": "https://repo.metadatacenter.org/template-instances/e91fb18a-3a98-420e-a826-bfb1b6eafc58",
   "Display compatibility": {
     "@value": "Text-only, bar chart, line chart"
+  },
+  "Short message ID": {
+    "@value": "8",
+    "@type": "xsd:decimal"
   }
 }

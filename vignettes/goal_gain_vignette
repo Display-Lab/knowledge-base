@@ -1,7 +1,7 @@
 # Goal Gain Vignette
 
-## Introduction
-Clinical performance feedback commonly includes peer comparison because it helps providers to understand how their care differs from the norm, and may motivate them to improve the care they provide to align with peers. Peer comparison feedback may also motivate providers to maintain a social status of being a high performer, once they have achieved it. The Social Better Causal Pathway specifies feedback messages that are capable of motivating providers through the delivery of information about high performance, relative to peers. Example messages that uses the social better pathway are "You are a top performer" and "Congratulations, your performance was in the top 10% of providers this month." This vignette serves the purpose of illustrating how a precision feedback system uses the Social Better Causal Pathway to motivate providers. 
+## Introduction 
+Clinical performance feedback commonly includes comparison to goals because it helps providers to understand how their care differs from the norm, and may motivate them to improve the care they provide. Goal comparison feedback may also motivate providers to maintain the status of being a high performer, once they have achieved it by showing performance that became better than that of . The Goal Gain Pathway specifies feedback messages that are capable of motivating providers through the delivery of information about achieving goals. An example messages that uses the goal gain pathway is "You reached the goal." This vignette serves the purpose of illustrating how a precision feedback system uses the Goal Gain Pathway to motivate providers. 
 
 ## Performance Data
 MPOG has received operative case data from last month about Alice and Bob's cases and that of their peers. MPOG calculates the following performance information for the measure SUS-04:

@@ -16,23 +16,23 @@ Alice, an attending anesthesiologist at Midwest Medicine, has the following perf
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Aug  |              6/7|               94|          88|
-|sep  |              16/19|               99|          91|
-|Oct  |              xx%|               95|          88|
+|Aug  |              86%|               94|          88|
+|sep  |              84%|               99|          91|
+|Oct  |              86%|               95|          88|
 |Nov  |              89%|               98|          93|
-|Dec  |              87%|               98|          94|
-|Jan  |              86%|               96|          90|
+|Dec  |              90%|               98|          94|
+|Jan  |              92%|               96|          90|
 
 Gaile, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for SUS-04:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Aug  |              6/7|               94|          88|
-|sep  |              16/19|               99|          91|
-|Oct  |              xx%|               95|          88|
-|Nov  |              89%|               98|          93|
-|Dec  |              87%|               98|          94|
-|Jan  |              86%|               96|          90|
+|Aug  |              88%|               94|          91|
+|sep  |              89%|               99|          92|
+|Oct  |              90%|               95|          89|
+|Nov  |              90%|               98|          91|
+|Dec  |              91%|               98|          92|
+|Jan  |              93%|               96|          91|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

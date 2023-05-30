@@ -78,10 +78,10 @@ This pathway describes the influence of feedback interventions that show the mes
 Preconditions for improving are factors that are necessary for the success of the feedback intervention using this pathway. The improving pathway has the following preconditions:
 
 Information content preconditions:
-1. Positive performance trend content (http://purl.obolibrary.org/obo/PSDO_0000099)
+1. [Positive performance trend content<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099))
 
 Message preconditions:
-1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
+1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
  
 ### Moderators 
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
@@ -102,13 +102,13 @@ The expected outcome of the successful influence of an email that uses the impro
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
 
 A. The [Performance Improving](https://github.com/Display-Lab/knowledge-base/...json TODO) message template contains the following message: "Your performance is improving this month for the measure [measure name].". This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
-1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
-2. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166), text only (TODO ?)
+1.[Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
 
 B. The [Congrats Improved Performance](https://github.com/Display-Lab/knowledge-base/blob/...json TODO) message template contains the following message: "Congratulations on your improved performance this month for the measure [measure name]." This message template [is about] (http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 
-1. Positive performance trend set (http://purl.obolibrary.org/obo/PSDO_0000120)
-2. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166), text only (TODO ?)
+1.[Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
 
 ## Software Pipeline (Precision Feedback Pipeline) TODO
 

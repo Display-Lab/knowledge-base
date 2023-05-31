@@ -87,15 +87,15 @@ Preconditions for social better are factors that are necessary for the success o
 
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social better causal pathway has the following moderators:
-1. **Habituation** - How many times has the recipient previously received this message in the last year?
-2. **Regulatory fit** - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
-3. **Gap size** - How large is the gap between the recipient's performance level and that of the social comparator?
+1. `Habituation` - How many times has the recipient previously received this message in the last year?
+2. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social better pathway has the following mechanisms:
-1. **Awareness (knowledge)**: The message may change the recipient's awareness of their high performance, relative to peers.
-2. **Subjective norms**: The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
-3. **Motivation**: The message may motivate the recipient to work to  maintain their status as a top performer.
+1. `Awareness (knowledge)` - The message may change the recipient's awareness of their high performance, relative to peers.
+2. `Subjective norms` - The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
+3. `Motivation` - The message may motivate the recipient to work to  maintain their status as a top performer.
 
 ### Outcomes
 The expected outcome of the successful influence of an email that uses the social better pathway is clinical process performance improvement or sustainment.
@@ -104,17 +104,17 @@ The expected outcome of the successful influence of an email that uses the socia
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There is one message template that the precision feedback system can currently access for this vignette:
 
-**[Top Performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/top_performer.json)** message:
+The **[Top Performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/top_performer.json)** message:
 > You are a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], above the [comparator name].
 
-This message template [[is about] <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
 2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
 3. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 4. Display format compatability: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
 
 ## Software Pipeline (Precision Feedback Pipeline)
-WIP - *still todo*
+WIP 
 ### Recipient annotations (Bitstomach)
 The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
 

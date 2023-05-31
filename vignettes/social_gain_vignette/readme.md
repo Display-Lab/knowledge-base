@@ -108,7 +108,7 @@ A successful precision feedback intervention leveraging the social gain pathway 
 ## Message templates
 Message templates represent possible motivational messages that a precision feedback system can send. There are three message templates that the precision feedback system can access for this vignette: 
 
-The **[Achieved top 10% peer benchmark <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_10_peer_benchmark.json)** message reads:
+The `Achieved top 10% peer benchmark` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_10_peer_benchmark.json) message reads:
 > You reached the top 10% peer benchmark this month for the measure [Measure name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
@@ -118,7 +118,7 @@ This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/onto
 4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
 5. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
-The **[Achieved top 25% peer benchmark <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_25_peer_benchmark.json)** message reads:
+The `Achieved top 25% peer benchmark` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_25_peer_benchmark.json) message reads:
 > You reached the top 25% peer benchmark this month for the measure [Measure name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
@@ -128,7 +128,7 @@ This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/onto
 4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
 5. [Peer 75th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
 
-The **[Achieved peer average <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_peer_average.json)** message reads:
+The `Achieved peer average` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_peer_average.json) message reads:
 > Your performance is above the peer average this month for the measure [Measure name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:

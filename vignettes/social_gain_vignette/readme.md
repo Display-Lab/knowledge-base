@@ -35,7 +35,7 @@ Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has th
 |Mar  |              97%|               95|          86|
 
 ## Preference data
-Chikondi's preference data (note that she has *not* completed the individual preference survey):
+Chikondi's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
@@ -75,32 +75,31 @@ This pathway describes the influence of feedback interventions informing the rec
 
 ### Preconditions
 Preconditions for social gain are factors necessary for the success of the precision feedback intervention using this pathway. The social gain pathway has the following preconditions:
-
 Information content preconditions:
-1. [Positive performance gap content](http://purl.obolibrary.org/obo/PSDO_0000104) - prefixIRI PSDO:0000104
-2. [Social comparator content](http://purl.obolibrary.org/obo/psdo_0000095) - prefixIRI PSDO:0000095
-3. [Positive trend content](http://purl.obolibrary.org/obo/PSDO_0000099) - prefixIRI PSDO:0000099
-4. [Achievement content](http://purl.obolibrary.org/obo/PSDO_0000112) - prefixIRI PSDO:0000112
+1. [Social comparator content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. [Positive performance gap content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104)
+3. [Positive performance trend content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+4. [Achievement content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000112)
 
 Message preconditions:
-1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117) - prefixIRI PSDO:0000117
-2. [Social comparator set](http://purl.obolibrary.org/obo/PSDO_0000045) - prefixIRI PSDO:0000045
-3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120) - prefixIRI PSDO:0000120
-4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121) - prefixIRI PSDO:0000121
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
  
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
-1. **Habituation** - How many times has the recipient previously received this message in the last year?
-2. **Regulatory fit** - To what extent is the message aligned to the behavior/task's characteristics, context, and recipient personality (motivated by bad outcome prevention vs. good outcome promotion).
-3. **Gap size** - How large is the gap between the recipient's performance level and that of the social comparator?
-4. **Slope of trend** - Derivative of the performance measure in the time domain
-5. **Time since last loss**
+1. `Habituation` - How many times has the recipient previously received this message in the last year?
+2. `Regulatory fit` - To what extent is the message aligned to the behavior/task's characteristics, context, and recipient personality (motivated by bad outcome prevention vs. good outcome promotion).
+3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
+4. `Slope of trend` - Derivative of the performance measure in the time domain
+5. `Time since last loss`
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
-1. **Awareness (knowledge)** - The message may change the recipient's awareness of their newfound or increased high performance relative to their peers.
-2. **Subjective norms** - The message may influence the recipient by creating or reinforcing their perception of their newfound top-performer status within their peer group.
-3. **Motivation** - The message may motivate the recipient to work to maintain their new status as a top performer.
+1. `Awareness (knowledge)` - The message may change the recipient's awareness of their newfound or increased high performance relative to their peers.
+2. `Subjective norms` - The message may influence the recipient by creating or reinforcing their perception of their newfound top-performer status within their peer group.
+3. `Motivation` - The message may motivate the recipient to work to maintain their new status as a top performer.
 
 
 ### Outcomes
@@ -109,35 +108,35 @@ A successful precision feedback intervention leveraging the social gain pathway 
 ## Message templates
 Message templates represent possible motivational messages that a precision feedback system can send. There are three message templates that the precision feedback system can access for this vignette: 
 
-**[Top 10% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
+The **[Achieved top 10% peer benchmark <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_10_peer_benchmark.json)** message reads:
 > You reached the top 10% peer benchmark this month for the measure [Measure name].
 
-This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
-2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
-3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
-4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
-5. [Peer 90th percentile benchmark](http://purl.obolibrary.org/obo/PSDO_0000129)
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
+5. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
-**[Top 25% Peer Benchmark](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
+The **[Achieved top 25% peer benchmark <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_top_25_peer_benchmark.json)** message reads:
 > You reached the top 25% peer benchmark this month for the measure [Measure name].
 
-This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
-2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
-3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
-4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
-5. [Peer 75th percentile benchmark](http://purl.obolibrary.org/obo/PSDO_0000128)
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
+5. [Peer 75th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
 
-**[Achieve Peer Average](https://i.imgur.com/I1EeK7L.jpeg)** <sub>Todo - JSON template in Github, link here</sub> message:
+The **[Achieved peer average <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/achieved_peer_average.json)** message reads:
 > Your performance is above the peer average this month for the measure [Measure name].
 
-This message template [[is about]](http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Positive performance gap set](http://purl.obolibrary.org/obo/PSDO_0000117)
-2. [Social comparator element](http://purl.obolibrary.org/obo/PSDO_0000045)
-3. [Positive performance trend set](http://purl.obolibrary.org/obo/PSDO_0000120)
-4. [Achievement set](http://purl.obolibrary.org/obo/PSDO_0000121)
-5. [Peer average comparator](http://purl.obolibrary.org/obo/PSDO_0000126)
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
+2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
+5. [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 **TODO**

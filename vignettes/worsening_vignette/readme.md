@@ -100,14 +100,14 @@ The expected outcome of a successful worsening pathway intervention is clinical 
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can currently access for this vignette: 
 
-The `Getting Worse`[ <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/getting_worse.json) message reads:
+The [Getting Worse <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/getting_worse.json) message reads:
 > Your performance is getting worse this month for the measure [measure name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
 1. `Negative performance trend set` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
 2. Display format compatability: `Line Graph` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), `Bar Chart` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)
 
-The `performance dropped`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_dropped.json) message** reads:
+The [Performance Dropped <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_dropped.json) message** reads:
 > Your performance dropped this month for the measure [measure name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:

@@ -15,23 +15,23 @@ Bob, a nurse anesthetist (CRNA) at Max Commuity Hospital, has the following perf
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              85%|               95|          87|
-|Dec  |              85%|               93|          85|
-|Jan  |              87%|               96|          88|
-|Feb  |              88%|               97|          87|
-|Mar  |              91%|               95|          86|
+|Oct  |              84%|               90|          85|
+|Nov  |              85%|               92|          86|
+|Dec  |              85%|               93|          87|
+|Jan  |              83%|               92|          86|
+|Feb  |              81%|               92|          86|
+|Mar  |              83%|               91|          85|
 
 Deepa, another CRNA at Midwest Medicine, a medical-school affiliated hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Oct  |              xx%|               xx|          xx|
-|Nov  |              95%|               95|          87|
-|Dec  |              94%|               93|          85|
-|Jan  |              92%|               96|          88|
-|Feb  |              94%|               97|          87|
-|Mar  |              97%|               95|          86|
+|Oct  |              83%|               93|          85|
+|Nov  |              84%|               95|          87|
+|Dec  |              85%|               93|          85|
+|Jan  |              84%|               92|          88|
+|Feb  |              84%|               93|          87|
+|Mar  |              85%|               91|          86|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

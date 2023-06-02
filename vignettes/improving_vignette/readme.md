@@ -8,62 +8,59 @@ A healthcare quality improvement consortium called the Multicenter Perioperative
 MPOG has received operative case data from last month about Deepa and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
 
 ### Healthcare professional performance
-Deepa's performance rate for BP-03 has level of 75% for November 2023, 74% for December 2023, and 77% for January 2023. Gaile's performance is 72% for November 2023, 75% for December 2023, and 74% for January 2023. 
+Deepa's performance rate for BP-03 has level of 85% for November 2023, 86% for December 2023, and 87% for January 2023. Gaile's performance is 92% for November 2023, 94% for December 2023, and 95% for January 2023. 
 
 Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Aug  |                 |                 |            |
-|Sep  |                 |                 |            |
+|Aug  |              88%|                 |            |
+|Sep  |              87%|                 |            |
 |Oct  |              88%|               93|          86|
-|Nov  |              89%|               96|          88|
-|Dec  |              87%|               95|          87|
-|Jan  |              86%|               97|          87|
+|Nov  |              85%|               96|          88|
+|Dec  |              86%|               95|          87|
+|Jan  |              87%|               97|          87|
 
 Gaile, a resident at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Top 10% Benchmark|Peer Average|
 |-----|-----------------|-----------------|------------|
-|Aug  |                 |                 |            |
-|Sep  |                 |                 |            |
+|Aug  |              90%|                 |            |
+|Sep  |              90%|                 |            |
 |Oct  |              97%|               94|          85|
-|Nov  |              96%|               95|          87|
-|Dec  |              95%|               96|          86|
-|Jan  |              98%|               97|          84|
+|Nov  |              92%|               95|          87|
+|Dec  |              94%|               96|          86|
+|Jan  |              95%|               97|          84|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Deepa's preference data: (TODO)
+Deepa's preference data:
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social gain	           |0.00000	      |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social stayed better   |0.00000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|0.00000	   |Performance is worsening.                                                       |
-|Improving	             |0.00000	    |Performance is improving.                                                       |
-|Social los             |0.00000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social stayed worse	   |0.00000	   |Performance has remained below average (no recent change).                      |
-|Social better	         |0.00000	    |Performance is high this month.                                                 |
-|Social worse	          |0.00000	   |Performance is low this month.                                                  |
-|Social approach	       |0.00000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain	           |-8.1654	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.2514	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.5498	   |Performance is worsening.                                                       |
+|Improving	             |-5.2654	    |Performance is improving.                                                       |
+|Social Loss             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |01.5484	    |Performance is high this month.                                                 |
+|Social Worse	          |10.5656	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
-Gaile's preference data: (TODO)
-
+Gaile's preference data: 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social gain	           |-2.92114	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social stayed better   |-12.76936	   |Performance is consistently high (no recent change).                            |
-|Worsening             	|1.06977     	|Performance is worsening.                                                       |
-|Improving	             |-0.26266	    |Performance is improving.                                                       |
-|Social loss            |2.72075	     |Performance was previously high, but it has dropped below the peer average.     |
-|Social stayed worse	   |9.97743	     |Performance has remained below average (no recent change).                      |
-|Social better	         |-5.97766	    |Performance is high this month.                                                 |
-|Social worse	          |-0.05277	    |Performance is low this month.                                                  |
-|Social approach	       |-0.24384	    |Performance is improving, getting closer to the peer benchmark.                 |
-
-The above tables were taken from Social Loss Vignette - PG
+|Social Gain	           |xx.xxxxx	    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-11.3618	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|11.6598	   |Performance is worsening.                                                       |
+|Improving	             |7.58489	    |Performance is improving.                                                       |
+|Social Loss             |8.46823	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse	   |-3.64987	   |Performance has remained below average (no recent change).                      |
+|Social Better	         |-8.64669	    |Performance is high this month.                                                 |
+|Social Worse	          |12.1645	   |Performance is low this month.                                                  |
+|Social Approach	       |-10.6889 	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: 1) A knowledge base, 2) A software pipeline, and 3) A web service.

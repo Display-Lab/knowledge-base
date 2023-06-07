@@ -1,5 +1,5 @@
 # Performance JSON data
-The following are templates for use in creating measure-ssociated JSON performance metadata to make **input_message.json files**.
+The following are templates for use in creating measure-associated JSON performance metadata to make **input_message.json files**.
 This data is currently templated as twelve month blocks.
   - note: confirm twelve months of data sufficient for pipeline operations
 

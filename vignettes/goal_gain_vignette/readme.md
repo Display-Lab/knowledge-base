@@ -13,8 +13,7 @@ Alice has a performance level of 97%.
 Alice's peer benchmarks for last month are 93% for the top 25% peer benchmark (75th percentile http://purl.obolibrary.org/obo/psdo_0000128), and 96% for the top 10% peer benchmark (90th percentile http://purl.obolibrary.org/obo/psdo_0000129).
 
 ## Preference data
-Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preferences data that is shared to identify population-level preference segments. These are generates as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
-Alice's preference data: (TODO)
+Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
 # Precision feedback system
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data, to select an optimal precision feedback message. 

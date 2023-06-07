@@ -88,15 +88,15 @@ Message preconditions:
 
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
-1. **Habituation** - How many times has the recipient previously received this message in the last year?
-2. **Regulatory fit** - How aligned is the message with characteristics of the behavior/task, context, and recipient personality (motivated by prevention vs. promotion mindset with regard to future outcomes)?
-3. **Gap size** - How large is the gap between the recipient's performance level and that of the social comparator?
+1. `Habituation` - How many times has the recipient previously received this message in the last year?
+2. `Regulatory fit` - How aligned is the message with characteristics of the behavior/task, context, and recipient personality (motivated by prevention vs. promotion mindset with regard to future outcomes)?
+3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
-1. **Awareness (knowledge)** - The message may change the provider's awareness of their own lagging performance relative to their peers.
-2. **Subjective Norms** - Messages may influence the recipient's perception of their own performance status (below average, in this case) within their peer group.
-3. **Motivation** - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
+1. `Awareness (knowledge)` - The message may change the provider's awareness of their own lagging performance relative to their peers.
+2. `Subjective Norms` - Messages may influence the recipient's perception of their own performance status (below average, in this case) within their peer group.
+3. `Motivation` - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
 
 ### Outcomes
 The expected outcome of a successful social worse pathway intervention is clinical performance improvement.
@@ -105,10 +105,10 @@ The expected outcome of a successful social worse pathway intervention is clinic
 
 Message templates represent a possible motivational message that a precision feedback system can send. There is one message template that the precision feedback system can currently access for this vignette: 
 
-The **[not top performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message** reads:
+The `Not Top Performer` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message reads:
 > You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
 
-This message template [[is about] <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136) the following data features:
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
 2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
 3. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)

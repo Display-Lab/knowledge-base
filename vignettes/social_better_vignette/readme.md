@@ -104,7 +104,7 @@ The expected outcome of the successful influence of an email that uses the socia
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There is one message template that the precision feedback system can currently access for this vignette:
 
-The **[Top Performer <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/top_performer.json)** message:
+The `Top Performer`[ <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/top_performer.json) message:
 > You are a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], above the [comparator name].
 
 This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:

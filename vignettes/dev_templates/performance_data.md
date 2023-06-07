@@ -29,6 +29,8 @@ Variables:
     [staffID,"MSR1","2023-11-01",critPass,critFlag,100,p_avg,ninety,sevenFive,pogGoal],
     [staffID,"MSR1","2023-12-01",critPass,critFlag,100,p_avg,ninety,sevenFive,pogGoal],
   ],
+  
+  
 When editing, copy paste into another text editor (sublime, notepad, whatever you use), then  `shft`+`ctrl`+`f` find/replace the variable with relevant data. Use `passNumb` and `flagNumb` to set the passed and flagged event counts, change the values for the benchmarks (including `pogGoal`), then edit the `critPass` and `critFlag` values based on the specifications in the [persona data sheet](https://docs.google.com/spreadsheets/d/1ZxtuEPI5EVfnO-YcvzGjbUSy3woixCsaz4slOCozVEU/edit#gid=0).
 
 # Vignette Template Data

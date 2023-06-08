@@ -14,14 +14,14 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Alice, an attending anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for PONV-05:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Oct  |              88%|               93|          86|
-|Nov  |              89%|               96|          88|
-|Dec  |              87%|               95|          87|
-|Jan  |              86%|               97|          87|
-|Feb  |              81%|               94|          86|
-|Mar  |              78%|               96|          88|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              90%|          90|                       92|                       96|
+|Aug  |              90%|          90|                       92|                       96|
+|Sept |              90%|          90|                       92|                       96|
+|Oct  |              90%|          90|                       92|                       96|
+|Nov  |          **xx%**|          90|                       92|                       96|
+|Dec  |          **xx%**|          90|                       92|                       96|
 
 Bob, a CRNA at Danville Hospital, has the following performance data over the last 6 months for PONV-05:
 

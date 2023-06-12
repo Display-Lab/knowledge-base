@@ -1,6 +1,6 @@
 # Social Approach Vignette
 ## Introduction
-This vignette illustrates the process for creating precision feedback messages about a recipient's performance approaching an explicit target, such as a top performer benchmark or peer average. These messages use the *social approach causal pathway*, which specifies feedback messages that may motivate providers by delivering information about their performance nearing a benchmark. Example messages that use social approach are "your performance is approaching the peer average this month for the measure GLU-01" and "your performance is approaching the peer 90th percentile benchmark this month for the measure ABX-01-OB".
+This vignette illustrates the process for creating precision feedback messages about a recipient's performance approaching an explicit target, such as a top performer benchmark or peer average. These messages use the social approach causal pathway, which specifies feedback messages that may motivate providers by delivering information about their performance nearing a benchmark. Example messages that use social approach are "your performance is approaching the peer average this month for the measure GLU-01" and "your performance is approaching the peer 90th percentile benchmark this month for the measure ABX-01-OB".
 
 This vignette also contains examples of data features and other entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such an entity is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
 
@@ -13,25 +13,25 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Bob, a nurse anesthetist (CRNA) at Max Commuity Hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Oct  |              84%|               90|          85|
-|Nov  |              85%|               92|          86|
-|Dec  |              85%|               93|          87|
-|Jan  |              83%|               92|          86|
-|Feb  |              81%|               92|          86|
-|Mar  |              83%|               91|          85|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              80%|          80|                       85|                       90|
+|Aug  |              80%|          80|                       85|                       90|
+|Sept |              80%|          80|                       85|                       90|
+|Oct  |              80%|          80|                       85|                       90|
+|Nov  |          **84%**|          80|                       85|                       90|
+|Dec  |          **84%**|          80|                       85|                       90|
 
 Deepa, another CRNA at Midwest Medicine, a medical-school affiliated hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Oct  |              83%|               93|          85|
-|Nov  |              84%|               95|          87|
-|Dec  |              85%|               93|          85|
-|Jan  |              84%|               92|          88|
-|Feb  |              84%|               93|          87|
-|Mar  |              85%|               91|          86|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              80%|          80|                       85|                       90|
+|Aug  |              80%|          80|                       85|                       90|
+|Sept |              80%|          80|                       85|                       90|
+|Oct  |              80%|          80|                       85|                       90|
+|Nov  |          **85%**|          80|                       85|                       90|
+|Dec  |          **88%**|          80|                       85|                       90|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

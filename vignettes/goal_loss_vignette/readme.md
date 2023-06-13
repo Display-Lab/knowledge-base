@@ -81,7 +81,7 @@ To generate precision feedback, MPOG sends de-identified performance and prefere
 The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
 
 ## Goal Loss Causal Pathway
-This pathway describes the influence of feedback interventions that show the message recipient that their performance has become worse than that of a target value, assigned independently of perfromance data or peer trends. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+This pathway describes the influence of feedback interventions that show the message recipient that their performance has fallen below an explicit performance goal, assigned independently of institutional peer performance. The goal loss causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
 ### Preconditions
 Preconditions for Goal Loss are factors that are necessary for the success of the feedback intervention using this pathway. The Goal Loss pathway has the following preconditions:

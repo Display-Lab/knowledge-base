@@ -95,11 +95,11 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 4. `Slope of trend` - Derivative of the performance measure in the time domain
 
 ### Mechanisms
-Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social approach pathway has the following mechanisms:
-1. `Awareness (knowledge)` - The message may change the recipient's awareness of their performance increasing and nearing a high performance benchmark relative to their peers.
-2. `Subjective norms` - The message may influence the recipient by creating or reinforcing their proximity to top/high-performer status within their peer group.
-3. `Motivation` - The message may motivate the recipient to keep up their recent performance increase to reach new social status.
-4. `Optimism` - The message may influence the recipient's confidence in their ability to improve their performance and achieve their goals.
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The social approach pathway has the following mechanisms:
+1. `Awareness (knowledge)` - The message may change the recipient's awareness of their performance, it's change over time, and of their peer's performance via institutional benchmarks.
+2. `Subjective norms` - The message may influence the recipient by creating or reinforcing their knowledge of their peer's performance and their relative status within their peer group.
+3. `Motivation` - The message may give the recipient purpose or direction towards changing their performance for a given measure.
+4. `Optimism` - The message may influence the recipient's confidence that things will happen for the best and they will continue to increase their performance, gaining social status.
 
 ### Outcomes
 A successful precision feedback intervention leveraging the social approach pathway should increase clinical process performance improvement.

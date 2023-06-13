@@ -104,11 +104,11 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 4. `Slope of trend`
 
 ### Mechanisms
-Mechanisms are factors that the intervention operates through to influence the feedback recipient. The Goal approach pathway has the following mechanisms:
-1. `Awareness (knowledge)`: The message may change the recipient's awareness of their high performance, relative to peers.
-2. `Goals`: The message may influence the recipient by ... **WIP/Todo**
-3. `Motivation`: The message may motivate the recipient to work to maintain their status as a top performer.
-4. `Optimism`: The message may influence the recipient's confidence in their ability to improve their performance and achieve their goals.
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The goal approach pathway has the following mechanisms:
+1. `Awareness (knowledge)`: The message may change the recipient's awareness of their own performance and of institutional performance goals.
+2. `Goals`: The message may create or reinforce mental representations of outcomes or end states that an individual wants to achieve relative to their clinical performance.
+3. `Motivation`: The message may give the recipient purpose or direction towards changing their own performance.
+4. `Optimism`: The message may increase the recipient's confidence that things will happen for the best or that desired performance goals will be attained.
 
 ### Outcomes
 The expected outcome of a successful goal approach pathway precision feedback intervention is clinical process performance improvement.

@@ -107,11 +107,10 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 5. `Time since last achievement`
 
 ### Mechanisms
-**Note: Mechanisms are blank in the [MPOG message library sheet](https://docs.google.com/spreadsheets/d/1h81ZmTqMWvWDcpLIr5IFW-AAmEiqQAPB4ZtyQtY87HQ/edit#gid=439820594)**
-Mechanisms are factors that the intervention operates through to influence the feedback recipient. The Goal Loss pathway has the following mechanisms:
-1. `Awareness (knowledge)`: The message may change the recipient's awareness of their high performance, relative to peers.
-2. `Subjective norms`: The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
-3. `Motivation`: The message may motivate the recipient to work to maintain their status as a top performer.
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The goal loss pathway has the following mechanisms:
+1. 1. `Awareness (knowledge)`: The message may change the recipient's awareness of their own performance and of institutional performance goals.
+2. `Goals`: The message may create or reinforce mental representations of outcomes or end states that an individual wants to achieve, relative to their clinical performance.
+3. `Motivation`: The message may give the recipient purpose or direction towards changing their own performance.
 
 ### Outcomes
 The expected outcome of a successful goal loss pathway precision feedback intervention is clinical process performance improvement.

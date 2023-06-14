@@ -22,6 +22,7 @@ Versioning of the knowledge base may implement breaking changes; as such version
 
 |Release date| Knowledgebase Version | Software Pipeline Version | 
 |-|-|-|
+| deprecated | 1.0.1 | *not yet published* |
 | 6/14/23 | 1.1.0 | *not yet published* |
 
 Future version of the knowledge base may be independent of the pipeline software version, and may be developed for standalone tools or other independent uses.

@@ -16,16 +16,12 @@ The causal pathways are located under the /causal_pathways directory.
 Each pathway is described in a corresponding vignette directory.
 
 ## Versioning *(WIP)*
-The knowledge base contains files in a spectrum of developmental states, from robustly functional to pre-psuedocode. Specific version of the `main` knowledge base repo exists in tandem with a specified version of the software pipeline, which are dependent on one-another for proper functionality.
-
-Versioning of the knowledge base may implement breaking changes; as such version pairings of the knowledge base and software pipeline which are compatible are documented below.
+The knowledge base contains files on a spectrum of developmental states, from robustly functional to pre-psuedocode. Versioning of the knowledge base may implement breaking changes, and as such a registry of stable pairs are maintained by the Display-Lab team. Stable release pairs of the software pipeline and knowledgebase are recorded as new versions are released, to ensure full functionality of the pipeline despite the changing nature of the knowledgebase. Future versions of the knowledge base may be independent of the software pipeline's version, and may be developed for standalone uses.
 
 |Release Pair| Knowledgebase Version | Software Pipeline Version | 
 |-|-|-|
 | deprecated | 1.0.1 | *not yet published* |
 | 6/14/23 | 1.1.0 | *not yet published* |
-
-Future version of the knowledge base may be independent of the pipeline software version, and may be developed for standalone tools or other independent uses.
 
 ## Version
 1.1.0

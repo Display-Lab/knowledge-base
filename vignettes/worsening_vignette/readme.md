@@ -13,25 +13,26 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Fahad, an attending anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the SUS-04 measure:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Oct  |              97%|               95|          89|
-|Nov  |              95%|               95|          90|
-|Dec  |              96%|               94|          90|
-|Jan  |              96%|               97|          91|
-|Feb  |              97%|               95|          88|
-|Mar  |              95%|               95|          89|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              90%|          90|                       92|                       96|
+|Aug  |              90%|          90|                       92|                       96|
+|Sept |              90%|          90|                       92|                       96|
+|Oct  |              90%|          90|                       92|                       96|
+|Nov  |          **97%**|          90|                       92|                       96|
+|Dec  |          **93%**|          90|                       92|                       96|
 
 Gaile, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for the SUS-02 measure:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Oct  |              92%|               95|          90|
-|Nov  |              93%|               96|          89|
-|Dec  |              91%|               95|          90|
-|Jan  |              92%|               95|          92|
-|Feb  |              95%|               97|          90|
-|Mar  |              93%|               96|          91|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              85%|          85|                       88|                       92|
+|Aug  |              85%|          85|                       88|                       92|
+|Sept |              85%|          85|                       88|                       92|
+|Oct  |              85%|          85|                       88|                       92|
+|Nov  |          **90%**|          85|                       88|                       92|
+|Dec  |          **86%**|          85|                       88|                       92|
+
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

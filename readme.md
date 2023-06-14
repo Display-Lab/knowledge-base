@@ -20,7 +20,7 @@ The knowledge base contains files in a spectrum of developmental states, from ro
 
 Versioning of the knowledge base may implement breaking changes; as such version pairings of the knowledge base and software pipeline which are compatible are documented below.
 
-|Release date| Knowledgebase Version | Software Pipeline Version | 
+|Release Pair| Knowledgebase Version | Software Pipeline Version | 
 |-|-|-|
 | deprecated | 1.0.1 | *not yet published* |
 | 6/14/23 | 1.1.0 | *not yet published* |

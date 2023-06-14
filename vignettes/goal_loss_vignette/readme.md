@@ -108,7 +108,7 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The goal loss pathway has the following mechanisms:
-1. 1. `Awareness (knowledge)`: The message may change the recipient's awareness of their own performance and of institutional performance goals.
+1. `Awareness (knowledge)`: The message may change the recipient's awareness of their own performance and of institutional performance goals.
 2. `Goals`: The message may create or reinforce mental representations of outcomes or end states that an individual wants to achieve, relative to their clinical performance.
 3. `Motivation`: The message may give the recipient purpose or direction towards changing their own performance.
 

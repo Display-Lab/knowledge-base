@@ -12,25 +12,25 @@ Deepa's performance rate for BP-03 has level of 85% for November 2023, 86% for D
 
 Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Aug  |              88%|                 |            |
-|Sep  |              87%|                 |            |
-|Oct  |              88%|               93|          86|
-|Nov  |              85%|               96|          88|
-|Dec  |              86%|               95|          87|
-|Jan  |              87%|               97|          87|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              80%|          80|                       85|                       90|
+|Aug  |              80%|          80|                       85|                       90|
+|Sept |              80%|          80|                       85|                       90|
+|Oct  |              80%|          80|                       85|                       90|
+|Nov  |          **82%**|          80|                       85|                       90|
+|Dec  |          **84%**|          80|                       85|                       90|
 
 Gaile, a resident at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
-|Month|Performance Level|Top 10% Benchmark|Peer Average|
-|-----|-----------------|-----------------|------------|
-|Aug  |              90%|                 |            |
-|Sep  |              90%|                 |            |
-|Oct  |              97%|               94|          85|
-|Nov  |              92%|               95|          87|
-|Dec  |              94%|               96|          86|
-|Jan  |              95%|               97|          84|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
+|-----|-----------------|------------|-------------------------|-------------------------|
+|Jul  |              85%|          85|                       88|                       92|
+|Aug  |              85%|          85|                       88|                       92|
+|Sept |              85%|          85|                       88|                       92|
+|Oct  |              85%|          85|                       88|                       92|
+|Nov  |          **87%**|          85|                       88|                       92|
+|Dec  |          **90%**|          85|                       88|                       92|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

@@ -1,6 +1,0 @@
-# Jekyll configuration
-# Facilites using github pages which use jekyll to build sites.
-
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-enoding: utf-8

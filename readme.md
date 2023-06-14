@@ -17,7 +17,7 @@ Each pathway is described in a corresponding vignette directory.
 
 
 ## Version
-1.0.1
+1.1.0
 
 
 

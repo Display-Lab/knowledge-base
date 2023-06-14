@@ -15,10 +15,14 @@ This project is supported by funding from the NIH National Library of Medicine a
 The causal pathways are located under the /causal_pathways directory.
 Each pathway is described in a corresponding vignette directory.
 
-## Attention
-The knowledge base contains a variety of files existing on a spectrum of states of development. Specific version of the `main` knowledge base repo exists in tandem with a specified version of the software pipeline, which are dependent on one-another for proper functionality.
+## Versioning *(WIP)*
+The knowledge base contains files in a spectrum of developmental states, from robustly functional to pre-psuedocode. Specific version of the `main` knowledge base repo exists in tandem with a specified version of the software pipeline, which are dependent on one-another for proper functionality.
 
-Versioning of the knowledge base may implement breaking changes, and as such version pairings of the knowledge base and software pipeline which are compatible are documented in the *WIP - changelog file somewhere? Wiki page?*.
+Versioning of the knowledge base may implement breaking changes; as such version pairings of the knowledge base and software pipeline which are compatible are documented below.
+
+|Release date| Knowledgebase Version | Software Pipeline Version | 
+|-|-|-|
+| 6/14/23 | 1.1.0 | *not yet published* |
 
 Future version of the knowledge base may be independent of the pipeline software version, and may be developed for standalone tools or other independent uses.
 

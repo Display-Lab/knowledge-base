@@ -1,10 +1,10 @@
 # Goal Gain Vignette
 
-## Introduction 
+## Introduction
 Clinical performance feedback commonly includes goal comparisons that motivate providers to increase effort, including effort for problem-solving to improve the care they provide. When goals are reached, feedback about goal acheivement can be motivating to providers whose motivational orientation (i.e. regulatory focus), task, and context orient them toward growth and improvement. The feedback about the acheivement of goals can also satisfy provider's information needs for understanding changes in performance, to indicate that past efforts have yielded improvements, and that effort towards learning to improve might be shifted elsewhere. The Goal Gain Pathway specifies feedback messages that are capable of motivating providers through the delivery of information about goal achievement. An example message that uses the goal gain pathway is "You reached the goal." This vignette serves the purpose of illustrating how a precision feedback system uses the Goal Gain Pathway to motivate providers. 
 
 ## Performance Data
-MPOG has received operative case data from last month about Eugene and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure [TOC-01: Intraoperative Transfer of Care<sub>(MPOG)</sub>](https://spec.mpog.org/Spec/Public/29). 
+MPOG has received operative case data from last month about Eugene and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure [TOC-01: Intraoperative Transfer of Care <sub>(MPOG)</sub>](https://spec.mpog.org/Spec/Public/29). 
 
 ### Healthcare professionals
 Alice has a performance level of 97%.
@@ -22,8 +22,8 @@ The precision feedback system is a knowledge-based system that is comprised of t
 ## Precision Feedback Knowledge Base
 The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
 
-## Social Better Causal Pathway 
-The causal pathway "social better" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+## Goal Gain Causal Pathway 
+The causal pathway "goal gain" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
 ### Preconditions
 Preconditions for social better are factors that are necessary for the success of the feedback intervention that uses the social better pathway. The social better pathway has the following preconditions:
@@ -47,7 +47,7 @@ Mechanisms are factors that the intervention operates through to influence the f
 3. Motivation: The message may motivate the recipient to work to  maintain their status as a top performer.
 
 ### Outcomes
-The expected outcome of the successful influence of an email that uses the social better pathway is clinical process performance improvement or sustainment.
+The expected outcome of the successful influence of an email that uses the goal gain pathway is clinical process performance improvement or sustainment.
 
 ## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 

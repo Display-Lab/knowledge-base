@@ -20,8 +20,8 @@ The knowledge base contains files on a spectrum of developmental states, from ro
 
 |Release Pair| Knowledgebase Version | Software Pipeline Version | 
 |-|-|-|
-| deprecated | 1.0.1 | *not yet published* |
-| 6/14/23 | 1.1.0 | *not yet published* |
+| deprecated | 1.0.1 | 1.2.2 |
+| 6/14/23 | 1.1.0 | *todo* |
 
 ## Version
 1.1.0

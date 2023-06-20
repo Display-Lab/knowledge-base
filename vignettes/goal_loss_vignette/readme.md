@@ -25,14 +25,14 @@ Fahad, an attending anesthesiologist at Max Community Hospital, has the followin
 
 Gaile, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for NMB-03-Peds:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              85%|          85|                       88|                       92|
-|Aug  |              85%|          85|                       88|                       92|
-|Sept |              85%|          85|                       88|                       92|
-|Oct  |              85%|          85|                       88|                       92|
-|Nov  |         **100%**|          85|                       88|                       92|
-|Dec  |          **80%**|          85|                       88|                       92|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|--|
+|Jul  |              85%|          85|                       88|                       92|90|
+|Aug  |              85%|          85|                       88|                       92|90|
+|Sept |              85%|          85|                       88|                       92|90|
+|Oct  |              85%|          85|                       88|                       92|90|
+|Nov  |         **100%**|          85|                       88|                       92|90|
+|Dec  |          **80%**|          85|                       88|                       92|90|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

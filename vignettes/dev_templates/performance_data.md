@@ -45,7 +45,7 @@ When editing, copy paste into another text editor (sublime, notepad, whatever yo
 Associated personas: `Alice`   `Fahad`
 ### Six month block
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
-|-----|-------- |---|---|---|---|
+|-----|---------|---|---|---|---|
 |Jul  |      90%| 90| 92| 96| 90|
 |Aug  |      90%| 90| 92| 96| 90|
 |Sept |      90%| 90| 92| 96| 90|
@@ -57,7 +57,7 @@ Associated personas: `Alice`   `Fahad`
 Associated personas: `Chikondi`  `Eugene`  `Gaile`
 ### Six month block
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
-|-----|-------- |---|---|---|---|
+|-----|---------|---|---|---|---|
 |Jul  |      85%| 85| 88| 92| 90|
 |Aug  |      85%| 85| 88| 92| 90|
 |Sept |      85%| 85| 88| 92| 90|
@@ -69,7 +69,7 @@ Associated personas: `Chikondi`  `Eugene`  `Gaile`
 Associated personas: `Bob`   `Deepa`
 ### Six month block
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
-|-----|-------- |---|---|---|---|
+|-----|---------|---|---|---|---|
 |Jul  |      80%| 80| 85| 90| 90|
 |Aug  |      80%| 80| 85| 90| 90|
 |Sept |      80%| 80| 85| 90| 90|

@@ -11,24 +11,17 @@ Each month, MPOG receives data about operative case quality and outcomes from ap
 ### Benchmark comparators
 MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure. For goal-based causal pathways, these peer-performance-based comparators do not impact the explicit goals that have been created, however they remian in the data processed by the pipeline, and are also shown below.
 
-For this vignette, the relevant goal comparator is shown below, as an example:
-|Measure|Provider Role|Performance Goal|
-|-------|-------------|----------------|
-|NMB-03-Peds|Attending|             92%|
-|NMB-03-Peds|Resident|              90%|
-|NMB-03-Peds|Nurse Anesthetist|     88%|
-
 ### Healthcare professional performance
 Fahad, an attending anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for NMB-03-Peds:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              90%|          90|                       92|                       96|
-|Aug  |              90%|          90|                       92|                       96|
-|Sept |              90%|          90|                       92|                       96|
-|Oct  |              90%|          90|                       92|                       96|
-|Nov  |         **100%**|          90|                       92|                       96|
-|Dec  |          **80%**|          90|                       92|                       96|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|---|
+|Jul  |              90%|          90|                       92|                       96|90|
+|Aug  |              90%|          90|                       92|                       96|90|
+|Sept |              90%|          90|                       92|                       96|90|
+|Oct  |              90%|          90|                       92|                       96|90|
+|Nov  |         **100%**|          90|                       92|                       96|90|
+|Dec  |          **80%**|          90|                       92|                       96|90|
 
 Gaile, a resident anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for NMB-03-Peds:
 

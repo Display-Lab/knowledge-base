@@ -14,25 +14,25 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Alice, an attending anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for PONV-05:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              90%|          90|                       92|                       96|
-|Aug  |              90%|          90|                       92|                       96|
-|Sept |              90%|          90|                       92|                       96|
-|Oct  |              90%|          90|                       92|                       96|
-|Nov  |          **97%**|          90|                       92|                       96|
-|Dec  |          **91%**|          90|                       92|                       96|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|-|
+|Jul  |              90%|          90|                       92|                       96|90|
+|Aug  |              90%|          90|                       92|                       96|90|
+|Sept |              90%|          90|                       92|                       96|90|
+|Oct  |              90%|          90|                       92|                       96|90|
+|Nov  |          **97%**|          90|                       92|                       96|90|
+|Dec  |          **91%**|          90|                       92|                       96|90|
 
 Bob, a CRNA at Danville Hospital, has the following performance data over the last 6 months for PONV-05:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              80%|          80|                       85|                       90|
-|Aug  |              80%|          80|                       85|                       90|
-|Sept |              80%|          80|                       85|                       90|
-|Oct  |              80%|          80|                       85|                       90|
-|Nov  |          **86%**|          80|                       85|                       90|
-|Dec  |          **79%**|          80|                       85|                       90|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|-|
+|Jul  |              80%|          80|                       85|                       90|90|
+|Aug  |              80%|          80|                       85|                       90|90|
+|Sept |              80%|          80|                       85|                       90|90|
+|Oct  |              80%|          80|                       85|                       90|90|
+|Nov  |          **86%**|          80|                       85|                       90|90|
+|Dec  |          **79%**|          80|                       85|                       90|90|
 
 
 ## Preference data

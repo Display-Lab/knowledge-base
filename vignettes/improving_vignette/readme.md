@@ -18,7 +18,7 @@ Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medi
 |Aug  |      75%| 80| 85| 90| 90|
 |Sept |      75%| 80| 85| 90| 90|
 |Oct  |      75%| 80| 85| 90| 90|
-|Nov  |***78%***| 80| 85| 90| 90|
+|Nov  |***82%***| 80| 85| 90| 90|
 |Dec  |***87%***| 80| 85| 90| 90|
 
 Gaile, a resident at Midwest Medicine, has the following performance data over the last 6 months for BP-03:

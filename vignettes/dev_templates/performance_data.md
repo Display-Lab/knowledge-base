@@ -34,7 +34,7 @@ Variables:
 When editing, copy paste into another text editor (sublime, notepad, whatever you use), then  `shft`+`ctrl`+`f` find/replace the variable with relevant data. Use `passNumb` and `flagNumb` to set the passed and flagged event counts, change the values for the benchmarks (including `pogGoal`), then edit the `critPass` and `critFlag` values based on the specifications in the [persona data sheet](https://docs.google.com/spreadsheets/d/1ZxtuEPI5EVfnO-YcvzGjbUSy3woixCsaz4slOCozVEU/edit#gid=0).
 
 # Vignette Template Data
-### Table 1: Typical Values and Benchmarks by Role (*WIP*)
+### Table 1: Typical Values and Benchmarks by Role (*Unused*)
  |Role|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
 |-----|-----------------|------------|------------------------|---------------|
 |Attending|  90-94%|            90|             92|                96|
@@ -44,35 +44,35 @@ When editing, copy paste into another text editor (sublime, notepad, whatever yo
 ## Attending Template Data
 Associated personas: `Alice`   `Fahad`
 ### Six month block
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              90%|          90|                       92|                       96|
-|Aug  |              90%|          90|                       92|                       96|
-|Sept |              90%|          90|                       92|                       96|
-|Oct  |              90%|          90|                       92|                       96|
-|Nov  |          **xx%**|          90|                       92|                       96|
-|Dec  |          **xx%**|          90|                       92|                       96|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-------- |---|---|---|---|
+|Jul  |      90%| 90| 92| 96| 90|
+|Aug  |      90%| 90| 92| 96| 90|
+|Sept |      90%| 90| 92| 96| 90|
+|Oct  |      90%| 90| 92| 96| 90|
+|Nov  |***xx%***| 90| 92| 96| 90|
+|Dec  |***xx%***| 90| 92| 96| 90|
 
 ## Resident Template Data
 Associated personas: `Chikondi`  `Eugene`  `Gaile`
 ### Six month block
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              85%|          85|                       88|                       92|
-|Aug  |              85%|          85|                       88|                       92|
-|Sept |              85%|          85|                       88|                       92|
-|Oct  |              85%|          85|                       88|                       92|
-|Nov  |          **xx%**|          85|                       88|                       92|
-|Dec  |          **xx%**|          85|                       88|                       92|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-------- |---|---|---|---|
+|Jul  |      85%| 85| 88| 92| 90|
+|Aug  |      85%| 85| 88| 92| 90|
+|Sept |      85%| 85| 88| 92| 90|
+|Oct  |      85%| 85| 88| 92| 90|
+|Nov  |***xx%***| 85| 88| 92| 90|
+|Dec  |***xx%***| 85| 88| 92| 90|
 
 ## CRNA Template Data
 Associated personas: `Bob`   `Deepa`
 ### Six month block
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              80%|          80|                       85|                       90|
-|Aug  |              80%|          80|                       85|                       90|
-|Sept |              80%|          80|                       85|                       90|
-|Oct  |              80%|          80|                       85|                       90|
-|Nov  |          **xx%**|          80|                       85|                       90|
-|Dec  |          **xx%**|          80|                       85|                       90|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-------- |---|---|---|---|
+|Jul  |      80%| 80| 85| 90| 90|
+|Aug  |      80%| 80| 85| 90| 90|
+|Sept |      80%| 80| 85| 90| 90|
+|Oct  |      80%| 80| 85| 90| 90|
+|Nov  |***xx%***| 80| 85| 90| 90|
+|Dec  |***xx%***| 80| 85| 90| 90|

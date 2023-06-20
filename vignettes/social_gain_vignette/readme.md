@@ -21,7 +21,7 @@ Chikondi, a resident physician at Max Community Hospital, has the following perf
 |Sept |              85%|          85|                       88|                       92|
 |Oct  |              85%|          85|                       88|                       92|
 |Nov  |          **85%**|          85|                       88|                       92|
-|Dec  |          **94%**|          85|                       88|                       92|
+|Dec  |          **91%**|          85|                       88|                       92|
 
 Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
 

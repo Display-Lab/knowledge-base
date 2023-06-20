@@ -11,24 +11,17 @@ Each month, MPOG receives data about operative case quality and outcomes from ap
 ### Benchmark comparators
 MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure. For goal-based causal pathways, these peer-performance-based comparators do not impact the explicit goals that have been created, however they remian in the data processed by the pipeline, and are also shown below.
 
-For this vignette, the relevant goal comparator is shown below, as an example. In implementation, goals will differ based on institution as well as role.
-|Measure|Provider Role|Performance Goal|
-|-------|-------------|----------------|
-|GLU-03|Attending|             92%|
-|GLU-03|Resident|              90%|
-|GLU-03|Nurse Anesthetist|     88%|
-
 ### Healthcare professional performance
 Alice, an attending anesthesiologist at Midwest Medicine, has the following performance data over the last 6 months for GLU-03:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|-----------------|------------|-------------------------|-------------------------|-----|
-|Jul  |              90%|          90|                       92|                       96|   92|
-|Aug  |              90%|          90|                       92|                       96|   92|
-|Sept |              90%|          90|                       92|                       96|   92|
-|Oct  |              90%|          90|                       92|                       96|   92|
-|Nov  |          **90%**|          90|                       92|                       96|   92|
-|Dec  |          **91%**|          90|                       92|                       96|   92|
+|Jul  |              90%|          90|                       92|                       96|   90|
+|Aug  |              90%|          90|                       92|                       96|   90|
+|Sept |              90%|          90|                       92|                       96|   90|
+|Oct  |              90%|          90|                       92|                       96|   90|
+|Nov  |          **90%**|          90|                       92|                       96|   90|
+|Dec  |          **91%**|          90|                       92|                       96|   90|
 
 Chikondi, a resident anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for GLU-03:
 

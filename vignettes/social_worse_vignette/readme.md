@@ -93,10 +93,10 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms
-Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The social gain pathway has the following mechanisms:
 1. `Awareness (knowledge)` - The message may change the provider's awareness of their own lagging performance relative to their peers.
-2. `Subjective Norms` - Messages may influence the recipient's perception of their own performance status (below average, in this case) within their peer group.
-3. `Motivation` - The message may motivate the provider to work to lose their status as a non-top-performer among their peers.
+2. `Subjective Norms` - Messages may influence the recipient's perception of their performance status within their peer group, and that it is below a peer benchmark.
+3. `Motivation` - The message may give the recipient new purpose to reach a peer benchmark by increasing their performance for a given measure.
 
 ### Outcomes
 The expected outcome of a successful social worse pathway intervention is clinical performance improvement.

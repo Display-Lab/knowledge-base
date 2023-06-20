@@ -14,25 +14,25 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Chikondi, a resident physician at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              85%|          85|                       88|                       92|
-|Aug  |              85%|          85|                       88|                       92|
-|Sept |              85%|          85|                       88|                       92|
-|Oct  |              85%|          85|                       88|                       92|
-|Nov  |          **85%**|          85|                       88|                       92|
-|Dec  |          **94%**|          85|                       88|                       92|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|-|
+|Jul  |              85%|          85|                       88|                       92|--|
+|Aug  |              85%|          85|                       88|                       92|--|
+|Sept |              85%|          85|                       88|                       92|--|
+|Oct  |              85%|          85|                       88|                       92|--|
+|Nov  |          **85%**|          85|                       88|                       92|--|
+|Dec  |          **91%**|          85|                       88|                       92|--|
 
 Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              90%|          90|                       92|                       96|
-|Aug  |              90%|          90|                       92|                       96|
-|Sept |              90%|          90|                       92|                       96|
-|Oct  |              90%|          90|                       92|                       96|
-|Nov  |          **93%**|          90|                       92|                       96|
-|Dec  |          **97%**|          90|                       92|                       96|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|--|
+|Jul  |              90%|          90|                       92|                       96|--|
+|Aug  |              90%|          90|                       92|                       96|--|
+|Sept |              90%|          90|                       92|                       96|--|
+|Oct  |              90%|          90|                       92|                       96|--|
+|Nov  |          **93%**|          90|                       92|                       96|--|
+|Dec  |          **97%**|          90|                       92|                       96|--|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

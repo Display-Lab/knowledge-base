@@ -92,10 +92,10 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms
-Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social better pathway has the following mechanisms:
+Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The social better pathway has the following mechanisms:
 1. `Awareness (knowledge)` - The message may change the recipient's awareness of their high performance, relative to peers.
-2. `Subjective norms` - The message may influence the precipient by creating or reinforcing their perception of their own top-performer status within their peer group.
-3. `Motivation` - The message may motivate the recipient to work to  maintain their status as a top performer.
+2. `Subjective norms` - The message may influence the recipient by creating or reinforcing their perception of their own high-performer status within their peer group.
+3. `Motivation` - The message may influence the recipient to maintain their status as a top performer for a given measure.
 
 ### Outcomes
 The expected outcome of the successful influence of an email that uses the social better pathway is clinical process performance improvement or sustainment.

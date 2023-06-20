@@ -13,25 +13,25 @@ MPOG calculates performance benchmarks and averages for each institution. One co
 ### Healthcare professional performance
 Bob, a nurse anesthetist (CRNA) at Max Commuity Hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              80%|          80|                       85|                       90|
-|Aug  |              80%|          80|                       85|                       90|
-|Sept |              80%|          80|                       85|                       90|
-|Oct  |              80%|          80|                       85|                       90|
-|Nov  |          **84%**|          80|                       85|                       90|
-|Dec  |          **84%**|          80|                       85|                       90|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|--|
+|Jul  |              80%|          80|                       85|                       90|--|
+|Aug  |              80%|          80|                       85|                       90|--|
+|Sept |              80%|          80|                       85|                       90|--|
+|Oct  |              80%|          80|                       85|                       90|--|
+|Nov  |          **84%**|          80|                       85|                       90|--|
+|Dec  |          **84%**|          80|                       85|                       90|--|
 
 Deepa, another CRNA at Midwest Medicine, a medical-school affiliated hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
-|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|
-|-----|-----------------|------------|-------------------------|-------------------------|
-|Jul  |              80%|          80|                       85|                       90|
-|Aug  |              80%|          80|                       85|                       90|
-|Sept |              80%|          80|                       85|                       90|
-|Oct  |              80%|          80|                       85|                       90|
-|Nov  |          **85%**|          80|                       85|                       90|
-|Dec  |          **88%**|          80|                       85|                       90|
+|Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
+|-----|-----------------|------------|-------------------------|-------------------------|-|
+|Jul  |              80%|          80|                       85|                       90|--|
+|Aug  |              80%|          80|                       85|                       90|--|
+|Sept |              80%|          80|                       85|                       90|--|
+|Oct  |              80%|          80|                       85|                       90|--|
+|Nov  |          **85%**|          80|                       85|                       90|--|
+|Dec  |          **88%**|          80|                       85|                       90|--|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

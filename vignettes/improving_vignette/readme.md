@@ -22,8 +22,8 @@ Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medi
 |Aug  |              80%|          80|                       85|                       90|90|
 |Sept |              80%|          80|                       85|                       90|90|
 |Oct  |              80%|          80|                       85|                       90|90|
-|Nov  |          **82%**|          80|                       85|                       90|90|
-|Dec  |          **84%**|          80|                       85|                       90|90|
+|Nov  |        * *82%* *|          80|                       85|                       90|90|
+|Dec  |        * *84%* *|          80|                       85|                       90|90|
 
 Gaile, a resident at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
@@ -33,8 +33,8 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 |Aug  |              85%|          85|                       88|                       92|90|
 |Sept |              85%|          85|                       88|                       92|90|
 |Oct  |              85%|          85|                       88|                       92|90|
-|Nov  |          **87%**|          85|                       88|                       92|90|
-|Dec  |          **90%**|          85|                       88|                       92|90|
+|Nov  |        * *87%* *|          85|                       88|                       92|90|
+|Dec  |        * *90%* *|          85|                       88|                       92|90|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
@@ -107,81 +107,69 @@ A. `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/k
 This message template `is about`[<sub>(OntoBee)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
-
 2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
 
-B. The [Congrats Improved Performance](https://github.com/Display-Lab/knowledge-base/blob/...json TODO) message template contains the following message: "Congratulations on your improved performance this month for the measure [measure name]." This message template [is about<sub>(BP)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+B. The `Congrats Improved Performance`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/congrats_improved_performance.json) message template contains the following message: 
+> Congratulations on your improved performance this month for the measure [measure name].
+
+This message template [is about<sub>(BP)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
-
 2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
 
 ## Software Pipeline (Precision Feedback Pipeline) TODO
 
 ## Recipient annotations (Bitstomach)
-This data set should result in an annotation that there is information content about a positive performance trend for Alice:
-1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
+The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
+
+Deepa's annotations indicate the presence of the following in her performance data this month:
+1. **TODO**
+
+Gaile's annotations indicate the presence of the following in his performance data this month:
+1. **TODO**
 
 ### Candidate Message Generation (Candidate Smasher)
-The second stage of the pipeline creates possible messages by associating the annotations for Alice and Bob with each message template, so that two candidate messages are created for each person.
+The second stage of the pipeline creates possible messages by associating the annotations for Deepa and Gaile with each message template, so that two candidate messages are created for each person.
 
-Alice's candidate messages:
+Deepa's candidate messages:
 
 A. Candidate A has the following annotations:
 
-The [Top 10 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template is about:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+The [**TODO**](**TODO**) message template [is about](**TODO**) the following features of performance data:
+1. **TODO**
 
-Alice's performance is about:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+Deepa's annotations from this month:
+1. **TODO**
 
 B. Candidate B has the following annotations:
 
-The [Top 25 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_25_performer.json) message template is about:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+The [**TODO**](**TODO**) message template [is about] (**TODO**) the following features of performance data:
+TODO
 
-Alice's performance is about:
-1. Social comparator content (http://purl.obolibrary.org/obo/psdo_0000095)
-2. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-3. Positive performance gap content (http://purl.obolibrary.org/obo/psdo_0000104) regarding comparator Top 25% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000128)
+Deepa's annotations from this month:
+TODO
+
+Gaile's candidate messages:
+
+A. Candidate A has the following annotations:
+
+TODO
+
+Gaile's performance is about:
+TODO
+
+B. Candidate B has the following annotations:
+
+TODO
+
+Gaile's performance is about:
+TODO
 
 ### Candidate Message Preconditions Evaluation (Think Pudding)
-For Alice, both candidates have matching preconditions with social better, and are indicated as acceptable for ranking in the next stage of the pipeline:
-
-1. Candidate A acceptable by social better
-2. Candidate B acceptable by social better
+TODO
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 TODO
 
 ### Message Generation and Delivery (Pictoralist)
 TODO
-
-## Existing notes below 5/23 - HC
-
-## Template annotations
-The performance_improving template is about a positive performance trend set:
-1. Positive performance trend set (http://purl.obolibrary.org/obo/psdo_0000120)
-
-## Resulting candidates
-The candidate produced for Deepa has:
-1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
-2. Positive performance trend set (http://purl.obolibrary.org/obo/psdo_0000120)
-
-## Causal pathway preconditions
-The improving causal pathway has preconditions:
-1. Positive performance trend content (http://purl.obolibrary.org/obo/psdo_0000099)
-2. Positive performance trend set (http://purl.obolibrary.org/obo/psdo_0000120)
-
-## Evaluation result
-The candidate is found to be acceptable by the causal pathway 'improving'.
-
-

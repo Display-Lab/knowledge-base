@@ -2,14 +2,18 @@
 
 ## Introduction 
 
+This vignette illustrates the process for generating precision feedback messages about a recipient's performance when it is improving. Feedback messages about improving performance motivate providers by enhancing providers' knowledge about their performance trends and fostering a sense of optimism. Example feedback messages that are part of the Improving Causal Pathway include "Your performance is improving" and "Congratulations on your improved performance." 
+
 A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
 ## Performance Data
+
+A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
+
+### Healthcare professional performance
 MPOG has received operative case data from last month about Deepa and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
 
 ### Healthcare professional performance
-Deepa's performance rate for BP-03 has level of 85% for November 2023, 86% for December 2023, and 87% for January 2023. Gaile's performance is 92% for November 2023, 94% for December 2023, and 95% for January 2023. 
-
 Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
@@ -81,16 +85,15 @@ Message preconditions:
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
  
 ### Moderators 
-Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social loss causal pathway has the following moderators:
-1. Habituation: How many times has the recipient previously received this message in the last year?
-2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
-3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator?
+Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The improving causal pathway has the following moderators:
+1. `Habituation` - How many times has the recipient previously received this message in the last year?
+2. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms 
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
-1. Habituation: How many times has the recipient previously received this message in the last year?
-2. Regulatory fit: To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
-3. Gap size: How large is the gap between the recipient's performance level and that of the social comparator? (TODO)
+1. `Awareness (knowledge)`: The message may change the recipient's awareness of their high performance, relative to peers.
+2. `Optimism` - The message may influence the recipient's confidence that things will happen for the best and they will continue to increase their performance, gaining social status.
 
 ### Outcomes
 The expected outcome of the successful influence of an email that uses the improving pathway is clinical process performance improvement.
@@ -98,7 +101,10 @@ The expected outcome of the successful influence of an email that uses the impro
 ## Message templates (TODO)
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
 
-A. The [Performance Improving](https://github.com/Display-Lab/knowledge-base/...json TODO) message template contains the following message: "Your performance is improving this month for the measure [measure name].". This message template [is about<sub>(OB)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
+A. `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_improving.json) message template contains the following message: 
+> Your performance is improving this month for the measure [measure name].
+
+This message template `is about`[<sub>(OntoBee)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
 
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
 

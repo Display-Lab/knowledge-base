@@ -98,7 +98,7 @@ Mechanisms are factors that the intervention operates through to influence the f
 ### Outcomes
 The expected outcome of the successful influence of an email that uses the improving pathway is clinical process performance improvement.
 
-## Message templates (TODO)
+## Message templates
 Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
 
 A. `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_improving.json) message template contains the following message: 

@@ -14,8 +14,8 @@ Eugene ... Todo
 |Aug  |      85%| 85| 88| 92| 90|
 |Sept |      85%| 85| 88| 92| 90|
 |Oct  |      85%| 85| 88| 92| 90|
-|Nov  |***xx%***| 85| 88| 92| 90|
-|Dec  |***xx%***| 85| 88| 92| 90|
+|Nov  |***85%***| 85| 88| 92| 90|
+|Dec  |***91%***| 85| 88| 92| 90|
 
 Gaile ... Todo
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
@@ -24,8 +24,8 @@ Gaile ... Todo
 |Aug  |      85%| 85| 88| 92| 90|
 |Sept |      85%| 85| 88| 92| 90|
 |Oct  |      85%| 85| 88| 92| 90|
-|Nov  |***xx%***| 85| 88| 92| 90|
-|Dec  |***xx%***| 85| 88| 92| 90|
+|Nov  |***88%***| 85| 88| 92| 90|
+|Dec  |***95%***| 85| 88| 92| 90|
 
 ### Benchmark comparators
 Alice's peer benchmarks for last month are 93% for the top 25% peer benchmark (75th percentile http://purl.obolibrary.org/obo/psdo_0000128), and 96% for the top 10% peer benchmark (90th percentile http://purl.obolibrary.org/obo/psdo_0000129).

@@ -102,14 +102,16 @@ Mechanisms are factors that the intervention operates through to influence the f
 The expected outcome of the successful influence of an email that uses the goal gain pathway is clinical process performance improvement or sustainment.
 
 ## Message templates
-Message templates represent a possible motivational message that a precision feedback system can send. There are two message templates that the precision feedback system can access for this vignette: 
-A. The [Top 10 Performer](https://github.com/Display-Lab/knowledge-base/blob/social_better/message_templates/top_10_performer.json) message template contains the following message:
-"Congratulations on your high performance last month! Your performance was above the 90th percentile of [Top 10% Benchmark performance level] for the measure [performance measure name]. Your performance was [recipient performance level]."
-This message template is about a positive performance gap set and a social comparator element (the MPOG Top 10% Benchmark), and is specified to be about (http://purl.obolibrary.org/obo/IAO_0000136) the following metadata:
-1. Social comparator element (http://purl.obolibrary.org/obo/psdo_0000045)
-2. Positive performance gap set (http://purl.obolibrary.org/obo/psdo_0000117)
-3. Top 10% Benchmark Comparator (http://purl.obolibrary.org/obo/psdo_0000129)
-4. Display format compatibility: Line graph (http://purl.obolibrary.org/obo/IAO_0000573), bar chart (http://purl.obolibrary.org/obo/STATO_0000166)
+Message templates represent a possible motivational message that a precision feedback system can send. There is one message templates that the precision feedback system can access for this vignette: 
+
+**[Reached Goal <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/reached_goal.json)** message:
+> You reached the goal this month for the measure [Measure name]. Your performance was [recipient performance level as percentage (with numerator and denominator)].
+    
+This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
+1. `Goal comparator element` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
+2. `Positive performance gap set` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
+3. `Positive performance trend set` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. `Achievement set` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
 
 ## Software Pipeline (Precision Feedback Pipeline)
 

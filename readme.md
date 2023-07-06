@@ -16,7 +16,7 @@ The causal pathways are located under the /causal_pathways directory.
 Each pathway is described in a corresponding vignette directory.
 
 ## Governance Policy
-The knowledge base contains files on a spectrum of developmental states, from robustly functional to pre-psuedocode. Versioning of the knowledge base may implement breaking changes, and as such a registry of stable pairs are maintained by the Display-Lab team. Stable release pairs of the software pipeline and knowledgebase are recorded as new versions are released, to ensure full functionality of the pipeline despite the changing nature of the knowledgebase. Future versions of the knowledge base may be independent of the software pipeline's version, and may be developed for standalone uses.
+The knowledge base contains files on a spectrum of developmental states, from robustly functional to pre-pseudocode. Versioning of the knowledge base may implement breaking changes, and as such a registry of stable pairs are maintained by the Display-Lab team. Stable release pairs of the software pipeline and knowledgebase are recorded as new versions are released, to ensure full functionality of the pipeline despite the changing nature of the knowledgebase. Future versions of the knowledge base may be independent of the software pipeline's version, and may be developed for standalone uses.
 
 |Release Pair| Knowledgebase Version | Software Pipeline Version | 
 |-|-|-|

@@ -11,7 +11,7 @@ Each month, MPOG receives data about operative case quality and outcomes from ap
 MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another is the [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure.
 
 ### Healthcare professional performance
-Bob, a nurse anesthetist (CRNA) at Max Commuity Hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
+Deepa, a nurse anesthetist (CRNA) at Max Commuity Hospital, has the following performance data over the last 6 months for the FLUID-01-NC measure:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|---------|---|---|---|---|
@@ -36,7 +36,7 @@ Deepa, another CRNA at Midwest Medicine, a medical-school affiliated hospital, h
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Bob's preference data:
+Deepa's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ Bob's preference data:
 |Social Stayed Better   |-6.0000	    |Performance is consistently high (no recent change).                            |
 |Worsening             	|12.0000	   |Performance is worsening.                                                       |
 |Improving	             |11.0000	    |Performance is improving.                                                       |
-|Social Loss             |08.0000	    |Performance was previously high, but it has dropped below the peer average.     |
+|social approach             |08.0000	    |Performance was previously high, but it has dropped below the peer average.     |
 |Social Stayed Worse	   |-9.0000	   |Performance has remained below average (no recent change).                      |
 |Social Better	         |1.5000	    |Performance is high this month.                                                 |
 |Social Worse	          |-3.0000	   |Performance is low this month.                                                  |
@@ -59,7 +59,7 @@ Deepa's preference data:
 |Social Stayed Better   |-6.2514	    |Performance is consistently high (no recent change).                            |
 |Worsening             	|11.5498	   |Performance is worsening.                                                       |
 |Improving	             |-5.2654	    |Performance is improving.                                                       |
-|Social Loss             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
+|social approach             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
 |Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
 |Social Better	         |01.5484	    |Performance is high this month.                                                 |
 |Social Worse	          |10.5656	   |Performance is low this month.                                                  |
@@ -80,7 +80,7 @@ Preconditions are factors necessary for the success of a social approach precisi
 Information content preconditions:
 1. [Social comparator content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
 2. [Negative performance gap content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
-3. [positive performance trend content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+3. [Positive performance trend content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
 
 Message preconditions:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
@@ -136,61 +136,88 @@ This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/onto
 4. [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 ## Software Pipeline (Precision Feedback Pipeline)
-**TODO**
+### Recipient annotation generation (Bitstomach)
+The first stage of the pipeline is a script called Bitstomach. This script analyzes recipient's performance data and generates features called **annotations**. These annotations describe features of the performance data such as performance trends over time, or how performance measures relate to other values like peer performance benchmarks and institutional performance goals.
 
-### Recipient annotations (Bitstomach)
-The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
+**Annotations for Bob's performance data for the most recent month:**
+1. `Social comparator content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. `Positive performance trend content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+3. `Negative performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+    - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
+    - *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+    - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
+4. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104) 
+    - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
-Bobs's annotations indicate the presence of the following in her performance data this month:
-1. **TODO**
-
-Deepa's annotations indicate the presence of the following in his performance data this month:
-1. **TODO**
-
+**Annotations for Deepa's performance data for the most recent month:**
+1. `Social comparator content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. `Positive performance trend content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+3. `Negative performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+	- *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+	- *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
+4. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104) 
+    - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
+    - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 ### Candidate Message Generation (Candidate Smasher)
-The second stage of the pipeline creates possible messages by associating the annotations for Bob and Deepa with each message template, so that two candidate messages are created for each person.
+The second stage of the pipeline creates two candidate messages that may be appropriate for each recipient to recieve. It does this by searching through the message template library and selecting two message templates with annotations that match those annotations of the recipient's performance.
 
-Bob's candidate messages:
+**Bob's candidate messages (A & B):**
 
-A. Candidate A has the following annotations:
+**Candidate Message A** is the `Approach Top 10 Peer Benchmark`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. ~~[Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)~~
 
-The [**TODO**](**TODO**) message template [is about](**TODO**) the following features of performance data:
-1. **TODO**
+**Candidate Message B** is the `Approach Top 25 Peer Benchmark`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/approach_top_25_peer_benchmark.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Peer 75th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
-Bob's annotations from this month:
-1. **TODO**
+Both candidate messages have annotations matching those generated from Bob's performance data, and are therefore appropriate as candidate messages.
 
-B. Candidate B has the following annotations:
+**Deepa's candidate messages (α & β):**
 
-The [**TODO**](**TODO**) message template [is about] (**TODO**) the following features of performance data:
-TODO
+**Candidate Message α**  is the `Approach Top 10 Peer Benchmark`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/drop_below_peer_average.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
-Bob's annotations from this month:
-TODO
+**Candidate Message β** is the `Approach Top 25 Peer Benchmark`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/approach_top_25_peer_benchmark.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
+3. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
+4. ~~[Peer 75th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)~~
 
-Deepa's candidate messages:
+Both candidate messages have annotations matching those generated from Deepa's performance data, and are therefore appropriate as candidate messages.
 
-A. Candidate A has the following annotations:
+### Candidate Message Preconditions Evaluation (ThinkPudding)
+The third stage of the pipeline processes and evaluates the candidate messages for each persona. It determines the ways in which the candidate message, causal pathway, and performance data are related, and ranks the candidate messages based on how closely related they are to the recipient's performance data and causal pathway. Overall, this script determines which candidate message is the best to give to the recipient based on the causal pathway and their performance data.
 
-TODO
-
-Deepa's performance is about:
-TODO
-
-B. Candidate B has the following annotations:
-
-TODO
-
-Deepa's performance is about:
-TODO
-
-### Candidate Message Preconditions Evaluation (Think Pudding)
-TODO
+For Bob, **Candidate B** is acceptable by the causal pathway **social approach**.
+For Deepa, **Candidate α** is acceptable by the causal pathway **social approach**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
-TODO
+The fourth stage of the pipeline selects which message to use in this month's precision feedback message, and collects the necessary information for feedback generation. The script does this by evaluating three things: the recipient's message preferences, their message history, and the candidate message's acceptability based on performance data and causal pathway relationships (ThinkPudding output).
+
+**For Bob, Esteemer uses the following information:**
+- The most acceptable candidate message is **Candidate B**
+- Bob's preference for social approach messages is *Todo*
+- Bob has not recieved the **Candidate B** message recently. 
+<!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
+> ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
+
+**For Deepa, Esteemer uses the following information:**
+- The most acceptable candidate message is **Candidate α**
+- Deepa's preference for social approach messages is *Todo*
+- Deepa has not recieved the **Candidate α** message recently.
+> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
+
+For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
 
 ### Message Generation and Delivery (Pictoralist)
-TODO
-
+The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.
+The script takes in the selected message and performance data of the recipient as inputs. It then uses the recipient's display preferences to generate a figure that visualize's the reciepients performance over time related to the given measure and causal pathway. It returns the figure as an image encoded as a base64 string, alongside other elements of the precision feedback message. The precision feedback email is then created using this figure, the necessary text data, and is then sent to the recipient.

@@ -141,44 +141,39 @@ The first stage of the pipeline is a script called Bitstomach. This script analy
 	- *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 ### Candidate Message Generation (Candidate Smasher)
-The second stage of the pipeline creates two candidate messages that may be appropriate for each recipient to recieve. It does this by searching through the message template library and selecting two message templates with annotations that match those annotations of the recipient's performance.
+The second stage of the pipeline creates two candidate messages that may be appropriate for each recipient to recieve. It does this by searching through the message template library and selecting  message templates with annotations that match those annotations of the recipient's performance.
 
-**Deepa's candidate messages (A & B):**
-The `Not Top Performer` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message reads:
-> You are not a top performer this month for the measure [Measure name]. Your performance was [recipient performance level - percentage], below the [comparator name].
-
-This message template `is about` [<sub>(OntoBee)</sub>](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000136) the following data features:
-1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045) 
+**Deepa's candidate message:**
 
 **Candidate Message A** is the `Not Top Performer` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
 2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
 3. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
-**Candidate Message B** is the **Todo** message template, which has the following annotations *in common* with the recipient's performance annotations:
+<!--**Candidate Message B** is the **Todo** message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. Todo
 2. Todo
 
-Both candidate messages have annotations matching those generated from Deepa's performance data, and are therefore appropriate as candidate messages.
+Both candidate messages have annotations matching those generated from Deepa's performance data, and are therefore appropriate as candidate messages. -->
 
-**Eugene's candidate messages (α & β):**
+**Eugene's candidate message:**
 
 **Candidate Message α** is the `Not Top Performer` [<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/not_top_performer.json) message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
 2. [Negative performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000116)
 3. ~~[Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)~~
 
-**Candidate Message β** is the **Todo** message template, which has the following annotations *in common* with the recipient's performance annotations:
+<!-- **Candidate Message β** is the **Todo** message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. Todo
 2. Todo
 
-Both candidate messages have annotations matching those generated from Eugene's performance data, and are therefore appropriate as candidate messages.
+Both candidate messages have annotations matching those generated from Eugene's performance data, and are therefore appropriate as candidate messages. -->
 
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
 The third stage of the pipeline processes and evaluates the candidate messages for each persona. It determines the ways in which the candidate message, causal pathway, and performance data are related, and ranks the candidate messages based on how closely related they are to the recipient's performance data and causal pathway. Overall, this script determines which candidate message is the best to give to the recipient based on the causal pathway and their performance data.
 
 For Deepa, **Candidate A** is acceptable by the causal pathway **social worse**.
-For Eugene, **Candidate β** is acceptable by the causal pathway **social worse**.
+For Eugene, **Candidate α** is acceptable by the causal pathway **social worse**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 The fourth stage of the pipeline selects which message to use in this month's precision feedback message, and collects the necessary information for feedback generation. The script does this by evaluating three things: the recipient's message preferences, their message history, and the candidate message's acceptability based on performance data and causal pathway relationships (ThinkPudding output).
@@ -191,10 +186,10 @@ The fourth stage of the pipeline selects which message to use in this month's pr
 > ∴ Esteemer will select **Candidate A** as the most appropriate message to provide the recipient.
 
 **For Eugene, Esteemer uses the following information:**
-- The most acceptable candidate message is **Candidate β**
+- The most acceptable candidate message is **Candidate α**
 - Eugene's preference for social worse messages is *Todo*
-- Eugene has not recieved the **Candidate β** message recently.
-> ∴ Esteemer will select **Candidate β** as the most appropriate message to provide the recipient. 
+- Eugene has not recieved the **Candidate α** message recently.
+> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
 
 For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
 

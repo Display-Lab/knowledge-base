@@ -1,10 +1,13 @@
 # Improving Causal Pathway Vignette
+
 ## Introduction
+
 This vignette illustrates the process for generating precision feedback messages about a recipient's performance when it is improving. Feedback messages about improving performance motivate providers by enhancing providers' knowledge about their performance trends and fostering a sense of optimism. Example feedback messages that are part of the Improving Causal Pathway include "Your performance is improving" and "Congratulations on your improved performance." 
 
 A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
 ## Performance Data
+
 A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
 ### Healthcare professional performance
@@ -47,7 +50,7 @@ Gaile's preference data:
 |Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
 |Social Better	         |01.5484	    |Performance is high this month.                                                 |
 |Social Worse	          |10.5656	   |Performance is low this month.                                                  |
-|Social Approach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Aproach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Gaile's preference data: 
@@ -162,22 +165,22 @@ Both candidate messages have annotations matching those generated from Gaile's p
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
 The third stage of the pipeline processes and evaluates the candidate messages for each persona. It determines the ways in which the candidate message, causal pathway, and performance data are related, and ranks the candidate messages based on how closely related they are to the recipient's performance data and causal pathway. Overall, this script determines which candidate message is the best to give to the recipient based on the causal pathway and their performance data.
 
-For Deepa, **Candidate B** is acceptable by the causal pathway **social approach**.
-For Gaile, **Candidate α** is acceptable by the causal pathway **social approach**.
+For Deepa, **Candidate B** is acceptable by the causal pathway **improving**.
+For Gaile, **Candidate α** is acceptable by the causal pathway **improving**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 The fourth stage of the pipeline selects which message to use in this month's precision feedback message, and collects the necessary information for feedback generation. The script does this by evaluating three things: the recipient's message preferences, their message history, and the candidate message's acceptability based on performance data and causal pathway relationships (ThinkPudding output).
 
 **For Deepa, Esteemer uses the following information:**
 - The most acceptable candidate message is **Candidate B**
-- Deepa's preference for social approach messages is *Todo*
+- Deepa's preference for improving messages is *Todo*
 - Deepa has not recieved the **Candidate B** message recently. 
 <!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
 > ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
 
 **For Gaile, Esteemer uses the following information:**
 - The most acceptable candidate message is **Candidate α**
-- Gaile's preference for social approach messages is *Todo*
+- Gaile's preference for improving messages is *Todo*
 - Gaile has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
 

@@ -210,6 +210,7 @@ Both candidate messages have annotations matching those generated from Bob's per
 The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
 
 For Alice, **Candidate B** is acceptable by the causal pathway **social loss**.
+
 For Bob, **Candidate α** is acceptable by the causal pathway **social loss**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)

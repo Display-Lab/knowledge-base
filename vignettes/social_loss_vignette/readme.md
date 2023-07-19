@@ -207,22 +207,21 @@ Both candidate messages have annotations matching those generated from Alice's p
 Both candidate messages have annotations matching those generated from Bob's performance data, and are therefore appropriate as candidate messages.
 
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona. It determines the ways in which the candidate message, causal pathway, and performance data are related, and ranks the candidate messages based on how closely related they are to the recipient's performance data and causal pathway. Overall, this script determines which candidate message is the best to give to the recipient based on the causal pathway and their performance data.
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
 
 For Alice, **Candidate B** is acceptable by the causal pathway **social loss**.
 For Bob, **Candidate α** is acceptable by the causal pathway **social loss**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
-The fourth stage of the pipeline selects which message to use in this month's precision feedback message, and collects the necessary information for feedback generation. The script does this by evaluating three things: the recipient's message preferences, their message history, and the candidate message's acceptability based on performance data and causal pathway relationships (ThinkPudding output).
+The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
-**For Alice, Esteemer uses the following information:**
+**For Alice, Esteemer uses the following information:**   - WIP
 - The most acceptable candidate message is **Candidate B**
 - Alice's preference for social loss messages is *Todo*
 - Alice has not recieved the **Candidate B** message recently. 
-<!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
 > ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
 
-**For Bob, Esteemer uses the following information:**
+**For Bob, Esteemer uses the following information:**   - WIP
 - The most acceptable candidate message is **Candidate α**
 - Bob's preference for social loss messages is *Todo*
 - Bob has not recieved the **Candidate α** message recently.

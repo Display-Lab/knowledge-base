@@ -168,17 +168,17 @@ Both candidate messages have annotations matching those generated from Deepa's p
 2. Todo
 
 Both candidate messages have annotations matching those generated from Eugene's performance data, and are therefore appropriate as candidate messages. -->
-
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona. It determines the ways in which the candidate message, causal pathway, and performance data are related, and ranks the candidate messages based on how closely related they are to the recipient's performance data and causal pathway. Overall, this script determines which candidate message is the best to give to the recipient based on the causal pathway and their performance data.
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
 
 For Deepa, **Candidate A** is acceptable by the causal pathway **social worse**.
+
 For Eugene, **Candidate α** is acceptable by the causal pathway **social worse**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
-The fourth stage of the pipeline selects which message to use in this month's precision feedback message, and collects the necessary information for feedback generation. The script does this by evaluating three things: the recipient's message preferences, their message history, and the candidate message's acceptability based on performance data and causal pathway relationships (ThinkPudding output).
+The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
-**For Deepa, Esteemer uses the following information:**
+**For Deepa, Esteemer uses the following information:** - WIP
 - The most acceptable candidate message is **Candidate A**
 - Deepa's preference for social worse messages is *Todo*
 - Deepa has not recieved the **Candidate A** message recently. 

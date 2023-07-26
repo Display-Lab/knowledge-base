@@ -207,7 +207,7 @@ Both candidate messages have annotations matching those generated from Alice's p
 Both candidate messages have annotations matching those generated from Bob's performance data, and are therefore appropriate as candidate messages.
 
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the message candidates and checks them against the persona's performance data annotations to determine which candidate messages are acceptable based on message preconditions. 
 
 For Alice, **Candidate B** is acceptable by the causal pathway **social loss**.
 
@@ -217,13 +217,13 @@ For Bob, **Candidate α** is acceptable by the causal pathway **social loss**.
 The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
 **For Alice, Esteemer uses the following information:**   - WIP
-- The most acceptable candidate message is **Candidate B**
+- The only acceptable candidate message is **Candidate B**
 - Alice's preference for social loss messages is *Todo*
 - Alice has not recieved the **Candidate B** message recently. 
 > ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
 
 **For Bob, Esteemer uses the following information:**   - WIP
-- The most acceptable candidate message is **Candidate α**
+- The only acceptable candidate message is **Candidate α**
 - Bob's preference for social loss messages is *Todo*
 - Bob has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 

@@ -169,7 +169,7 @@ Both candidate messages have annotations matching those generated from Deepa's p
 
 Both candidate messages have annotations matching those generated from Eugene's performance data, and are therefore appropriate as candidate messages. -->
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the message candidates and checks them against the persona's performance data annotations to determine which candidate messages are acceptable based on message preconditions.
 
 For Deepa, **Candidate A** is acceptable by the causal pathway **social worse**.
 
@@ -179,14 +179,14 @@ For Eugene, **Candidate α** is acceptable by the causal pathway **social worse*
 The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
 **For Deepa, Esteemer uses the following information:** - WIP
-- The most acceptable candidate message is **Candidate A**
+- The acceptable candidate message is **Candidate A**
 - Deepa's preference for social worse messages is *Todo*
 - Deepa has not recieved the **Candidate A** message recently. 
 <!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
 > ∴ Esteemer will select **Candidate A** as the most appropriate message to provide the recipient.
 
 **For Eugene, Esteemer uses the following information:**
-- The most acceptable candidate message is **Candidate α**
+- The acceptable candidate message is **Candidate α**
 - Eugene's preference for social worse messages is *Todo*
 - Eugene has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 

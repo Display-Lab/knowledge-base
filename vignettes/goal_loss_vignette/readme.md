@@ -176,7 +176,7 @@ The candidate message has annotations matching those generated from Fahad's perf
 
 The candidate message has annotations matching those generated from Fahad's performance data, and is therefore appropriate as a candidate message.
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the message candidates and checks them against the persona's performance data annotations to determine which candidate messages are acceptable based on message preconditions.
 
 For Fahad, **Candidate A** is acceptable by the causal pathway **goal loss**.
 
@@ -186,14 +186,14 @@ For Gaile, **Candidate α** is acceptable by the causal pathway **goal loss**.
 The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
 **For Fahad, Esteemer uses the following information:**
-- The most acceptable candidate message is **Candidate A**
+- The acceptable candidate message is **Candidate A**
 - Fahad's preference for goal loss messages is *Todo*
 - Fahad has not recieved the **Candidate A** message recently. 
 <!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
 > ∴ Esteemer will select **Candidate A** as the most appropriate message to provide the recipient.
 
 **For Gaile, Esteemer uses the following information:**
-- The most acceptable candidate message is **Candidate α**
+- The acceptable candidate message is **Candidate α**
 - Gaile's preference for goal loss messages is *Todo*
 - Gaile has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 

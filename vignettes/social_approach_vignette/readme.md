@@ -195,7 +195,7 @@ Both candidate messages have annotations matching those generated from Bob's per
 Both candidate messages have annotations matching those generated from Deepa's performance data, and are therefore appropriate as candidate messages.
 
 ### Candidate Message Preconditions Evaluation (ThinkPudding)
-The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the selected message candidates and checks them against the persona's performance data annotations to determine which candidate messages are appropriate based on message preconditions. 
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the message candidates and checks them against the persona's performance data annotations to determine which candidate messages are acceptable based on message preconditions.
 
 For Bob, **Candidate B** is acceptable by the causal pathway **social approach**.
 
@@ -204,11 +204,17 @@ For Deepa, **Candidate α** is acceptable by the causal pathway **social approac
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
+**For Bob, Esteemer uses the following information:**
+- The acceptable candidate message is **Candidate B**
+- Bob's preference for social approach messages is *Todo*
+- Bob has not recieved the **Candidate B** message recently.
+> ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient. 
+
 **For Deepa, Esteemer uses the following information:**
-- The most acceptable candidate message is **Candidate α**
+- The acceptable candidate message is **Candidate α**
 - Deepa's preference for social approach messages is *Todo*
 - Deepa has not recieved the **Candidate α** message recently.
-> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
+> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient.
 
 For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
 

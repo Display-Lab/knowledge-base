@@ -1,37 +1,38 @@
 # Social Gain Vignette
 
 ## Introduction
-This vignette illustrates the process for creating precision feedback messages about a recipient's performance rising above a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Gain Causal Pathway, which specifies feedback messages that may motivate providers by delivering information about their performance improving. Motivation from these messages can arise from the recognition of a gain of social status as a top or above-average performer. Example messages that use social gain are "you reached the top 10% peer benchmark" and "your performance has increased above the peer average".
+This vignette illustrates the process for creating precision feedback messages about a recipient's performance rising above a peer comparator, such as a top performer benchmark or peer average. These messages use the Social Gain Causal Pathway, which specifies feedback messages that may motivate providers by delivering information about their performance improving. Motivation from these messages can arise from the recognition of a gain of social status as a top or above-average performer. Example messages that use social gain are "you reached the top 10% `peer benchmark" and "your performance has increased above the peer average".
 
-This vignette also contains examples of data features and other entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of such an entity is a [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is defined in the [Performance Summary Display Ontology <sub>(GH)</sub>](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+This vignette also contains example data and unique identifiers for the data entities that a precision feedback system uses to evaluate the potential success of a precision feedback message. An example of a unique identifier is http://purl.obolibrary.org/obo/psdo_0000126, an ID that points to a [peer average comparator](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), defined in the [Performance Summary Display Ontology](https://github.com/Display-Lab/psdo) as an average representing the mean performance of a peer group. 
+
 ## Performance Data
-Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [OPIOID: Opioid Equivalency](https://spec.mpog.org/Spec/Public/37).
+Each month, MPOG receives data about operative case quality and outcomes from approximately 60 healthcare institutions. MPOG calculates performance for each provider individually, for approximately 35 performance measures of quality and outcomes. One example of these measures is [PUL-01: Protective Tidal Volume, 10 mL/kg PBW](https://spec.mpog.org/Spec/Public/4).
 
 ### Benchmark comparators
 MPOG calculates performance benchmarks and averages for each institution. One comparator is a [top 10% benchmark](http://purl.obolibrary.org/obo/psdo_0000129), which represents the 90th percentile for performance among providers at an institution for a given measure. Another comparator is the [peer average](http://purl.obolibrary.org/obo/psdo_0000126), which is the mean performance for all providers at an insitution for a given measure.
 
 ### Healthcare professional performance
-Chikondi, a resident physician at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
+Chikondi, a resident physician at Max Community Hospital, has the following performance data over the last 6 months for the PUL-01 measure:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|-----------------|------------|-------------------------|-------------------------|--|
-|Jul  |       85%| 85| 88| 92|--|
-|Aug  |       85%| 85| 88| 92|--|
-|Sept |       85%| 85| 88| 92|--|
-|Oct  |       85%| 85| 88| 92|--|
-|Nov  | ***85%***| 85| 88| 92|--|
-|Dec  | ***91%***| 85| 88| 92|--|
+|Jul  |       85%| 85| 88| 92|90|
+|Aug  |       85%| 85| 88| 92|90|
+|Sept |       85%| 85| 88| 92|90|
+|Oct  |       85%| 85| 88| 92|90|
+|Nov  | ***85%***| 85| 88| 92|90|
+|Dec  | ***91%***| 85| 88| 92|90|
 
-Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the OPIOID measure:
+Fahad, an attending pediatric anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the PUL-01 measure:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|-----------------|------------|-------------------------|-------------------------|--|
-|Jul  |       90%| 90| 92| 96|--|
-|Aug  |       90%| 90| 92| 96|--|
-|Sept |       90%| 90| 92| 96|--|
-|Oct  |       90%| 90| 92| 96|--|
-|Nov  | ***93%***| 90| 92| 96|--|
-|Dec  | ***97%***| 90| 92| 96|--|
+|Jul  |       90%| 90| 92| 96|90|
+|Aug  |       90%| 90| 92| 96|90|
+|Sept |       90%| 90| 92| 96|90|
+|Oct  |       90%| 90| 92| 96|90|
+|Nov  | ***93%***| 90| 92| 96|90|
+|Dec  | ***97%***| 90| 92| 96|90|
 
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.

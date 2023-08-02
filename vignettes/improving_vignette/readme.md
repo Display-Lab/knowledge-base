@@ -1,6 +1,6 @@
 # Improving Causal Pathway Vignette
 
-## Introduction 
+## Introduction
 
 This vignette illustrates the process for generating precision feedback messages about a recipient's performance when it is improving. Feedback messages about improving performance motivate providers by enhancing providers' knowledge about their performance trends and fostering a sense of optimism. Example feedback messages that are part of the Improving Causal Pathway include "Your performance is improving" and "Congratulations on your improved performance." 
 
@@ -11,10 +11,10 @@ A healthcare quality improvement consortium called the Multicenter Perioperative
 A healthcare quality improvement consortium called the Multicenter Perioperative Outcomes Group (MPOG) uses precision feedback to prioritize motivating performance information about the quality and outcomes of operative cases. A performance measure that MPOG assesses for operative cases regards the minimization of the use of climate-sensitive anesthetic gases: [BP-03: Low Map Prevention < 65](https://spec.mpog.org/Spec/Public/34).
 
 ### Healthcare professional performance
-MPOG has received operative case data from last month about Deepa and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
+MPOG has received operative case data from last month about Gaile and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
 
 ### Healthcare professional performance
-Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
+Gaile, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|---------|---|---|---|---|
@@ -39,7 +39,7 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Deepa's preference data:
+Gaile's preference data:
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
 |Social Gain	           |-8.1654	    |Performance was previously low, but it has improved to reach the peer benchmark.|
@@ -50,7 +50,7 @@ Deepa's preference data:
 |Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
 |Social Better	         |01.5484	    |Performance is high this month.                                                 |
 |Social Worse	          |10.5656	   |Performance is low this month.                                                  |
-|Social Approach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Aproach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Gaile's preference data: 
@@ -75,7 +75,7 @@ The knowledge base contains the following components: Causal pathways, message t
 ## Improving Causal Pathway
 This pathway describes the influence of feedback interventions that show the message recipient that their performance has improved. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
-### Preconditions 
+### Preconditions
 Preconditions for improving are factors that are necessary for the success of the feedback intervention using this pathway. The improving pathway has the following preconditions:
 
 Information content preconditions:
@@ -84,13 +84,13 @@ Information content preconditions:
 Message preconditions:
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
  
-### Moderators 
+### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The improving causal pathway has the following moderators:
 1. `Habituation` - How many times has the recipient previously received this message in the last year?
 2. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
 3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
-### Mechanisms 
+### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
 1. `Awareness (knowledge)`: The message may change the recipient's awareness of their high performance, relative to peers.
 2. `Optimism` - The message may influence the recipient's confidence that things will happen for the best and they will continue to increase their performance, gaining social status.
@@ -105,71 +105,88 @@ A. `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/k
 > Your performance is improving this month for the measure [measure name].
 
 This message template `is about`[<sub>(OntoBee)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
-
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
-2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
+2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)<!--, text only (TODO ?)-->
 
 B. The `Congrats Improved Performance`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/congrats_improved_performance.json) message template contains the following message: 
 > Congratulations on your improved performance this month for the measure [measure name].
 
 This message template [is about<sub>(BP)</sub>](http://purl.obolibrary.org/obo/IAO_0000136) the following features of performance data:
-
 1. [Positive performance trend set<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
-2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166), text only (TODO ?)
+2. Display format compatibility: [Line Graph <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/IAO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000573), [Bar Chart <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/STATO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000166)<!--, text only (TODO ?) -->
 
-## Software Pipeline (Precision Feedback Pipeline) TODO
+## Software Pipeline (Precision Feedback Pipeline)
+### Recipient annotation generation (Bitstomach)
+The first stage of the pipeline is a script called Bitstomach. This script analyzes recipient's performance data and generates features called **annotations**. These annotations describe features of the performance data such as performance trends over time, or how performance measures relate to other values like peer performance benchmarks and institutional performance goals.
 
-## Recipient annotations (Bitstomach)
-The first stage of the pipeline analyzes performance to identify features of performance, such as comparisons and trends that are related to motivation. The analysis from this stage results in the following annotations:
+**Annotations for Deepa's performance data for the most recent month:** 
+1. `Social comparator content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. `Positive performance trend content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+3. `Negative performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+    - *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+    - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
+4. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104) 
+    - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+    - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
 
-Deepa's annotations indicate the presence of the following in her performance data this month:
-1. **TODO**
-
-Gaile's annotations indicate the presence of the following in his performance data this month:
-1. **TODO**
+**Annotations for Gaile's performance data for the most recent month:**
+1. `Social comparator content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
+2. `Positive performance trend content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
+3. `Negative performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000105)
+	- *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+4. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104)
+	- *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
+    - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
+    - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
 
 ### Candidate Message Generation (Candidate Smasher)
-The second stage of the pipeline creates possible messages by associating the annotations for Deepa and Gaile with each message template, so that two candidate messages are created for each person.
+The second stage of the pipeline creates two candidate messages that may be appropriate for each recipient to recieve. It does this by searching through the message template library and selecting two message templates with annotations that match those annotations of the recipient's performance.
 
-Deepa's candidate messages:
+**Deepa's candidate messages (A & B):**
 
-A. Candidate A has the following annotations:
+**Candidate Message A** is the `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_improving.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
 
-The [**TODO**](**TODO**) message template [is about](**TODO**) the following features of performance data:
-1. **TODO**
+**Candidate Message B** is the `Congrats Improved Performance`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/congrats_improved_performance.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
 
-Deepa's annotations from this month:
-1. **TODO**
+Both candidate messages have annotations matching those generated from Deepa's performance data, and are therefore appropriate as candidate messages.
 
-B. Candidate B has the following annotations:
+**Gaile's candidate messages (α & β):**
 
-The [**TODO**](**TODO**) message template [is about] (**TODO**) the following features of performance data:
-TODO
+**Candidate Message α** is the `The Performance Improving`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/performance_improving.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
 
-Deepa's annotations from this month:
-TODO
+**Candidate Message β** is the `Congrats Improved Performance`[<sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/main/message_templates/congrats_improved_performance.json) message template, which has the following annotations *in common* with the performance annotations:
+1. [Positive performance trend set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000120)
 
-Gaile's candidate messages:
+Both candidate messages have annotations matching those generated from Gaile's performance data, and are therefore appropriate as candidate messages.
 
-A. Candidate A has the following annotations:
+### Candidate Message Preconditions Evaluation (ThinkPudding)
+The third stage of the pipeline processes and evaluates the candidate messages for each persona based on preconditions. It compares the annotations associated with the message candidates and checks them against the persona's performance data annotations to determine which candidate messages are acceptable based on message preconditions. 
 
-TODO
+For Deepa, **Candidate B** is acceptable by the causal pathway **improving**.
 
-Gaile's performance is about:
-TODO
-
-B. Candidate B has the following annotations:
-
-TODO
-
-Gaile's performance is about:
-TODO
-
-### Candidate Message Preconditions Evaluation (Think Pudding)
-TODO
+For Gaile, **Candidate α** is acceptable by the causal pathway **improving**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
-TODO
+The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
+
+**For Deepa, Esteemer uses the following information:** - WIP
+- The acceptable candidate message is **Candidate B**
+- Deepa's preference for improving messages is *Todo*
+- Deepa has not recieved the **Candidate B** message recently. 
+<!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
+> ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
+
+**For Gaile, Esteemer uses the following information:**
+- The acceptable candidate message is **Candidate α**
+- Gaile's preference for improving messages is *Todo*
+- Gaile has not recieved the **Candidate α** message recently.
+> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
+
+For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
 
 ### Message Generation and Delivery (Pictoralist)
-TODO
+The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.
+The script takes in the selected message and performance data of the recipient as inputs. It then uses the recipient's display preferences to generate a figure that visualize's the reciepients performance over time related to the given measure and causal pathway. It returns the figure as an image encoded as a base64 string, alongside other elements of the precision feedback message. The precision feedback email is then created using this figure, the necessary text data, and is then sent to the recipient.

@@ -85,9 +85,10 @@ Message preconditions:
 
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social gain causal pathway has the following moderators:
-1. `Habituation` - How many times has the recipient previously received this message in the last year?
-2. `Regulatory fit` - How aligned is the message with characteristics of the behavior/task, context, and recipient personality (motivated by prevention vs. promotion mindset with regard to future outcomes)?
-3. `Gap size` - How large is the gap between the recipient's performance level and that of their last month's performance?
+1. `Message recency` - The number of months since this message was delivered previously.
+2. `Message delivery count` - How many times has the recipient previously received this message in the last year? 
+3. `Regulatory fit` - How aligned is the message with characteristics of the behavior/task, context, and recipient personality (motivated by prevention vs. promotion mindset with regard to future outcomes)?
+4. `Gap size` - How large is the gap between the recipient's performance level and that of their last month's performance?
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:

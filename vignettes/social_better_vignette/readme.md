@@ -87,9 +87,10 @@ Preconditions for social better are factors that are necessary for the success o
 
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The social better causal pathway has the following moderators:
-1. `Habituation` - How many times has the recipient previously received this message in the last year?
-2. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
-3. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
+1. `Message recency` - The number of months since this message was delivered previously.
+2. `Message delivery count` - How many times has the recipient previously received this message in the last year?  
+3. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
+4. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. Adapted from [Carey et. al. 2019](https://doi.org/10.1093/abm/kay078). The social better pathway has the following mechanisms:

@@ -86,8 +86,8 @@ Preconditions for goal gain are factors that are necessary for the success of th
 
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The goal gain causal pathway has the following moderators:
-1. `Message recency` - The number of months since this message was delivered previously.
-2. `Message delivery count` - How many times has the recipient previously received this message in the last year? 
+1. `Message recency` - The number of months since the message was delivered previously.
+2. `Message delivery count` - How many times has the recipient previously received this message in the last year?  
 3. `Regulatory fit` - To what extent is the message aligned to the behavior/task's characteristics, context, and recipient personality (motivated by bad outcome prevention vs. good outcome promotion).
 4. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 5. `Slope of trend` - Derivative of the performance measure in the time domain

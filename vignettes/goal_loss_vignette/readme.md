@@ -93,7 +93,7 @@ Message preconditions:
 ### Moderators
 Moderators are factors that inhibit or promote the influence of the feedback intervention on the recipient. The Goal Loss causal pathway has the following moderators:
 1. `Message recency` - The number of months since this message was delivered previously.
-2. `Message delivery count` - How many times has the recipient previously received this message in the last year?  
+2. `Message delivery count` - How many times has the recipient previously received this message in the last year? 
 3. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
 4. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 5. `Slope of trend`

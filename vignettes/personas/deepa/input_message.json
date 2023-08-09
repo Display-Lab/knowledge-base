@@ -20,7 +20,7 @@
     },
 
   "Performance_data":[
-      ["staff_number","measure","month","passed_count","flagged_count","denominator","peer_average_comparator","peer_75th_percentile_benchmark","peer_90th_percentile_benchmark"],
+      ["staff_number","measure","month","passed_count","flagged_count","denominator","peer_average_comparator","peer_75th_percentile_benchmark","peer_90th_percentile_benchmark", "MPOG_goal"],
       [4,"GLU01","2023-01-01",95,5,100,80,90,85,90],
       [4,"GLU01","2023-02-01",95,5,100,80,90,85,90],
       [4,"GLU01","2023-03-01",95,5,100,80,90,85,90],
@@ -86,6 +86,5 @@
           "line": "0.0"
         }
     }
-  },
-  "debug":"no"
   }
+}

@@ -6,11 +6,15 @@ The Precision Feedback Knowledge Base is comprised of four elements. The four el
 
 Each causal pathway specifies the influence of "motivating information", such as performance comparisons, on its recipients. They are called causal pathways because there is published scientific evidence to suggest that when "motivating information" is incorported into precision feedback interventions it can change recipient behaviors. In this case, "motivating information" is the combination of a recipient's past performance record and added contextual information to support comparisons. As an element of the knoweldge base, causal pathways serve the dual purposes of 1) explaining why feedback interventions influence behavior (i.e. program theory), and 2) configuring a precision feedback intervention to generate messages that can be delivered to recipients in emails, reports, or by other means. 
 
-3. Templates
+2. Templates
+
+ Each template specifies an evidence-based text and display format for a performance feedback message corresponding to a causal pathway. (Note: A single causal pathway may have more than one template.) The contents of each template include links to concept definitions from relevant ontologies.
 
 4. Measures
 
-5. Vignettes
+7. Vignettes
+   
+   (Main Ontologies Used)
 
    
 a collection of pathways through which feedback influences human behavior, with healthcare and clinical practice as the primary application domains. 

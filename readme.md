@@ -20,7 +20,7 @@ Each causal pathway specifies the influence of "motivating information", such as
 
  Each vignette tells a narrative story about two personas. Each vignette is also associated with one casual pathway and its templates. Each vignette includes example performance data, a specific context for presenting the performance data as "motivating information", and example messages formatted according to relevant message templates. The purpose of each vignette is to bring together the core components of the knowledge base as they would be used to generate precision performance feedback. Overall, the vignettes illustrate how a causal pathway is used by a precision feedback system to deliver motivating information to one or more feedback recipients, based on their performance data, their preferences, and a collection of message templates that determine a minimal set of possible feedback interventions.
 
-## Overall View
+## Overall View of the Knowledge Base
    
 Taken together, all of the elements in the knowledge base can be used by a precision feedback system to prioritize motivating feedback messages. For example, if a person (the precision feedback message recipient) is performing below average but is improving, a precision feedback system could use information about the recipient's preferences and past performance to determine whether or not to prioritize and deliver one of the following messages: "You are not a top performer", "Your performance is improving", "Your performance is approaching the benchmark", or "You may have an opportunity to improve."
 
@@ -28,8 +28,13 @@ This project is supported by funding from the NIH National Library of Medicine a
 
 ## Knowledge Base Component File Locations
 
-The causal pathways are located under the /causal_pathways directory.
-Each pathway is described in a corresponding vignette directory.
+The causal pathways are located in the /causal_pathways directory.
+
+The message templates are located in the /message_templates directory.
+
+Specifications of quality measures are kept in the file measures.json.
+
+Each causal pathway is described in a corresponding vignette directory.
 
 ## Governance Policy
 

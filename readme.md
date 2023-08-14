@@ -1,6 +1,25 @@
 # Precision Feedback Knowledge Base
 
-The Precision Feedback Knowledge Base is a collection of pathways through which feedback influences human behavior, with healthcare and clinical practice as the primary application domain. Each pathway specifies the influence of motivating information, such as performance comparisons, trends, achievement, and loss as the key information content of feedback interventions. The elements of motivating information are represented pragmatically as models of factors affecting the success of feedback interventions. These models for feedback intervention success serve dual purposes of 1) explaining how we believe feedback interventions influence behavior (i.e. program theory), and 2) configuring a precision feedback system that uses the models to generate feedback messages that can be delivered in emails, quality dashboards, feedback reports, or other digital interventions. 
+The Precision Feedback Knowledge Base is comprised of four elements. The four elements are:
+
+1. Causal Pathways
+
+Each causal pathway specifies the influence of "motivating information", such as performance comparisons, on its recipients. They are called causal pathways because there is published scientific evidence to suggest that when "motivating information" is incorported into precision feedback interventions it can change recipient behaviors. In this case, "motivating information" is the combination of a recipient's past performance record and added contextual information to support comparisons. As an element of the knoweldge base, causal pathways serve the dual purposes of 1) explaining why feedback interventions influence behavior (i.e. program theory), and 2) configuring a precision feedback intervention to generate messages that can be delivered to recipients in emails, reports, or by other means. 
+
+3. Templates
+
+4. Measures
+
+5. Vignettes
+
+   
+a collection of pathways through which feedback influences human behavior, with healthcare and clinical practice as the primary application domains. 
+
+Vignettes (Narrative)
+Templates (CEDAR-JSON)
+Measures (JSON)
+
+
 
 Each pathway is represented in a causal pathway diagram that links the motivating information in performance data with message text and visual displays that can be used to deliver the information. The models are implemented semantically in a computer-processable format using a linked-data approach (JSON-LD), based on the Performance Summary Display Ontology and the Causal Pathway Ontology.
 

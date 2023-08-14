@@ -165,7 +165,7 @@ The second stage of the pipeline creates two candidate messages that may be appr
 3. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
 4. [Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
-**Candidate Message B** is the `In Top 25%`[ <sub>(GH)</sub>](**Todo**) message template, which has the following annotations *in common* with the recipient's performance annotations:
+**Candidate Message B** is the `In Top 25%`[ <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/knowledgebase-description-edit/message_templates/in_top_25%25.json) message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
 2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
 3. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
@@ -181,7 +181,7 @@ Both candidate messages have annotations matching those generated from Alice's p
 3. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
 4. ~~[Peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)~~
 
-**Candidate Message β** is the `In Top 25%`[ <sub>(GH)</sub>](**Todo**) message template, which has the following annotations *in common* with the recipient's performance annotations:
+**Candidate Message β** is the `In Top 25%`[ <sub>(GH)</sub>](https://github.com/Display-Lab/knowledge-base/blob/knowledgebase-description-edit/message_templates/in_top_25%25.json) message template, which has the following annotations *in common* with the recipient's performance annotations:
 1. [Social comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000045)
 2. [Positive performance gap set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000117)
 3. [Achievement set <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000121)
@@ -199,7 +199,7 @@ For Gaile, **Candidate β** is acceptable by the causal pathway **social better*
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
 The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
 
-**For Alice, Esteemer uses the following information:** - WIP
+**For Alice, Esteemer uses the following information:**
 - The acceptable candidate message is **Candidate A**
 - Alice's preference for social better messages is *Todo*
 - Alice has not recieved the **Candidate A** message recently. 

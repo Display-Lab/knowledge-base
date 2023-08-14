@@ -41,30 +41,30 @@ Chikondi's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |11.0000	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |-6.0000	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|12.0000	   |Performance is worsening.                                                       |
-|Improving	             |11.0000	    |Performance is improving.                                                       |
-|social gain             |08.0000	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |-9.0000	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |1.5000	    |Performance is high this month.                                                 |
-|Social Worse	          |-3.0000	   |Performance is low this month.                                                  |
-|Social Approach	       |02.0000 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain               |11.0000     |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.0000        |Performance is consistently high (no recent change).                            |
+|Worsening              |12.0000       |Performance is worsening.                                                       |
+|Improving               |11.0000       |Performance is improving.                                                       |
+|social gain             |08.0000       |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse       |-9.0000    |Performance has remained below average (no recent change).                      |
+|Social Better           |1.5000        |Performance is high this month.                                                 |
+|Social Worse             |-3.0000     |Performance is low this month.                                                  |
+|Social Approach           |02.0000        |Performance is improving, getting closer to the peer benchmark.                 |
 
 
 Fahad's preference data:
 
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |-8.1654	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |-6.2514	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|11.5498	   |Performance is worsening.                                                       |
-|Improving	             |-5.2654	    |Performance is improving.                                                       |
-|social gain             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |01.5484	    |Performance is high this month.                                                 |
-|Social Worse	          |10.5656	   |Performance is low this month.                                                  |
-|Social Approach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social Gain               |-8.1654     |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social Stayed Better   |-6.2514        |Performance is consistently high (no recent change).                            |
+|Worsening              |11.5498       |Performance is worsening.                                                       |
+|Improving               |-5.2654       |Performance is improving.                                                       |
+|social gain             |12.1369       |Performance was previously high, but it has dropped below the peer average.     |
+|Social Stayed Worse       |09.8987    |Performance has remained below average (no recent change).                      |
+|Social Better           |01.5484       |Performance is high this month.                                                 |
+|Social Worse             |10.5656     |Performance is low this month.                                                  |
+|Social Approach           |-10.2541       |Performance is improving, getting closer to the peer benchmark.                 |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: a knowledge base, a software pipeline, and a web service.
@@ -96,7 +96,7 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 3. `Regulatory fit` - To what extent is the message aligned to the behavior/task's characteristics, context, and recipient personality (motivated by bad outcome prevention vs. good outcome promotion).
 4. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 5. `Slope of trend` - Derivative of the performance measure in the time domain
-6. `Time since last loss`
+6. `Time since last loss` - Time in months since the last "loss" event
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social gain pathway has the following mechanisms:
@@ -155,7 +155,7 @@ The first stage of the pipeline is a script called Bitstomach. This script analy
 4. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104) 
     - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
     - *with respect to* [Peer 75th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
-    <!-- - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046) -->
+    - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
 5. `Achievement content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000112) 
     - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
 
@@ -164,12 +164,12 @@ The first stage of the pipeline is a script called Bitstomach. This script analy
 1. `Social comparator content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)
 2. `Positive performance trend content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000099)
 3. `Positive performance gap content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000104)
-	- *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
-	- *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
-	- *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
-	<!-- - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046) -->
+    - *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+    - *with respect to* [Peer 75th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000128)
+    - *with respect to* [Peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126)
+    - *with respect to* [Goal comparator element <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000046)
 4. `Achievement content` [<sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000112) 
-	- *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
+    - *with respect to* [Peer 90th percentile comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129)
 
 ### Candidate Message Generation (Candidate Smasher)
 The second stage of the pipeline creates two candidate messages that may be appropriate for each recipient to recieve. It does this by searching through the message template library and selecting two message templates with annotations that match those annotations of the recipient's performance.
@@ -225,7 +225,6 @@ The fourth stage of the pipeline ranks the candidate messages based on a number 
 - The acceptable candidate message is **Candidate B**
 - Chikondi's preference for social gain messages is *Todo*
 - Chikondi has not recieved the **Candidate B** message recently. 
-<!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
 > ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
 
 **For Fahad, Esteemer uses the following information:**

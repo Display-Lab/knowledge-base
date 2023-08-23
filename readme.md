@@ -2,7 +2,7 @@
 
 ## Elements of the Knowledge Base
 
-The Precision Feedback Knowledge Base is comprised of four elements. The four elements are:
+The Precision Feedback Knowledge Base is comprised of four elements. The four elements are causal pathways, message templates, quality measures, and vignettes. Each element is described in detail next.
 
 1. Causal Pathways
 

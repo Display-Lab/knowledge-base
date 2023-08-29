@@ -48,21 +48,36 @@
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
     "name": {
-      "@value": "Social better"
+      "@value": "Social Gain"
     },
     "description": {
-      "@value": "The causal pathway \"social better\" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. Example messages that uses the social better pathway are \"You are a top performer\" and \"Your performance is better than average.\""
+      "@value": "The pathway \"social gain\" describes the influence of feedback interventions informing the recipient that their performance has become better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."
     },
     "Moderators": [
       {
-        "@value": "Habituation, regulatory fit, gap size"
+        "@value": "regulatory fit"
+      },
+      {
+        "@value": "gap size"
+      },
+      {
+        "@value": "slope of trend"
+      },
+      {
+        "@value": "time since last loss"
+      },
+      {
+        "@value": "message recency"
+      },
+      {
+        "@value": "message delivery count"
       }
     ],
     "Outcomes": {
-      "@value": "Performance improvement or sustainment"
+      "@value": "Clinical process performance improvement"
     },
     "Mechanisms": {
-      "@value": "Awareness, subjective norms, motivation"
+      "@value": "Awareness (knowledge), Subjective norms, Motivation"
     },
     "Has precondition": [
       {
@@ -74,20 +89,36 @@
         "rdfs:label": "positive performance gap content"
       },
       {
+        "@id": "http://purl.obolibrary.org/obo/PSDO_0000112",
+        "rdfs:label": "achievement content"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/PSDO_0000099",
+        "rdfs:label": "positive performance trend content"
+      },
+      {
         "@id": "http://purl.obolibrary.org/obo/PSDO_0000045",
         "rdfs:label": "social comparator element"
       },
       {
         "@id": "http://purl.obolibrary.org/obo/PSDO_0000117",
         "rdfs:label": "positive performance gap set"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/PSDO_0000120",
+        "rdfs:label": "positive performance trend set"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/PSDO_0000121",
+        "rdfs:label": "achievement set"
       }
     ],
     "schema:isBasedOn": "https://repo.metadatacenter.org/templates/2c8ca8b3-868b-4b65-aabf-1ed955b024c2",
-    "schema:name": "precision feedback causal pathway metadata",
+    "schema:name": "social gain",
     "schema:description": "",
-    "pav:createdOn": "2023-02-20T14:17:24-08:00",
-    "pav:createdBy": "https://metadatacenter.org/users/626c7d49-cdfc-43d6-b254-36a7be904ea9",
-    "pav:lastUpdatedOn": "2023-02-20T14:17:24-08:00",
-    "oslc:modifiedBy": "https://metadatacenter.org/users/626c7d49-cdfc-43d6-b254-36a7be904ea9",
-    "@id": "https://repo.metadatacenter.org/template-instances/8302e75d-ab21-4613-b94a-89c0eaf54c39"
+    "pav:createdOn": "2023-08-01T15:21:27-07:00",
+    "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
+    "pav:lastUpdatedOn": "2023-08-03T14:51:59-07:00",
+    "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
+    "@id": "https://repo.metadatacenter.org/template-instances/46d968d8-762f-4870-bb05-3321a9b69f14"
   }

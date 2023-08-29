@@ -11,7 +11,7 @@ Each month, MPOG receives data about operative case quality and outcomes from ap
 MPOG calculates performance benchmarks and averages for each institution. One comparator is a [peer 90th percentile benchmark <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000129), which represents the 90th percentile for performance among providers at an institution, for each measure. Another is the [peer average comparator <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000126), which is the mean performance for all providers at an insitution, for each measure.
 
 ### Healthcare professional performance
-Fahad, an attending anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the SUS-04 measure:
+Fahad, an attending anesthesiologist at Max Community Hospital, has the following performance data over the last 6 months for the SUS-02 measure:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|---------|---|---|---|---|

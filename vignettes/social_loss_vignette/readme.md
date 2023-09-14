@@ -223,38 +223,36 @@ $$\text{Feedback history, } t_{\text{message}} \text{ and } N_{\text{received}}$
 $$\text{Individual feedack preferences, } F_{\text{pref}}$$
 
 The overall algortihm can be represented as:
-$$F_{\text{pref}} \biggl( C_{\text{data}} \Bigl( X_s \| \Delta_{\text{performance}} \| \Bigr)\Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \\
+$$F_{\text{pref}} \biggl[ C_{\text{data}} \Bigl( X_s \| \Delta_{\text{performance}} \| \Bigr)\Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \\
     + \\
-    C_{\text{history}} \Bigl( (X_e \cdot t_{\text{event}}) + (X_m \cdot t_{\text{message}}) + (X_N \cdot N_{\text{received}}) \Bigr) \biggr)$$
+    C_{\text{history}} \Bigl( \bigl(X_e \cdot t_{\text{event}}\bigr) + \bigl(X_m \cdot t_{\text{message}}\bigr) + \bigl(X_N \cdot N_{\text{received}}\bigr) \Bigr) \biggr]$$
 
 <!-- No changes need to be made below this line when propagating to new vignettes-->
 The Esteemer algorithm uses weighting coefficients, which vary based on the particularities of each causal pathway. For the social loss causal pathway, the weighting coefficients are:
-|--------------------|-|-|-|-|-|-|-|
-|**Moderator**       |G<sub>performance</sub>|Δ<sub>performance</sub>|t<sub>event</sub>|t<sub>message</sub>|N<sub>received</sub>|Data component|History component|
-|**Coefficient Term**|X<sub>gs</sub>|X<sub>s</sub>|X<sub>e</sub>|X<sub>m</sub>|X<sub>N</sub>|C<sub>data</sub>|C<sub>history</sub>|
-|**Value**           |0.5           |0.5          |0.5          |0.5          |0.5          |1               |1|
+
+| Moderator          | G<sub>performance</sub> | Δ<sub>performance</sub> | t<sub>event</sub> | t<sub>message</sub> | N<sub>received</sub> | Data component | History component |
+|--------------------|-------------------------|-------------------------|-------------------|---------------------|----------------------|----------------|-------------------|
+| Coefficient Term   | X<sub>gs</sub>          | X<sub>s</sub>           | X<sub>e</sub>     | X<sub>m</sub>       | X<sub>N</sub>        |C<sub>data</sub>|C<sub>history</sub>|
+| Value              | 0.5                     | 0.5                     | 0.5               | 0.5                 | 0.5                  | 1              | 1                 |
+
 <!-- Values above need to be changed for each causal pathway -->
 
-As an example, the appropriate values for the evaluation of Alice's **Candidate B** message are filled in below:
-$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 6 \| \Bigr)\Bigl( 0.5 \| 5 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (19.5)F_{\text{pref}}$$
+
+As an example, appropriate values based on this vignette are filled in for Alice's **Candidate B** message, and evaluate like so:
+$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 6 \| \Bigr)\Bigl( 0.5 \| 5 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (19.5)F_{\text{pref}}$$  
 Bob's acceptable social loss candidate evaluates similarly:
-$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 7 \| \Bigr)\Bigl( 0.5 \| 1 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (13.75)F_{\text{pref}}$$
+$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 7 \| \Bigr)\Bigl( 0.5 \| 1 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (13.75)F_{\text{pref}}$$  
 <!-- Equations above need to be re-evaluated for each causal pathway -->
 
 Of note, each persona has more than one measure's worth of data, therefore for each persona there are potentially many acceptable candidates, utilizing different causal pathways regarding different measures. Esteemer evaluates each acceptable candidate measure with differing coefficient weights depending on the causal pathway. 
 
-The final result of evaluating all of Alice's acceptable candidates are:
-- Social loss:  19.5 F<sub>pref</sub>
-- Social better:    X F<sub>pref</sub>
-- Goal approach:    X F<sub>pref</sub>
-<!-- Old text below:
-**For Bob, Esteemer uses the following information:**   - WIP
-- The only acceptable candidate message is **Candidate α**
-- Bob's preference for social loss messages is *Todo*
-- Bob has not recieved the **Candidate α** message recently.
-> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
+The final result of evaluating all of Alice's acceptable candidates are:<br>
+Social loss:  19.5 F<sub>pref</sub>  
+Social better:    X(>19) F<sub>pref</sub>  
+Goal approach:    X(>19) F<sub>pref</sub>  
+∴ Esteemer will select the social loss message candidate as the most appropriate message to provide the recipient.
 
-For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message. -->
+<!-- Old outro text: For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message. -->
 
 ### Message Generation and Delivery (Pictoralist)
 The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.

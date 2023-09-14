@@ -214,8 +214,24 @@ For Alice, **Candidate B** is acceptable by the causal pathway **social loss**.
 
 For Bob, **Candidate α** is acceptable by the causal pathway **social loss**.
 
-### Candidate Message Moderator Evaluation and Selection (Esteemer)
-The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
+### Candidate Message Moderator Evaluation and Selection (Esteemer) **WIP**
+The fourth stage of the pipeline consists of an algorithm which ranks acceptable candidate messages. It ranks these candidates based on a number of moderators, and does so to determine which message is the most important to provide to the feedback recipient as motivating information. The moderators which influence the rank of a candidate message are:
+- Performance trend slope, $$Delta_{\text{performance}}$$
+- Performance gap size, $$G_{\text{performance}}$$
+- Achievement or loss recency, $$t_{\text{event}}$$
+- Feedback history, $$t_{\text{message}}$$ and $$N_{\text{received}}$$
+- Individual feedack preferences, $$F_{\text{pref}}$$
+
+The overall algortihm can be represented as:
+$$F_{\text{pref}} \biggl( C_{\text{data}} \Bigl( X_s \| \Delta_{\text{performance}} \| \Bigr)\Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \\
+    + \\
+    C_{\text{history}} \Bigl( (X_e \cdot t_{\text{event}}) - (X_m \cdot t_{\text{message}}) - (X_N \cdot N_{\text{received}}) \Bigr) \biggr)$$
+
+The Esteemer algorithm uses weighting coefficients $$X_*$$ or $$C_*$$, which vary based on the particularities of each causal pathway. For the social loss causal pathway, the weighting coefficients are:
+|**Moderator**       |$$G_{\text{performance}}$$|$$Delta_{\text{performance}}$$|$$t_{\text{event}}$$|$$t_{\text{message}}$$|$$N_{\text{received}}$$|
+|**Coefficient Term**|$$X_{gs}$$                |$$X_s$$                       |$$X_e$$             |$$X_m                 |$$X_N$$                |
+|**Value**           |0.5| 0.5| 0.5| 0.5| 0.5| 0.5| 0.5|
+
 
 **For Alice, Esteemer uses the following information:**   - WIP
 - The only acceptable candidate message is **Candidate B**
@@ -229,7 +245,7 @@ The fourth stage of the pipeline ranks the candidate messages based on a number 
 - Bob has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
 
-For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
+<!--For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message. -->
 
 ### Message Generation and Delivery (Pictoralist)
 The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.

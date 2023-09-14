@@ -216,11 +216,11 @@ For Bob, **Candidate α** is acceptable by the causal pathway **social loss**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer) **WIP**
 The fourth stage of the pipeline consists of an algorithm which ranks acceptable candidate messages. It ranks these candidates based on applying weights to and then summing a number of moderators, with the end goal to determine which message may be the most motivating to provide to the recipient. The moderators which influence the rank of a candidate message are:
-$$\text{Performance trend slope,}  \Delta_{\text{performance}}$$
-$$\text{Performance gap size,}  G_{\text{performance}}$$
-$$\text{Achievement or loss recency,} t_{\text{event}}$$
-$$\text{Feedback history, } t_{\text{message}} \text{and} N_{\text{received}}$$
-$$\text{Individual feedack preferences,} F_{\text{pref}}$$
+$$\text{Performance trend slope, }  \Delta_{\text{performance}}$$
+$$\text{Performance gap size, }  G_{\text{performance}}$$
+$$\text{Achievement or loss recency, } t_{\text{event}}$$
+$$\text{Feedback history, } t_{\text{message}} \text{ and } N_{\text{received}}$$
+$$\text{Individual feedack preferences, } F_{\text{pref}}$$
 
 The overall algortihm can be represented as:
 $$F_{\text{pref}} \biggl( C_{\text{data}} \Bigl( X_s \| \Delta_{\text{performance}} \| \Bigr)\Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \\

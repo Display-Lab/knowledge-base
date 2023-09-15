@@ -301,6 +301,18 @@
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "PONV Prophylaxis: Adults",
         "identifier": "PONV05"
+      },
+      {
+        "@id": "_:SUS02",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Global Warming Footprint, Maintenance",
+        "identifier": "SUS02"
+      },
+      {
+        "@id": "_:NMB03Peds",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "NMB Dosing, Pediatrics",
+        "identifier": "NMB03Peds"
       }
     ]
   

@@ -99,7 +99,7 @@ Moderators are factors that inhibit or promote the influence of the feedback int
 3. `Regulatory fit` - To what extent is this message aligned with characteristics of the behavior/task, context, and recipient personality, with regard to motivation to avoid negative outcomes / problem (prevention focus), or motivation to achieve positive outcomes / develop and learn (promotion focus)?
 4. `Gap size` - How large is the gap between the recipient's performance level and that of the social comparator?
 5. `Slope of trend`
-6. `Time since last achievement`
+6. `Time since last loss`
 
 ### Mechanisms
 Mechanisms are factors that the intervention operates through to influence the feedback recipient. The social loss pathway has the following mechanisms:
@@ -219,17 +219,17 @@ The fourth stage of the pipeline ranks the candidate messages based on a number 
 
 **For Alice, Esteemer uses the following information:**   - WIP
 - The only acceptable candidate message is **Candidate B**
-- Alice's preference for social loss messages is *Todo*
+- Alice's preference utility value for social loss messages is 9.956127
 - Alice has not recieved the **Candidate B** message recently. 
 > ∴ Esteemer will select **Candidate B** as the most appropriate message to provide the recipient.
 
 **For Bob, Esteemer uses the following information:**   - WIP
 - The only acceptable candidate message is **Candidate α**
-- Bob's preference for social loss messages is *Todo*
+- Bob's preference for social loss messages is 2.72075
 - Bob has not recieved the **Candidate α** message recently.
 > ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
 
-For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
+For each of the selected messages, Esteemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
 
 ### Message Generation and Delivery (Pictoralist)
 The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.

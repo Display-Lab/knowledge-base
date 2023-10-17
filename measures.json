@@ -313,7 +313,122 @@
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "NMB Dosing, Pediatrics",
         "identifier": "NMB03Peds"
+      },
+      {
+        "@id": "_:BP06",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Low MAP Prevention <55 (10 minutes)",
+        "identifier": "BP06"
+      },
+      {
+        "@id": "_:GLU04",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hypoglycemia Management, Periop (<60 mg/dL)",
+        "identifier": "GLU04"
+      },
+      {
+        "@id": "_:GLU06",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
+        "identifier": "GLU06"
+      },
+      {
+        "@id": "_:GLU08",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hyperglycemia Treatment, Open Cardiac (>180mg/dL)",
+        "identifier": "GLU08"
+      },
+      {
+        "@id": "_:GLU09",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hyperglycemia Management, Intraop (>180mg/dL)",
+        "identifier": "GLU09"
+      },
+      {
+        "@id": "_:GLU10",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hyperglycemia Management, Periop (>180mg/dL)",
+        "identifier": "GLU10"
+      },
+      {
+        "@id": "_:GLU11",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hyperglycemia Treatment, Periop (>180 mg/dL)",
+        "identifier": "GLU11"
+      },
+      {
+        "@id": "_:GLU12",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hypoglycemia Management, Intraop (<70mg/dL)",
+        "identifier": "GLU12"
+      },
+      {
+        "@id": "_:GLU13",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Hypoglycemia Management, Periop (<70mg/dL)",
+        "identifier": "GLU13"
+      },
+      {
+        "@id": "_:NMB03",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "NMB Dosing, Pediatrics",
+        "identifier": "NMB03"
+      },
+      {
+        "@id": "_:SMOK01",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Smoking Tobacco Status Documentation",
+        "identifier": "SMOK01"
+      },
+      {
+        "@id": "_:SMOK02",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Smoking Tobacco Cessation Intervention",
+        "identifier": "SMOK02"
+      },
+      {
+        "@id": "_:SUS05",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Nitrous Avoided, Induction",
+        "identifier": "SUS05"
+      },
+      {
+        "@id": "_:SUS06",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Low Fresh Gas Flow, Pediatric Induction",
+        "identifier": "SUS06"
+      },
+      {
+        "@id": "_:SUS07",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Nitrous Oxide Avoided",
+        "identifier": "SUS07"
+      },
+      {
+        "@id": "_:TEMP01",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Thermoregulation Vigilance - Active Warming",
+        "identifier": "TEMP01"
+      },
+      {
+        "@id": "_:TEMP02",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Thermoregulation Monitoring - Core Temperature",
+        "identifier": "TEMP02"
+      },
+      {
+        "@id": "_:TEMP04",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Intraoperative Normothermia, Pediatrics",
+        "identifier": "TEMP04"
+      },
+      {
+        "@id": "_:TRAN03",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "Transfusion Vigilance, Pediatrics",
+        "identifier": "TRAN03"
       }
+      
     ]
   
     }

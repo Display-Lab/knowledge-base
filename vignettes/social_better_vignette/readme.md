@@ -45,14 +45,12 @@ Alice's preference data:
 |Worsening             	|-22	   |Performance is worsening.                                                       |
 |Improving	             |3    |Performance is improving.                                                       |
 |Social loss             |10	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social worse     |-15     |Performance is low this month.
-      |
+|Social worse     |-15     |Performance is low this month.                                                         |
 |Social stayed worse	   |-8   |Performance has remained below average (no recent change).                      |
-|Social approach	         |15	    |Performance is high this month.                                                 |
+|Social approach	         |15	    |Performance is high this month.                                     |
 |Goal gain         |13	   |Performance is low this month.                                                  |
 |Goal loss	       |10	   |Performance is improving, getting closer to the peer benchmark.                 |
-|Goal approach   |14    | 
-|
+|Goal approach   |14    |                                                                                    |
 
 
 Gaile's preference data:

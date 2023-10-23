@@ -40,15 +40,19 @@ Preferences for precision feedback are elicited through a preference survey that
 Alice's preference data:
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|social better	           |12.97730	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social stayed better   |6.164377	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|-12.23023	   |Performance is worsening.                                                       |
-|Improving	             |3.325883	    |Performance is improving.                                                       |
-|Social loss             |9.956127	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social stayed worse	   |-7.710484	   |Performance has remained below average (no recent change).                      |
-|Social better	         |-1.61124	    |Performance is high this month.                                                 |
-|Social worse	          |-14.86794	   |Performance is low this month.                                                  |
-|Social approach	       |13.99621 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social better	           |-2    |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social gain   |13	    |Performance is consistently high (no recent change).                            |
+|Worsening             	|-22	   |Performance is worsening.                                                       |
+|Improving	             |3    |Performance is improving.                                                       |
+|Social loss             |10	    |Performance was previously high, but it has dropped below the peer average.     |
+|Social worse     |-15     |Performance is low this month.
+      |
+|Social stayed worse	   |-8   |Performance has remained below average (no recent change).                      |
+|Social approach	         |15	    |Performance is high this month.                                                 |
+|Goal gain         |13	   |Performance is low this month.                                                  |
+|Goal loss	       |10	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Goal approach   |14    | 
+|
 
 
 Gaile's preference data:

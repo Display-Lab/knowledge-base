@@ -6,19 +6,19 @@ The Precision Feedback Knowledge Base is comprised of four elements. The four el
 
 ## Causal Pathways
 
-Each causal pathway specifies the influence of "motivating information", such as performance comparisons, on its recipients. They are called causal pathways because there is published scientific evidence to suggest that when "motivating information" is incorported into precision feedback interventions it can change recipient behaviors. In this case, "motivating information" is the combination of a recipient's past performance record and added contextual information to support comparisons. As an element of the knoweldge base, causal pathways serve the dual purposes of 1) explaining why feedback interventions influence behavior (i.e. program theory), and 2) configuring a precision feedback intervention to generate messages that can be delivered to recipients in emails, reports, or by other means. The causal pathways are implemented semantically in a computer-processable format using a linked-data approach (JSON-LD), based on the Performance Summary Display Ontology (PSDO) and the Causal Pathway Ontology (CPO).
+Each causal pathway specifies the influence of *motivating information*, such as performance comparisons, on health-related outcomes through a feedback recipient. As elements of the knowledge base, causal pathways serve the dual purposes of 1) explaining why feedback interventions may influence behavior (i.e. program theory), and 2) configuring a precision feedback intervention to generate messages that can be delivered to recipients in emails, reports, or by other means. The causal pathways are implemented semantically in a computer-processable format using a linked-data approach (JSON-LD), based on the Performance Summary Display Ontology (PSDO) and the Causal Pathway Ontology (CPO).
 
 ## Message Templates
 
- Each message template specifies an evidence-based text and display format for a performance feedback message corresponding to a causal pathway. (Note: A single causal pathway may have more than one message template.) The contents of each message template include links to concept definitions from relevant ontologies.
+Each message template specifies the theoretical characteristics of a text statement about performance corresponding to a causal pathway. (Note: A single causal pathway may have more than one associated message template.) The contents of each message template include links to concept definitions from relevant ontologies.
 
 ## Quality Measures
 
- Each quality measure represents a standard for measuring the performance and improvement of people who do a given task, here providers of healthcare services.
+Each quality measure represents a standard for measuring the performance and improvement of people who do a given task, here providers of healthcare services.
 
 ## Vignettes
 
- Each vignette tells a narrative story about two personas. Each vignette is also associated with one casual pathway and its templates. Each vignette includes example performance data, a specific context for presenting the performance data as "motivating information", and example messages formatted according to relevant message templates. The purpose of each vignette is to bring together the core components of the knowledge base as they would be used to generate precision performance feedback. Overall, the vignettes illustrate how a causal pathway is used by a precision feedback system to deliver motivating information to one or more feedback recipients, based on their performance data, their preferences, and a collection of message templates that determine a minimal set of possible feedback interventions.
+Each vignette tells a narrative story about two personas. Each vignette is also associated with one casual pathway and its templates. Each vignette includes example performance data, a specific context for presenting the performance data as "motivating information", and example messages formatted according to relevant message templates. The purpose of each vignette is to bring together the core components of the knowledge base as they would be used to generate precision performance feedback. Overall, the vignettes illustrate how a causal pathway is used by a precision feedback system to deliver motivating information to one or more feedback recipients, based on their performance data, their preferences, and a collection of message templates that determine a minimal set of possible feedback interventions.
 
 ## Overall View of the Knowledge Base
 ![knowledgebase-map](https://github.com/Display-Lab/knowledge-base/assets/133153871/abcd7acf-ca74-4fcb-a904-bfe1a13a6c16)

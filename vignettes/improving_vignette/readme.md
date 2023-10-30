@@ -189,7 +189,7 @@ The Esteemer algorithm uses weighting coefficients, which vary based on the part
 | Moderator          | G<sub>performance</sub> | Δ<sub>performance</sub> | t<sub>event</sub> | t<sub>message</sub> | N<sub>received</sub> | Data component | History component |
 |--------------------|-------------------------|-------------------------|-------------------|---------------------|----------------------|----------------|-------------------|
 | Coefficient Term   | X<sub>gs</sub>          | X<sub>s</sub>           | X<sub>e</sub>     | X<sub>m</sub>       | X<sub>N</sub>        |C<sub>data</sub>|C<sub>history</sub>|
-| Value              | 0.5                     | 0.5                     | 0.5               | 0.5                 | 0.5                  | 1              | 1                 |
+| Value              | 0                       | 0.8                     | 0              | -0.1                | -0.1                 | 1              | 1                 |
 
 <!-- Values above need to be changed for each causal pathway -->
 <!--

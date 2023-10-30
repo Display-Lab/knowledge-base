@@ -13,7 +13,6 @@
     - Social Worse
     - Worsening
     - NOTE: Need to calculate and enable example ranks for all personas
-    - NOTE: Need to update the coefficient table with data particular to each causal pathway
 
 
 - TODO: Annotations and other persona-specific details need to be updated to reflect the personas in use for the following:  

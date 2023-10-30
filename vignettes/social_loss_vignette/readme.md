@@ -223,9 +223,9 @@ $$\text{Feedback history, } t_{\text{message}} \text{ and } N_{\text{received}}$
 $$\text{Individual feedack preferences, } F_{\text{pref}}$$
 
 The overall algortihm can be represented as:
-$$F_{\text{pref}} \biggl[ C_{\text{data}} \Bigl( X_s \| \Delta_{\text{performance}} \| \Bigr)\Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \\
+$$F_{\text{pref}} \Biggl[ C_{\text{data}} \biggl( \Bigl( X_s \| \Delta_{\text{performance}}  \| \Bigr) + \Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \biggr) \\
     + \\
-    C_{\text{history}} \Bigl( \bigl(X_e \cdot t_{\text{event}}\bigr) + \bigl(X_m \cdot t_{\text{message}}\bigr) + \bigl(X_N \cdot N_{\text{received}}\bigr) \Bigr) \biggr]$$
+    C_{\text{history}} \Bigl( \bigl(X_e \cdot t_{\text{event}}\bigr) + \bigl(X_m \cdot t_{\text{message}}\bigr) + \bigl(X_N \cdot N_{\text{received}}\bigr) \Bigr) \Biggr]$$
 
 <!-- No changes need to be made below this line when propagating to new vignettes-->
 The Esteemer algorithm uses weighting coefficients, which vary based on the particularities of each causal pathway. For the social loss causal pathway, the weighting coefficients are:
@@ -239,7 +239,7 @@ The Esteemer algorithm uses weighting coefficients, which vary based on the part
 
 
 As an example, appropriate values based on this vignette are filled in for Alice's **Candidate B** message, and evaluate like so:
-$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 6 \| \Bigr)\Bigl( 0.5 \| 5 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (19.5)F_{\text{pref}}$$  
+$$F_{\text{pref}} \biggl( 1 \Bigl( \Bigl( 0.5 \| 6 \| \Bigr) + \Bigl( 0.5 \| 5 \| \Bigr) \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (19.5)F_{\text{pref}}$$  
 Bob's acceptable social loss candidate evaluates similarly:
 $$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 7 \| \Bigr)\Bigl( 0.5 \| 1 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (13.75)F_{\text{pref}}$$  
 <!-- Equations above need to be re-evaluated for each causal pathway -->

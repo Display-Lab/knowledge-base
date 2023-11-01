@@ -168,22 +168,36 @@ For Fahad, **Candidate A** is acceptable by the causal pathway **worsening**.
 For Gaile, **Candidate α** is acceptable by the causal pathway **worsening**.
 
 ### Candidate Message Moderator Evaluation and Selection (Esteemer)
-The fourth stage of the pipeline ranks the candidate messages based on a number of moderators in order to determine the most appropriate message to provide to the feedback recipient. The script does this by evaluating message candidates against a number of factors: recency of the recipient having recieved a similar message, gap size, slope of the trend in the performance data, time since last loss or achievement, the recipient's feedback preferences, and the acceptability of the candidate message based on preconditions (ThinkPudding acceptability).
+The fourth stage of the pipeline consists of an algorithm which ranks acceptable candidate messages. It ranks these candidates based on applying weights to and then summing a number of moderators, with the end goal to determine which message may be the most motivating to provide to the recipient. The moderators which influence the rank of a candidate message are:
+$$\text{Performance trend slope, }  \Delta_{\text{performance}}$$
+$$\text{Performance gap size, }  G_{\text{performance}}$$
+$$\text{Achievement or loss recency, } t_{\text{event}}$$
+$$\text{Feedback history, } t_{\text{message}} \text{ and } N_{\text{received}}$$
+$$\text{Individual feedack preferences, } F_{\text{pref}}$$
 
-**For Fahad, Esteemer uses the following information:** - WIP
-- The acceptable candidate message is **candidate A**
-- Fahad's preference for social approach messages is *Todo*
-- Fahad has not recieved the **candidate A** message recently. 
-<!-- Todo - determine how long message cooldown is for repeat selection, change text above accordingly-->
-> ∴ Esteemer will select **candidate A** as the most appropriate message to provide the recipient.
+The overall algortihm can be represented as:
+$$F_{\text{pref}} \Biggl[ C_{\text{data}} \biggl( \Bigl( X_s \| \Delta_{\text{performance}}  \| \Bigr) + \Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \biggr) \\
+    + \\
+    C_{\text{history}} \Bigl( \bigl(X_e \cdot t_{\text{event}}\bigr) + \bigl(X_m \cdot t_{\text{message}}\bigr) + \bigl(X_N \cdot N_{\text{received}}\bigr) \Bigr) \Biggr]$$
 
-**For Gaile, Esteemer uses the following information:**
-- The acceptable candidate message is **Candidate α**
-- Gaile's preference for social approach messages is *Todo*
-- Gaile has not recieved the **Candidate α** message recently.
-> ∴ Esteemer will select **Candidate α** as the most appropriate message to provide the recipient. 
+<!-- No changes need to be made below this line when propagating to new vignettes-->
+The Esteemer algorithm uses weighting coefficients, which vary based on the particularities of each causal pathway. For the social loss causal pathway, the weighting coefficients are:
 
-For each of the selected messages, Eseemer will return the template ID, message text, comparator type, acceptability relationship, measure name, title, and display type preferred by the recipient. This data is used in the next step of the pipeline to generate the precision feedback message.
+| Moderator          | G<sub>performance</sub> | Δ<sub>performance</sub> | t<sub>event</sub> | t<sub>message</sub> | N<sub>received</sub> | Data component | History component |
+|--------------------|-------------------------|-------------------------|-------------------|---------------------|----------------------|----------------|-------------------|
+| Coefficient Term   | X<sub>gs</sub>          | X<sub>s</sub>           | X<sub>e</sub>     | X<sub>m</sub>       | X<sub>N</sub>        |C<sub>data</sub>|C<sub>history</sub>|
+| Value              | 0                       | 0.8                     | 0              | -0.1                | -0.5                 | 1              | 1                 |
+
+<!-- Values above need to be changed for each causal pathway -->
+<!--
+
+As an example, appropriate values based on this vignette are filled in for Eugene's **Candidate B** message, and evaluate like so:
+$$F_{\text{pref}} \biggl( 1 \Bigl( \Bigl( 0.5 \| 6 \| \Bigr) + \Bigl( 0.5 \| 5 \| \Bigr) \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (19.5)F_{\text{pref}}$$  
+Gaile's acceptable social loss candidate evaluates similarly:
+$$F_{\text{pref}} \biggl( 1 \Bigl( 0.5 \| 7 \| \Bigr)\Bigl( 0.5 \| 1 \| \Bigr) + 1 \Bigl( (0.5 \cdot 12) + (0.5 \cdot 12) + (0.5 \cdot 0) \Bigr) \biggr) = (13.75)F_{\text{pref}}$$  
+<!-- Equations above need to be re-evaluated for each causal pathway -->
+
+Of note, each persona has more than one measure's worth of data, therefore for each persona there are potentially many acceptable candidates, utilizing different causal pathways regarding different measures. Esteemer evaluates each acceptable candidate measure with differing coefficient weights depending on the causal pathway. 
 
 ### Message Generation and Delivery (Pictoralist)
 The fifth and final stage of the pipeline generates visual representations of the selected message based on the recipient's performance data, and sends this output off for delivery to the recipient.

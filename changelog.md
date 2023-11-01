@@ -1,4 +1,24 @@
 # Precision Feedback Knowledge Base (PFKB) - Changelog
+## Version 0.1.1
+**Patch:** Update vignettes with standard template for all software pipeline sections
+- Updated introductory texts on all software pipeline sections for:
+    - Goal Approach
+    - Goal Gain
+
+- Updated Esteemer and Pictoralist sections for the following vignettes:  
+    - Goal Loss
+    - Improving
+    - Social Approach
+    - Social Better
+    - Social Worse
+    - Worsening
+    - NOTE: Need to calculate and enable example ranks for all personas
+
+
+- TODO: Annotations and other persona-specific details need to be updated to reflect the personas in use for the following:  
+    - Goal Approach
+    - Goal Gain
+
 ## Version 0.1.0
 ### 10/24/23
 **Improvement:** Added changelog  

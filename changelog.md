@@ -1,4 +1,16 @@
 # Precision Feedback Knowledge Base (PFKB) - Changelog
+## Version 0.1.1
+### Unreleased
+**Patch:** Message template changes
+- Fixed message text keys to have internally consistent programmatically acceptable keys for filling with information when createprecisionfeedback process is run
+    - Not updated for:
+        - congrats_improved_performance 
+        - consistently_high_performance
+        - remain_low_performance
+        - Potentially not moving forward with these templates, other cedar changes in the works but not in this patch
+- Separated parts of the message text into text message and additional message text
+    - Supporting this change with changes to pictoralist
+
 ## Version 0.1.0
 ### 10/24/23
 **Improvement:** Added changelog  

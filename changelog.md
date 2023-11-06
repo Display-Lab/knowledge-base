@@ -1,6 +1,11 @@
 # Precision Feedback Knowledge Base (PFKB) - Changelog
-## Version 0.1.1
-### Unreleased
+## Version 0.1.2
+### 11/6/23 (release not published)
+**Patch:** Measure name change in input_messages
+- Crosscheck and correct changes from measures.json against input_message.json files
+
+## Version 0.1.2
+### 11/6/23 (release not published)
 **Patch:** Message template changes
 - Fixed message text keys to have internally consistent programmatically acceptable keys for filling with information when createprecisionfeedback process is run
     - Not updated for:
@@ -31,7 +36,7 @@
     - Goal Gain
 
 ## Version 0.1.0
-### 10/24/23
+### 10/24/23 (release not published)
 **Improvement:** Added changelog  
 - Implementing semantic versioning for PFKB, first step towards initial release
     - Need to have proper version control prior to pilot for rollback protection, work around breaking changes

@@ -52,7 +52,7 @@
   },
   "Message text": [
     {
-      "@value": "Your performance is getting worse this month for the measure [Measure name]."
+      "@value": "Your performance is getting worse this month for the measure [measure name]. Your performance was [recipient performance level]."
     }
   ],
   "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
@@ -60,8 +60,8 @@
   "schema:description": "specification for a possible precision feedback message",
   "pav:createdOn": "2023-04-26T15:35:30-07:00",
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2023-05-24T12:35:55-07:00",
-  "oslc:modifiedBy": "https://metadatacenter.org/users/b62c6dfa-e33c-40fa-aa02-021e4b9bb00b",
+  "pav:lastUpdatedOn": "2023-10-31T16:53:43-07:00",
+  "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "@id": "https://repo.metadatacenter.org/template-instances/1f257d98-f6b0-44f6-92c8-1a194954f33f",
   "Display compatibility": {
     "@value": "Text-only, bar chart, line chart"
@@ -69,5 +69,8 @@
   "Short message ID": {
     "@value": "20",
     "@type": "xsd:decimal"
+  },
+  "Additional message text": {
+    "@value": "A case-by-case breakdown of your results are available at your [clinical quality dashboard (link)]. More information about the rationale for the measure [measure name] and how it is calculated is available [here (link to measure spec)]."
   }
 }

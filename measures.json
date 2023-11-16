@@ -99,10 +99,10 @@
         "identifier": "FLUID01"
       },
       {
-        "@id": "_:FLUID01_NC",
+        "@id": "_:FLUID01NC",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "NC: Minimizing Colloid Use (Non-Cardiac)",
-        "identifier": "FLUID01_NC"
+        "identifier": "FLUID01NC"
       },
       {
         "@id": "_:FLUID02",
@@ -303,16 +303,16 @@
       "identifier": "PUL03"
     },
     {
-      "@id": "_:SMOK-01",
+      "@id": "_:SMOK01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "Smoking Tobacco Status Documentation",
-      "identifier": "SMOK-01"
+      "identifier": "SMOK01"
     },
     {
-      "@id": "_:SMOK-02",
+      "@id": "_:SMOK02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "Smoking Tobacco Cessation Intervention",
-      "identifier": "SMOK-02"
+      "identifier": "SMOK02"
     },
     {
       "@id": "_:SUS01",

@@ -207,10 +207,10 @@
         "identifier": "BP03"
       },
       {
-        "@id": "_:PONV03b",
+        "@id": "_:PONV03",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "Postoperative Nausea or Vomiting Outcome",
-        "identifier": "PONV03b"
+        "identifier": "PONV03"
       },
       {
         "@id": "_:GLU03",

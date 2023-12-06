@@ -309,10 +309,10 @@
         "identifier": "SUS02"
       },
       {
-        "@id": "_:NMB03Peds",
+        "@id": "_:NMB03",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "NMB Dosing, Pediatrics",
-        "identifier": "NMB03Peds"
+        "identifier": "NMB03"
       }
     ]
   

@@ -14,7 +14,7 @@ A healthcare quality improvement consortium called the Multicenter Perioperative
 MPOG has received operative case data from last month about Gaile and Gaile's cases and that of their peers. MPOG calculates the following performance information for the measure BP-03:
 
 ### Healthcare professional performance
-Gaile, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
+Deepa, a dedicated Certified Registered Nurse Anesthetist (CRNA) at Midwest Medicine, has the following performance data over the last 6 months for BP-03:
 
 |Month|Performance Level|Peer Average|75th Percentile Benchmark|90th Percentile Benchmark|MPOG Goal|
 |-----|---------|---|---|---|---|
@@ -39,32 +39,51 @@ Gaile, a resident at Midwest Medicine, has the following performance data over t
 ## Preference data
 Preferences for precision feedback are elicited through a preference survey that providers can take. The preference survey produces a preference model for each provider that, with the provider's permission, is shared with MPOG to maintain. MPOG analyses preference data that is shared to identify population-level preference segments. These segments are generated as preference profiles that can serve as a default preference model for an organization, or which can be selected by providers who do not take the preference survey, but who identify preferences that are close enough to their own in the settings menu for the precision feedback system.
 
-Gaile's preference data:
+Deepa's preference data (Individual profile from conjoint analysis survey) :
+
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |-8.1654	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |-6.2514	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|11.5498	   |Performance is worsening.                                                       |
-|Improving	             |-5.2654	    |Performance is improving.                                                       |
-|Social Loss             |12.1369	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |09.8987	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |01.5484	    |Performance is high this month.                                                 |
-|Social Worse	          |10.5656	   |Performance is low this month.                                                  |
-|Social Aproach	       |-10.2541	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social better	        |-13          |Performance is high this month.                                                 |
+|Social gain            |-14 	      |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |5            |Performance is consistently high (no recent change).                            |
+|Worsening             	|3  	      |Performance is worsening.                                                       |
+|Improving	        |4            |Performance is improving.                                                       |
+|Social loss            |3 	      |Performance was previously high, but it has dropped below the peer average.     |
+|Social worse           |5            |Performance is low this month.                                                  |
+|Social stayed worse    |2            |Performance has remained below average (no recent change).                      |
+|Social approach        |5	      |Performance is improving, getting closer to the peer benchmark.                 |
+|Goal gain              |-8	      |Performance was previously low, but it has improved to reach the goal.          |
+|Goal loss	        |3 	      |Performance was previously high, but it has dropped below the goal.             |
+|Goal approach          |5            |Performance is improving, getting closer to the goal.                           |
 
+|Display format         |Utility value|
+|-----------------------|-------------|
+|Bar chart              |0            |
+|Line chart             |1            |
+|Text only              |0            |
 
-Gaile's preference data: 
+Gaile's preference data (Midwest Medicine group profile) :
+
 |Motivating information |Utility value|Description                                                                     |
 |-----------------------|-------------|--------------------------------------------------------------------------------|
-|Social Gain	           |xx.xxxxx	    |Performance was previously low, but it has improved to reach the peer benchmark.|
-|Social Stayed Better   |-11.3618	    |Performance is consistently high (no recent change).                            |
-|Worsening             	|11.6598	   |Performance is worsening.                                                       |
-|Improving	             |7.58489	    |Performance is improving.                                                       |
-|Social Loss             |8.46823	    |Performance was previously high, but it has dropped below the peer average.     |
-|Social Stayed Worse	   |-3.64987	   |Performance has remained below average (no recent change).                      |
-|Social Better	         |-8.64669	    |Performance is high this month.                                                 |
-|Social Worse	          |12.1645	   |Performance is low this month.                                                  |
-|Social Approach	       |-10.6889 	   |Performance is improving, getting closer to the peer benchmark.                 |
+|Social better	        |-2           |Performance is high this month.                                                 |
+|Social gain            |13	      |Performance was previously low, but it has improved to reach the peer benchmark.|
+|Social stayed better   |6            |Performance is consistently high (no recent change).                            |
+|Worsening             	|-22	      |Performance is worsening.                                                       |
+|Improving	        |3            |Performance is improving.                                                       |
+|Social loss            |10	      |Performance was previously high, but it has dropped below the peer average.     |
+|Social worse           |-15          |Performance is low this month.                                                  |
+|Social stayed worse    |-8           |Performance has remained below average (no recent change).                      |
+|Social approach        |15	      |Performance is improving, getting closer to the peer benchmark.                 |
+|Goal gain              |13	      |Performance was previously low, but it has improved to reach the goal.          |
+|Goal loss	        |10	      |Performance was previously high, but it has dropped below the goal.             |
+|Goal approach          |14           |Performance is improving, getting closer to the goal.                           |
+
+|Display format         |Utility value|
+|-----------------------|-------------|
+|Bar chart              |1            |
+|Line chart             |0	      |
+|Text only              |0            |
 
 # Precision feedback message generation
 To generate precision feedback, MPOG sends de-identified performance and preference data to a precision feedback system that processes each provider's data with their peer comparator performance data. The precision feedback system produces and evaluates candidate messages using metadata from message templates, then selects an optimal precision feedback message to return to MPOG. The precision feedback system is a knowledge-based system that is comprised of the following parts: 1) A knowledge base, 2) A software pipeline, and 3) A web service.

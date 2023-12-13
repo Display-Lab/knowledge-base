@@ -62,28 +62,29 @@
   "History":{
   },
   "Preferences":{
-      "Utilities": {
-      "Message_Format": 
-        {
-          "1": "0.0",
-          "2": "0.1",
-          "16": "7.5",
-          "24": "9.4",
-          "18": "11.3",
-          "11": "13.2",
-          "22": "15.1" ,
-          "14": "22.6" ,
-          "21": "62.3" ,
-          "5":"0.2",
-          "15":"4.0",
-          "4":"0.9"
-        },
-      "Display_Format":
-        {
-          "short_sentence_with_no_chart": "0.0",
-          "bar": "37.0",
-          "line": "0.0"
-        }
-    }
+    "Utilities": {
+    "Message_Format": 
+      {
+        "Social gain":"5",
+        "Social stayed better":"-10",
+        "Worsening":"3",
+        "Improving":"-7",
+        "Social loss":"5",
+        "Social stayed worse":"3",
+        "Social better":"5",
+        "Social worse":"2",
+        "Social approach":"-6",
+        "Goal gain":"5",
+        "Goal approach":"-6"
+      },
+    "Display_Format":
+      {
+        "Bar chart": "1",
+        "Line chart": "0",
+        "Text-only": "0",
+        "System-generated":"0"
+      }
   }
+}
+
 }

@@ -1,6 +1,6 @@
 Causal_pathway,Comparison_size,Trend_slope,Measure_achievement_recency,Loss_recency,Message_recency,Message_received_count,Measure_recency
 Better,0.5,--,--,--,-0.1,-0.1,-0.5
-Worse,0.5,--,--,--,-0.1,-0.5,-0.5
+Worse,0,--,--,--,-0.1,-0.5,-0.5
 Improving,--,0.8,--,--,-0.1,-0.1,0
 Worsening,--,0.8,--,--,-0.1,-0.5,0
 Achievement,0.5,0.8,-0.5,--,-0.1,-0.1,-0.5

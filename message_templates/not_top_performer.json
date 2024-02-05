@@ -60,19 +60,19 @@
   },
   "Message text": [
     {
-      "@value": "You are not a top performer this month for the measure [measure name]. Your performance was [recipient performance level], below the top 10% peer benchmark, which was [comparator performance level] this month."
+      "@value": "You are not a top performer this month for the measure [measure name]. Your performance was [recipient performance level] and the top 10% peer benchmark was [comparator performance level]."
     }
   ],
   "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
-  "schema:name": "Not Top Performer",
+  "schema:name": "Not Top Performer_not for pilot",
   "schema:description": "specification for a possible precision feedback message",
   "pav:createdOn": "2023-04-26T14:54:16-07:00",
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2023-10-31T15:27:25-07:00",
+  "pav:lastUpdatedOn": "2024-01-22T16:20:45-08:00",
   "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "@id": "https://repo.metadatacenter.org/template-instances/7a786bd2-e0e4-4c13-b3c6-a7228223dd4e",
   "Display compatibility": {
-    "@value": "Text-only, bar chart, line chart"
+    "@value": "text-only, bar chart, line chart"
   },
   "Short message ID": {
     "@value": "6",
@@ -80,5 +80,8 @@
   },
   "Additional message text": {
     "@value": "A case-by-case breakdown of your results are available at your [clinical quality dashboard (link)]. More information about the rationale for the measure [measure name] and how it is calculated is available [here (link to measure spec)]."
+  },
+  "Default display": {
+    "@value": "bar chart"
   }
 }

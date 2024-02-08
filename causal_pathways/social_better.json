@@ -55,7 +55,19 @@
     },
     "Moderators": [
       {
-        "@value": "Habituation, regulatory fit, gap size"
+        "@value": "Habituation"
+      },
+      {
+        "@value": "regulatory fit"
+      },
+      {
+        "@value": "gap size"
+      },
+      {
+        "@value": "message recency"
+      },
+      {
+        "@value": "message delivery count"
       }
     ],
     "Outcomes": {

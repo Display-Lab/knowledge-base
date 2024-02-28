@@ -57,7 +57,7 @@ The knowledge base contains files on a spectrum of developmental states, from ro
 | 6/14/23 | 1.1.0 | *todo* |
 
 ## Version
-1.1.0
+1.1.1
 
 
 

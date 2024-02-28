@@ -68,10 +68,10 @@
   "schema:description": "specification for a possible precision feedback message",
   "pav:createdOn": "2023-06-28T12:45:49-07:00",
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2023-10-31T15:58:26-07:00",
+  "pav:lastUpdatedOn": "2024-01-27T13:59:27-08:00",
   "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "Display compatibility": {
-    "@value": "Text-only, bar chart, line chart"
+    "@value": "text-only, bar chart, line chart"
   },
   "Short message ID": {
     "@value": "14",
@@ -81,5 +81,8 @@
   "@id": "https://repo.metadatacenter.org/template-instances/2bcbbc2c-37de-4b5c-ab0d-f3104e49cb50",
   "Additional message text": {
     "@value": "A case-by-case breakdown of your results are available at your [clinical quality dashboard (link)]. More information about the rationale for the measure [measure name] and how it is calculated is available [here (link to measure spec)]."
+  },
+  "Default display": {
+    "@value": "bar chart"
   }
 }

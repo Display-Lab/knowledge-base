@@ -1,4 +1,13 @@
 # Precision Feedback Knowledge Base (PFKB) - Changelog
+## Version 1.1.1
+### 2/28/24 (release not published)
+ - Added motivating performance information and message scoring models directories
+ - Reorganized files and added description in readmes
+
+
+
+
+
 ## Version 0.1.2
 ### 11/6/23 (release not published)
 **Patch:** Measure name change in input_messages

@@ -14,6 +14,7 @@ Motivating performance information is the information that healthcare profession
 1. Improving trend
 2. Worsening trend
 
+
 ### Performance events 
 1. Achievement
 2. Loss
@@ -28,4 +29,5 @@ A [Precision Feedback Pipeline](https://github.com/Display-Lab/precision-feedbac
 3) [trend _detect](https://github.com/Display-Lab/precision-feedback-pipeline/blob/main/bitstomach/signals/_trend.py)
 - detects trend signals, where trend equates to the performance level rate of change month over month. This method can detect monotonic positive and negative trends over three months. The method records the slope as a moderator PSDO.performance_trend_content
 
-In esteemer, the moderator methods reads motivating information identified by signal detectors fro9m teh graph, extracting the values and types of moderators from the motivating information that then affect the score of a message template.
+In esteemer, the moderator methods reads motivating information identified by signal detectors from the graph, extracting the values and types of moderators from the motivating information that then affect the score of a message template.
+

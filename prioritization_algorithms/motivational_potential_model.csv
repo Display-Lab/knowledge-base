@@ -1,10 +1,14 @@
-Causal_pathway,Comparison_size,Trend_slope,Measure_achievement_recency,Loss_recency,Message_recency,Message_received_count,Measure_recency,Coaching_bias
-Better,0.5,--,--,--,-0.1,-0.1,-0.5,0
-Worse,0.5,--,--,--,-0.1,-0.5,-0.5,1
-Improving,--,0.8,--,--,-0.1,-0.1,0,.5
-Worsening,--,0.8,--,--,-0.1,-0.5,0,1
-Achievement,0.5,0.8,-0.5,--,-0.1,-0.1,-0.5,.5
-Loss,0.5,0.8,--,-0.5,-0.1,-0.5,-0.5,1
-Approach,0.5,0.8,-0.5,--,-0.1,-0.1,0,1
-Sustain better,0.5,--,--,--,-0.1,-0.1,-0.5,0
-Sustain worse,0.5,--,--,--,-0.1,-0.5,-0.5,1
+causal_pathway,comparison_size,trend_size,measure_achievement_recency,measure_loss_recency,message_recency,message_received_count,measure_recency,coachiness
+social_better,0.5,--,--,--,-0.1,-0.1,-0.5,0
+social_worse,0.5,--,--,--,-0.1,-0.5,-0.5,1
+goal_worse,0.5,--,--,--,-0.1,-0.5,-0.5,1
+improving,--,0.8,--,--,-0.1,-0.1,0,.5
+worsening,--,0.8,--,--,-0.1,-0.5,0,1
+social_gain,0.5,0.8,-0.5,--,-0.1,-0.1,-0.5,.5
+goal_gain,0.5,0.8,-0.5,--,-0.1,-0.1,-0.5,.5
+social_loss,0.5,0.8,--,-0.5,-0.1,-0.5,-0.5,1
+goal_loss,0.5,0.8,--,-0.5,-0.1,-0.5,-0.5,1
+social_approach,0.5,0.8,-0.5,--,-0.1,-0.1,0,1
+goal_approach,0.5,0.8,-0.5,--,-0.1,-0.1,0,1
+sustain_better,0.5,--,--,--,-0.1,-0.1,-0.5,0
+sustain_worse,0.5,--,--,--,-0.1,-0.5,-0.5,1

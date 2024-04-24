@@ -1,4 +1,4 @@
-causal_pathway,comparison_size,trend_size,measure_achievement_recency,measure_loss_recency,message_recency,message_received_count,measure_recency,coachiness
+causal_pathway,comparison_size,trend_size,achievement_recency,loss_recency,message_recency,message_received_count,measure_recency,coachiness
 social_better,0.5,,,,-0.1,-0.1,-0.5,0
 social_worse,0.5,,,,-0.1,-0.5,-0.5,1
 goal_worse,0.5,,,,-0.1,-0.5,-0.5,1

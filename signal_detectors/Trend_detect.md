@@ -1,4 +1,4 @@
-# Trend Motivating Information Detector
+# Trend Signal Detector
 ## Concept
 The trend motivating information detector function compares the performance level of a feedback recipient for a specfic measure as it changes over time. The trend detector currently evaluates over a three month window, and detects monotonic and non-monotonic performance trend information. The signal detects when the performance level has a positive or negative slope over time, and extracts the magnitude of teh trend as motivating information to be used as a moderator.
 ## Example

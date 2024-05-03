@@ -31,7 +31,6 @@ Adapt this from the vignette documentation for the causal pathway
 ### Appreciation-type causal pathways 
 
 #### Moderators
-#### Moderators
 ##### Moderator 1
 ###### Signal 1
 ###### Signal 2

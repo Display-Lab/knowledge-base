@@ -92,7 +92,7 @@ The knowledge base contains the following components: causal pathways, message t
 This pathway describes the influence of feedback interventions informing the recipient that their performance is approaching that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
 ### Preconditions
-Preconditions are factors necessary for the success of a social approach precision feedback itervention. The social approach causal pathway has the following preconditions:
+Preconditions are factors necessary for the success of a social approach precision feedback intervention. The social approach causal pathway has the following preconditions:
 
 Information content preconditions:
 1. [Social comparator content <sub>(BP)</sub>](https://bioportal.bioontology.org/ontologies/PSDO?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000095)

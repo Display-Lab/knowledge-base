@@ -93,6 +93,6 @@
     "@value": null
   },
   "Default display": {
-    "@value": "bar chart"
+    "@value": "line chart"
   }
 }

@@ -51,12 +51,6 @@
         "identifier": "ABX03"
       },
       {
-        "@id": "_:AKI01",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "AKI-01: Acute Kidney Injury",
-        "identifier": "AKI01"
-      },
-      {
         "@id": "_:BRAIN01",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
@@ -99,18 +93,6 @@
         "identifier": "BP06"
       },
       {
-        "@id": "_:CARD02",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "CARD-02: Myocardial Injury",
-        "identifier": "CARD02"
-      },
-      {
-        "@id": "_:CARD03",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "CARD-03: Myocardial Injury, High Risk Patients",
-        "identifier": "CARD03"
-      },
-      {
         "@id": "_:FLUID01",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
@@ -134,24 +116,6 @@
         "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
         "identifier": "FLUID02_C"
       },
-      {
-      "@id": "_:GA01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GA-01-OB: General Anesthesia During Cesarean Deliveries",
-      "identifier": "GA01"
-    },
-    {
-      "@id": "_:GA02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GA-02-OB: General Anesthesia after Neuraxial in Cesarean Deliveries",
-      "identifier": "GA02"
-    },
-    {
-      "@id": "_:GA03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GA-03-OB: General Anesthesia Administered after Epidural for Cesareans",
-      "identifier": "GA03"
-    },
     {
       "@id": "_:GLU01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
@@ -187,12 +151,6 @@
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "GLU-06-C: Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
       "identifier": "GLU06"
-    },
-    {
-      "@id": "_:GLU07",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-07-C: Hypoglycemia Management, Open Cardiac (<70mg/dL)",
-      "identifier": "GLU07"
     },
     {
       "@id": "_:GLU08",
@@ -231,18 +189,6 @@
       "identifier": "GLU13"
     },
     {
-      "@id": "_:MED01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "MED-01: Avoiding Medication Overdose",
-      "identifier": "MED01"
-    },
-    {
-      "@id": "_:MORT01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "MORT-01: 30 Day In-Hospital Mortality Rate",
-      "identifier": "MORT01"
-    },
-    {
       "@id": "_:NMB01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NMB-01: Train of Four Taken",
@@ -279,22 +225,10 @@
       "identifier": "PAIN02"
     },
     {
-      "@id": "_:PAIN03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PAIN-03: Opioid Reversal with Naloxone",
-      "identifier": "PAIN03"
-    },
-    {
       "@id": "_:PONV01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "PONV-01: PONV Prophylaxis: Adults (Old)",
       "identifier": "PONV01"
-    },
-    {
-      "@id": "_:PONV03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV-03: Postoperative Nausea or Vomiting Outcome",
-      "identifier": "PONV03"
     },
     {
       "@id": "_:PONV04",
@@ -393,34 +327,10 @@
       "identifier": "TEMP02"
     },
     {
-      "@id": "_:TEMP03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-03: Perioperative Hypothermia",
-      "identifier": "TEMP03"
-    },
-    {
       "@id": "_:TEMP04",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "TEMP-04-Peds: Intraoperative Normothermia, Pediatrics",
       "identifier": "TEMP04"
-    },
-    {
-      "@id": "_:TEMP05",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-05-OB: Hypothermia in Cesarean Deliveries",
-      "identifier": "TEMP05"
-    },
-    {
-      "@id": "_:TEMP06",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-06-C: Hypothermia Avoidance, Cardiac",
-      "identifier": "TEMP06"
-    },
-    {
-      "@id": "_:TEMP07",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-07-C: Hyperthermia Avoidance, Cardiac",
-      "identifier": "TEMP07"
     },
     {
       "@id": "_:TOC01",
@@ -447,22 +357,10 @@
       "identifier": "TRAN01"
     },
     {
-      "@id": "_:TRAN02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TRAN-02: Overtransfusion",
-      "identifier": "TRAN02"
-    },
-    {
       "@id": "_:TRAN03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "TRAN-03-Peds: Transfusion Vigilance, Pediatrics",
       "identifier": "TRAN03"
-    },
-    {
-      "@id": "_:TRAN04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TRAN-04-Peds: Overtransfusion, Pediatrics",
-      "identifier": "TRAN04"
     }
     ]
     }  

@@ -39,10 +39,28 @@
         "identifier": "ABX01"
       },
       {
+        "@id": "_:ABX02",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
+        "identifier": "ABX02"
+      },
+      {
+        "@id": "_:ABX03",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
+        "identifier": "ABX03"
+      },
+      {
         "@id": "_:AKI01",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "AKI-01: Acute Kidney Injury",
         "identifier": "AKI01"
+      },
+      {
+        "@id": "_:BRAIN01",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
+        "identifier": "BRAIN01"
       },
       {
         "@id": "_:BP01",
@@ -109,6 +127,12 @@
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
         "dc:title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
         "identifier": "FLUID02"
+      },
+      {
+        "@id": "_:FLUID02_C",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
+        "identifier": "FLUID02_C"
       },
       {
       "@id": "_:GA01",

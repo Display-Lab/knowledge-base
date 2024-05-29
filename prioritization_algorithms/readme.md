@@ -6,7 +6,7 @@ The individual moderators listed below are weighted on a per causal pathway basi
 ```
  history_score = (message_recurrence * 0.1 + message_recency * 0.1 + measure_recurrence * 0.5) / (0.1 + 0.1 + 0.5)
  ```
-In the above example for the _social better_ example measure recurrence is more important than message recurrence or message recency
+In the above example for the _social better_ example measure recurrence is more important than message recurrence or message recency. We normalize the total history score by deviding by individual moderator weights.
 
  `history_score` will be a value between 0 and 1 with 0 being the least history (the most motivational) and 1 being the most history (the least motivational).
 

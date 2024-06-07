@@ -39,408 +39,328 @@
         "identifier": "ABX01"
       },
       {
-        "@id": "_:AKI01",
+        "@id": "_:ABX02",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Acute Kidney Injury",
-        "identifier": "AKI01"
+        "dc:title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
+        "identifier": "ABX02"
+      },
+      {
+        "@id": "_:ABX03",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
+        "identifier": "ABX03"
+      },
+      {
+        "@id": "_:BRAIN01",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
+        "identifier": "BRAIN01"
       },
       {
         "@id": "_:BP01",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Low MAP Prevention < 55 (20 minutes)",
+        "dc:title": "BP-01: Low MAP Prevention < 55 (20 minutes)",
         "identifier": "BP01"
       },
       {
         "@id": "_:BP02",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Avoiding Monitoring Gaps",
+        "dc:title": "BP-02: Avoiding Monitoring Gaps",
         "identifier": "BP02"
       },
       {
         "@id": "_:BP03",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Low MAP Prevention < 65",
+        "dc:title": "BP-03: Low MAP Prevention < 65 (15 minutes)",
         "identifier": "BP03"
       },
       {
         "@id": "_:BP04",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "SBP < 90 in Cesarean Deliveries",
+        "dc:title": "BP-04-OB: SBP < 90 in Cesarean Deliveries",
         "identifier": "BP04"
       },
       {
         "@id": "_:BP05",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Low MAP Avoidance < 55, Induction",
+        "dc:title": "BP-05: Low MAP Avoidance < 55, Induction",
         "identifier": "BP05"
       },
       {
         "@id": "_:BP06",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Low MAP Prevention <55 (10 minutes)",
+        "dc:title": "BP-06: Low MAP Prevention < 55 (10 minutes)",
         "identifier": "BP06"
-      },
-      {
-        "@id": "_:CARD02",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Myocardial Injury",
-        "identifier": "CARD02"
-      },
-      {
-        "@id": "_:CARD03",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Myocardial Injury, High Risk Patients",
-        "identifier": "CARD03"
       },
       {
         "@id": "_:FLUID01",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Card: Minimizing Colloid Use (Cardiac)",
+        "dc:title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
         "identifier": "FLUID01"
       },
       {
         "@id": "_:FLUID01NC",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "NC: Minimizing Colloid Use (Non-Cardiac)",
-        "identifier": "FLUID01NC"
+        "dc:title": "FLUID-01-NC: Minimizing Colloid Use, Non-Cardiac",
+        "identifier": "FLUID01_NC"
       },
       {
         "@id": "_:FLUID02",
         "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "Peds: Minimizing Colloid Use (Pediatrics)",
+        "dc:title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
         "identifier": "FLUID02"
       },
       {
-      "@id": "_:GA01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "OB: General Anesthesia During Cesarean Deliveries",
-      "identifier": "GA01"
-    },
-    {
-      "@id": "_:GA02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "OB: General Anesthesia after Neuraxial in Cesarean Deliveries",
-      "identifier": "GA02"
-    },
-    {
-      "@id": "_:GA03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "OB: General Anesthesia Administered after Epidural for Cesareans",
-      "identifier": "GA03"
-    },
+        "@id": "_:FLUID02_C",
+        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+        "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
+        "identifier": "FLUID02_C"
+      },
     {
       "@id": "_:GLU01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Intraop (>200mg/dL)",
+      "dc:title": "GLU-01: Hyperglycemia Management, Intraop (>200mg/dL)",
       "identifier": "GLU01"
     },
     {
       "@id": "_:GLU02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Intraop (<60mg/dL)",
+      "dc:title": "GLU-02: Hypoglycemia Management, Intraop (<60 mg/dL)",
       "identifier": "GLU02"
     },
     {
       "@id": "_:GLU03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Periop (>200 mg/dL)",
+      "dc:title": "GLU-03: Hyperglycemia Management, Periop (>200 mg/dL)",
       "identifier": "GLU03"
     },
     {
       "@id": "_:GLU04",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hypoglycemia Management, Periop (<60 mg/dL)",
+      "dc:title": "GLU-04: Hypoglycemia Management, Periop (<60 mg/dL)",
       "identifier": "GLU04"
     },
     {
       "@id": "_:GLU05",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Treatment, Periop (>200 mg/dL)",
+      "dc:title": "GLU-05: Hyperglycemia Treatment, Periop (>200 mg/dL)",
       "identifier": "GLU05"
     },
     {
       "@id": "_:GLU06",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
+      "dc:title": "GLU-06-C: Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
       "identifier": "GLU06"
-    },
-    {
-      "@id": "_:GLU07",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hypoglycemia Management, Open Cardiac (<70mg/dL)",
-      "identifier": "GLU07"
     },
     {
       "@id": "_:GLU08",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Treatment, Open Cardiac (>180mg/dL)",
+      "dc:title": "GLU-08-C: Hyperglycemia Treatment, Open Cardiac (>180mg/dL)",
       "identifier": "GLU08"
     },
     {
       "@id": "_:GLU09",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Intraop (>180mg/dL)",
+      "dc:title": "GLU-09: Hyperglycemia Management, Intraop (>180mg/dL)",
       "identifier": "GLU09"
     },
     {
       "@id": "_:GLU10",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Management, Periop (>180mg/dL)",
+      "dc:title": "GLU-10: Hyperglycemia Management, Periop (>180mg/dL)",
       "identifier": "GLU10"
     },
     {
       "@id": "_:GLU11",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hyperglycemia Treatment, Periop (>180 mg/dL)",
+      "dc:title": "GLU-11: Hyperglycemia Treatment, Periop (>180 mg/dL)",
       "identifier": "GLU11"
     },
     {
       "@id": "_:GLU12",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hypoglycemia Management, Intraop (<70mg/dL)",
+      "dc:title": "GLU-12: Hypoglycemia Management, Intraop (<70mg/dL)",
       "identifier": "GLU12"
     },
     {
       "@id": "_:GLU13",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Hypoglycemia Management, Periop (<70mg/dL)",
+      "dc:title": "GLU-13: Hypoglycemia Management, Periop (<70mg/dL)",
       "identifier": "GLU13"
-    },
-    {
-      "@id": "_:MED01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Avoiding Medication Overdose",
-      "identifier": "MED01"
-    },
-    {
-      "@id": "_:MORT01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "30 Day In-Hospital Mortality Rate",
-      "identifier": "MORT01"
     },
     {
       "@id": "_:NMB01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Train of Four Taken",
+      "dc:title": "NMB-01: Train of Four Taken",
       "identifier": "NMB01"
     },
     {
       "@id": "_:NMB02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Reversal Administered",
+      "dc:title": "NMB-02: Reversal Administered",
       "identifier": "NMB02"
     },
     {
       "@id": "_:NMB03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NMB Dosing, Pediatrics",
+      "dc:title": "NMB-03-Peds: NMB Dosing, Pediatrics",
       "identifier": "NMB03"
     },
     {
       "@id": "_:OPIOID",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Opioid Equivalency",
+      "dc:title": "OPIOID: Opioid Equivalency",
       "identifier": "OPIOID"
     },
     {
       "@id": "_:PAIN01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Multimodal Analgesia, Pediatrics",
+      "dc:title": "PAIN-01-Peds: Multimodal Analgesia, Pediatrics",
       "identifier": "PAIN01"
     },
     {
       "@id": "_:PAIN02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Multimodal Analgesia",
+      "dc:title": "PAIN-02: Multimodal Analgesia",
       "identifier": "PAIN02"
-    },
-    {
-      "@id": "_:PAIN03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Opioid Reversal with Naloxone",
-      "identifier": "PAIN03"
     },
     {
       "@id": "_:PONV01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV Prophylaxis: Adults (Old)",
+      "dc:title": "PONV-01: PONV Prophylaxis: Adults (Old)",
       "identifier": "PONV01"
-    },
-    {
-      "@id": "_:PONV03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Postoperative Nausea or Vomiting Outcome",
-      "identifier": "PONV03"
     },
     {
       "@id": "_:PONV04",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: PONV Prophylaxis: Pediatrics",
+      "dc:title": "PONV-04-Peds: PONV Prophylaxis: Pediatrics",
       "identifier": "PONV04"
     },
     {
       "@id": "_:PONV05",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV Prophylaxis: Adults",
+      "dc:title": "PONV-05: PONV Prophylaxis: Adults",
       "identifier": "PONV05"
     },
     {
       "@id": "_:PUL01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Protective Tidal Volume",
+      "dc:title": "PUL-01: Protective Tidal Volume, 10 mL/kg PBW",
       "identifier": "PUL01"
     },
     {
       "@id": "_:PUL02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Protective Tidal Volume",
+      "dc:title": "PUL-02: Protective Tidal Volume, 8 mL/kg PBW",
       "identifier": "PUL02"
     },
     {
       "@id": "_:PUL03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Administration of PEEP",
+      "dc:title": "PUL-03: Administration of PEEP",
       "identifier": "PUL03"
     },
     {
       "@id": "_:SMOK01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Smoking Tobacco Status Documentation",
+      "dc:title": "SMOK-01: Smoking Tobacco Status Documentation",
       "identifier": "SMOK01"
     },
     {
       "@id": "_:SMOK02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Smoking Tobacco Cessation Intervention",
+      "dc:title": "SMOK-02: Smoking Tobacco Cessation Intervention",
       "identifier": "SMOK02"
     },
     {
       "@id": "_:SUS01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Fresh Gas Flow, less than or equal to 3L/min",
+      "dc:title": "SUS-01: Fresh Gas Flow, less than or equal to 3L/min",
       "identifier": "SUS01"
     },
     {
       "@id": "_:SUS02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Global Warming Footprint, Maintenance",
+      "dc:title": "SUS-02: Global Warming Footprint, Maintenance",
       "identifier": "SUS02"
     },
     {
       "@id": "_:SUS03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Global Warming Footprint, Induction",
+      "dc:title": "SUS-03: Global Warming Footprint, Induction",
       "identifier": "SUS03"
     },
     {
       "@id": "_:SUS04",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Fresh Gas Flow, less than or equal to 2L/min",
+      "dc:title": "SUS-04: Fresh Gas Flow, less than or equal to 2L/min",
       "identifier": "SUS04"
     },
     {
       "@id": "_:SUS05",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: Nitrous Avoided, Induction",
+      "dc:title": "SUS-05-Peds: Nitrous Avoided, Induction",
       "identifier": "SUS05"
     },
     {
       "@id": "_:SUS06",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: Low Fresh Gas Flow, Pediatric Induction",
+      "dc:title": "SUS-06-Peds: Low Fresh Gas Flow, Pediatric Induction",
       "identifier": "SUS06"
     },
     {
       "@id": "_:SUS07",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Nitrous Oxide Avoided",
+      "dc:title": "SUS-07: Nitrous Oxide Avoided",
       "identifier": "SUS07"
     },
     {
       "@id": "_:TEMP01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Thermoregulation Vigilance - Active Warming",
+      "dc:title": "TEMP-01: Thermoregulation Vigilance - Active Warming",
       "identifier": "TEMP01"
     },
     {
       "@id": "_:TEMP02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Thermoregulation Monitoring - Core Temperature",
+      "dc:title": "TEMP-02: Thermoregulation Monitoring - Core Temperature",
       "identifier": "TEMP02"
-    },
-    {
-      "@id": "_:TEMP03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Perioperative Hypothermia",
-      "identifier": "TEMP03"
     },
     {
       "@id": "_:TEMP04",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: Intraoperative Normothermia",
+      "dc:title": "TEMP-04-Peds: Intraoperative Normothermia, Pediatrics",
       "identifier": "TEMP04"
-    },
-    {
-      "@id": "_:TEMP05",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "OB: Hypothermia in Cesarean Deliveries",
-      "identifier": "TEMP05"
-    },
-    {
-      "@id": "_:TEMP06",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "CARD: Hypothermia Avoidance in Cardiac Surgery",
-      "identifier": "TEMP06"
-    },
-    {
-      "@id": "_:TEMP07",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "CARD: Hyperthermia Avoidance in Cardiac Surgery",
-      "identifier": "TEMP07"
     },
     {
       "@id": "_:TOC01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Transfer of Care- Intraoperative",
+      "dc:title": "TOC-01: Transfer of Care- Intraoperative",
       "identifier": "TOC01"
     },
     {
       "@id": "_:TOC02",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Transfer of Care to PACU (Postop)",
+      "dc:title": "TOC-02: Transfer of Care to PACU (Postop)",
       "identifier": "TOC02"
     },
     {
       "@id": "_:TOC03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Transfer of Care to ICU (Postop)",
+      "dc:title": "TOC-03: Transfer of Care to ICU (Postop)",
       "identifier": "TOC03"
     },
     {
       "@id": "_:TRAN01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Transfusion Management Vigilance",
+      "dc:title": "TRAN-01: Transfusion Management Vigilance",
       "identifier": "TRAN01"
-    },
-    {
-      "@id": "_:TRAN02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Overtransfusion",
-      "identifier": "TRAN02"
     },
     {
       "@id": "_:TRAN03",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: Transfusion Vigilance",
+      "dc:title": "TRAN-03-Peds: Transfusion Vigilance, Pediatrics",
       "identifier": "TRAN03"
-    },
-    {
-      "@id": "_:TRAN04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "Peds: Overtransfusion",
-      "identifier": "TRAN04"
     }
     ]
-    }
-
-  
+    }  

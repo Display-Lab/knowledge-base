@@ -1,0 +1,49 @@
+[
+  {
+    "@id": "http://purl.obolibrary.org/obo/PSDO_0000094",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PSDO_0000093"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Goal Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.obolibrary.org/obo/PSDO_0000126",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PSDO_0000093",
+      "http://purl.obolibrary.org/obo/PSDO_0000095"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Peer Average"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.obolibrary.org/obo/PSDO_0000128",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PSDO_0000093",
+      "http://purl.obolibrary.org/obo/PSDO_0000095"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Peer Top 25%"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.obolibrary.org/obo/PSDO_0000129",
+    "@type": [
+      "http://purl.obolibrary.org/obo/PSDO_0000093",
+      "http://purl.obolibrary.org/obo/PSDO_0000095"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Peer Top 10%"
+      }
+    ]
+  }
+]

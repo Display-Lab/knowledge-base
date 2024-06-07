@@ -1,14 +1,12 @@
-causal_pathway,comparison_size,trend_size,achievement_recency,loss_recency,message_recency,message_received_count,measure_recency,coachiness
-social_better,0.5,,,,-0.1,-0.1,-0.5,0
-social_worse,0.5,,,,-0.1,-0.5,-0.5,1
-goal_worse,0.5,,,,-0.1,-0.5,-0.5,1
-improving,,0.8,,,-0.1,-0.1,0,.5
-worsening,,0.8,,,-0.1,-0.5,0,1
-social_gain,0.5,0.8,-0.5,,-0.1,-0.1,-0.5,.5
-goal_gain,0.5,0.8,-0.5,,-0.1,-0.1,-0.5,.5
-social_loss,0.5,0.8,,-0.5,-0.1,-0.5,-0.5,1
-goal_loss,0.5,0.8,,-0.5,-0.1,-0.5,-0.5,1
-social_approach,0.5,0.8,-0.5,--,-0.1,-0.1,0,1
-goal_approach,0.5,0.8,-0.5,--,-0.1,-0.1,0,1
-sustain_better,0.5,,,,-0.1,-0.1,-0.5,0
-sustain_worse,0.5,,,,-0.1,-0.5,-0.5,1
+causal_pathway,coachiness,comparison_size,trend_size,achievement_recency,loss_recency,message_recency,message_recurrence,measure_recency,history
+social better,0,1,,,,0.14,0.14,0.72,0.7
+social worse,1,1,,,,0.1,0.45,0.45,1.1
+goal worse,1,1,,,,0.1,0.45,0.45,1.1
+improving,0.5,,1,,,0.5,0.5,0,0.2
+worsening,1,,1,,,0.17,0.83,0,0.6
+social gain,0.5,0.28,0.44,0.28,,0.14,0.14,0.72,0.7
+goal gain,0.5,0.28,0.44,0.28,,0.14,0.14,0.72,0.7
+social loss,1,0.28,0.44,,0.28,0.1,0.45,0.45,1.1
+goal loss,1,0.28,0.44,,0.28,0.1,0.45,0.45,1.1
+social approach,1,0.28,0.44,0.28,,0.5,0.5,0,0.2
+goal approach,1,0.28,0.44,0.28,,0.5,0.5,0,0.2

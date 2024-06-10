@@ -38,10 +38,16 @@
     },
     "is_about": "http://purl.obolibrary.org/obo/IAO_0000136",
     "Name": "https://schema.metadatacenter.org/properties/26450fa6-bb2c-4126-8229-79efda7f863a",
-    "Message text": "https://schema.metadatacenter.org/properties/6b9dfdf9-9c8a-4d85-8684-a24bee4b85a8"
+    "Message text": "https://schema.metadatacenter.org/properties/6b9dfdf9-9c8a-4d85-8684-a24bee4b85a8",
+    "Default display": "https://schema.metadatacenter.org/properties/5b4f16a9-feb7-4724-8741-2739d8808760",
+    "has_causal_pathway": "http://purl.obolibrary.org/obo/cpo_0000056"
   },
   "@type": "http://data.bioontology.org/ontologies/PSDO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000002",
   "is_about": [
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000094",
+      "rdfs:label": "goal comparator content"
+    },
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000116",
       "rdfs:label": "negative performance gap set"
@@ -51,12 +57,17 @@
       "rdfs:label": "goal comparator element"
     }
   ],
+  "has_causal_pathway": 
+  {
+    "@id": "http://example.com/goal_worse_temporary",
+    "schema:name": "goal worse"
+  },
   "Name": {
     "@value": "Opportunity to Improve Goal"
   },
   "Message text": [
     {
-      "@value": "You may have an opportunity to improve for the measure [measure name]. Your performance was [recipient performance level], below the goal."
+      "@value": "You may have an opportunity to improve for the measure [measure name]. Your performance was [recipient performance level], below the [comparator performance level] goal."
     }
   ],
   "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",

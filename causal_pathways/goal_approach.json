@@ -100,6 +100,10 @@
       {
         "@id": "http://purl.obolibrary.org/obo/PSDO_0000120",
         "rdfs:label": "positive performance trend set"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/PSDO_0000201",
+        "rdfs:label": "approach content"
       }
     ],
     "schema:isBasedOn": "https://repo.metadatacenter.org/templates/2c8ca8b3-868b-4b65-aabf-1ed955b024c2",

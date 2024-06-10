@@ -1,0 +1,13 @@
+{
+    "social gain": 1.007650319,
+    "worsening": -1.7261141,
+    "improving": 0.258245277,
+    "social loss": 0.7730646814,
+    "social better": -0.1251083934,
+    "social worse": -1.154453186,
+    "social approach": 1.086765623,
+    "goal gain": 1.007650319,
+    "goal approach": 1.086765623,
+    "goal loss": 0.7730646814,
+    "goal worse": -1.154453186
+}

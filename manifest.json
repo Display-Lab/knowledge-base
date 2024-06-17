@@ -1,30 +1,47 @@
 [
-  "message_templates/achieved_peer_average.json",
-  "message_templates/achieved_top_10_peer_benchmark.json",
-  "message_templates/approach_goal.json",
-  "message_templates/approach_peer_average.json",
-  "message_templates/approach_top_10_peer_benchmark.json",
-  "message_templates/drop_below_goal.json",
-  "message_templates/drop_below_peer_average.json",
-  "message_templates/getting_worse.json",
-  "message_templates/no_longer_top_performer.json",
-  "message_templates/not_top_performer.json",
-  "message_templates/opportunity_to_improve_goal.json",
-  "https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/message_templates/opportunity_to_improve_top_10.json",
-  "message_templates/performance_improving.json",
-  "message_templates/reached_goal.json",
-  "message_templates/top_performer.json",
-  "causal_pathways/goal_approach.json",
-  "causal_pathways/goal_gain.json",
-  "causal_pathways/goal_loss.json",
-  "causal_pathways/goal_worse.json",
-  "causal_pathways/improving.json",
-  "causal_pathways/social_approach.json",
-  "causal_pathways/social_better.json",
-  "causal_pathways/social_gain.json",
-  "causal_pathways/social_loss.json",
-  "causal_pathways/social_worse.json",
-  "https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/causal_pathways/worsening.json",
-  "performance_measures/measures.json",
-  "comparators.json"
+  {
+    "message_templates/": [
+      "achieved_peer_average.json",
+      "achieved_top_10_peer_benchmark.json",
+      "approach_goal.json",
+      "approach_peer_average.json",
+      "approach_top_10_peer_benchmark.json",
+      "drop_below_goal.json",
+      "drop_below_peer_average.json",
+      "getting_worse.json",
+      "no_longer_top_performer.json",
+      "not_top_performer.json",
+      "opportunity_to_improve_goal.json",
+      "performance_improving.json",
+      "reached_goal.json",
+      "top_performer.json"
+    ],
+    "https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/message_templates/": "opportunity_to_improve_top_10.json"
+
+  },
+  {
+    "causal_pathways/": [
+      "goal_approach.json",
+      "goal_gain.json",
+      "goal_loss.json",
+      "goal_worse.json",
+      "improving.json",
+      "social_approach.json",
+      "social_better.json",
+      "social_gain.json",
+      "social_loss.json",
+      "social_worse.json"
+    ],
+    "https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/causal_pathways/": "worsening.json"
+  },
+  {
+    "performance_measures/": [
+      "measures.json"
+    ]
+  },
+  {
+    ".": [
+      "comparators.json"
+    ]
+  }
 ]

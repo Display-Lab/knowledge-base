@@ -1,0 +1,11 @@
+---
+- message_templates: 
+  # - "achieved_peer_average.json"
+  - "approach_goal.json"
+- causal_pathways: 
+  - "social_gain.json"
+  - "..."
+- .: 
+  - "measures.json"
+  - "comparators.json"
+# - import: https://kb.og/manifest.yaml

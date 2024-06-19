@@ -1,0 +1,42 @@
+---
+message_templates/: 
+  - achieved_peer_average.json
+  - achieved_top_10_peer_benchmark.json
+  - achieved_top_25_peer_benchmark.json
+  - approach_goal.json
+  - approach_peer_average.json
+  - approach_top_10_peer_benchmark.json
+  - approach_top_25_peer_benchmark.json
+  - congratulations_high_performance.json
+  - consistently_high_performance.json
+  - drop_below_goal.json
+  - drop_below_peer_average.json
+  - getting_worse.json
+  - in_top_25%.json
+  - no_longer_top_performer.json
+  - not_top_performer.json
+  - opportunity_to_improve_goal.json
+  - opportunity_to_improve_peer_average.json
+  - opportunity_to_improve_top_10.json
+  - performance_dropped.json
+  - performance_improving.json
+  - reached_goal.json
+  - remain_low_performance.json
+  - top_performer.json
+
+causal_pathways/: 
+  - goal_approach.json
+  - goal_gain.json
+  - goal_loss.json
+  - goal_worse.json
+  - improving.json
+  - social_approach.json
+  - social_better.json
+  - social_gain.json
+  - social_loss.json
+  - social_worse.json 
+  - worsening.json
+performance_measures/: 
+  - measures.json
+.: 
+  - comparators.json

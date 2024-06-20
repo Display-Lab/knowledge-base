@@ -48,7 +48,7 @@
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
     "name": {
-      "@value": "Social better"
+      "@value": "Social Better"
     },
     "description": {
       "@value": "The causal pathway \"social better\" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. Example messages that uses the social better pathway are \"You are a top performer\" and \"Your performance is better than average.\""

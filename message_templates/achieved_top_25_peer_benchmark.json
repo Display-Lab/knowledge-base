@@ -82,9 +82,6 @@
   "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "pav:derivedFrom": "https://repo.metadatacenter.org/template-instances/5c49f6e6-b95f-4eb9-baa9-dac580e33e20",
   "@id": "https://repo.metadatacenter.org/template-instances/75bd50a3-c11b-4a61-96e6-eee1f34eff78",
-  "Display compatibility": {
-    "@value": "Text-only, bar chart, line chart"
-  },
   "Short message ID": {
     "@value": "3",
     "@type": "xsd:decimal"

@@ -89,9 +89,6 @@
     "@value": "17",
     "@type": "xsd:decimal"
   },
-  "Additional message text": {
-    "@value": "A case-by-case breakdown of your results are available at your [clinical quality dashboard (link)]. More information about the rationale for the measure [measure name] and how it is calculated is available [here (link to measure spec)]."
-  },
   "Default display": {
     "@value": "line chart"
   }

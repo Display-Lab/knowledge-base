@@ -77,9 +77,7 @@
   "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "pav:lastUpdatedOn": "2024-01-27T14:00:32-08:00",
   "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "Display compatibility": {
-    "@value": "text-only, bar chart, line chart"
-  },
+
   "Short message ID": {
     "@value": "27",
     "@type": "xsd:decimal"

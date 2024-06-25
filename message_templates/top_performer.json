@@ -73,9 +73,6 @@
       "@value": "You are a top performer this month for the measure [measure name]. Your performance was [recipient performance level] and the top 10% peer benchmark was [comparator performance level]."
     }
   ],
-  "Display compatibility": {
-    "@value": "text-only, bar chart, line chart"
-  },
   "Short message ID": {
     "@value": "1",
     "@type": "xsd:decimal"

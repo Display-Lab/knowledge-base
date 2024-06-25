@@ -87,9 +87,7 @@
   "pav:lastUpdatedOn": "2023-10-31T15:57:51-07:00",
   "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
   "@id": "https://repo.metadatacenter.org/template-instances/722d98b6-0dfd-40ff-8248-abeaaf4aad6d",
-  "Display compatibility": {
-    "@value": "Text-only, bar chart, line chart"
-  },
+
   "Short message ID": {
     "@value": "13",
     "@type": "xsd:decimal"

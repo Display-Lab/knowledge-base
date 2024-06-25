@@ -39,7 +39,6 @@
     "is_about": "http://purl.obolibrary.org/obo/IAO_0000136",
     "Name": "https://schema.metadatacenter.org/properties/26450fa6-bb2c-4126-8229-79efda7f863a",
     "Message text": "https://schema.metadatacenter.org/properties/6b9dfdf9-9c8a-4d85-8684-a24bee4b85a8",
-    "Display compatibility": "https://schema.metadatacenter.org/properties/537a99db-422e-4916-88b5-f8b188b9f936",
     "Short message ID": "https://schema.metadatacenter.org/properties/cd6dcfc0-9083-4a73-bf7e-fd310b238bd6",
     "Additional message text": "https://schema.metadatacenter.org/properties/df7c7ba0-07dd-4930-aad6-62e1ca9dd6fa",
     "Default display": "https://schema.metadatacenter.org/properties/5b4f16a9-feb7-4724-8741-2739d8808760"
@@ -67,9 +66,7 @@
       "@value": "Congratulations on your high performance for the measure [measure name]. Your performance was [recipient performance level] last month."
     }
   ],
-  "Display compatibility": {
-    "@value": "text-only, bar chart, line chart"
-  },
+
   "Short message ID": {
     "@value": "29",
     "@type": "xsd:decimal"

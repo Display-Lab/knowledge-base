@@ -69,7 +69,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/deb62b84-bd40-4729-84ca-bf099cc2c07e",
-    "schema:name": "goal gain"
+    "schema:name": "Goal Gain"
   },
   "Name": {
     "@value": "Reached Goal"

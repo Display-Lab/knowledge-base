@@ -64,7 +64,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/0884af75-ed8c-4b61-aa15-67b41b93d834",
-    "schema:name": "social approach"
+    "schema:name": "Social Approach"
   },
   "Name": {
     "@value": "Approach Peer Average"

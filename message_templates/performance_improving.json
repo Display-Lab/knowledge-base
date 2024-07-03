@@ -53,7 +53,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/0b160448-c376-476d-b4a9-5e8a5496eaf0",
-    "schema:name": "improving"
+    "schema:name": "Improving"
   },
   "Name": {
     "@value": "Performance Improving"

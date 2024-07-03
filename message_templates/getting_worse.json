@@ -43,7 +43,7 @@
     "has_causal_pathway": "http://purl.obolibrary.org/obo/cpo_0000056"
 
   },
-  "@type": "http://data.bioontology.org/ontologies/PSDO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000002",
+  "@type": "http://purl.obolibrary.org/obo/PSDO_0000002",
   "is_about": [
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000119",

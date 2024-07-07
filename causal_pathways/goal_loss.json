@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Goal Loss"
+   "Goal Loss"
     },
     "description": {
       "@value": "The pathway \"goal loss\" describes the influence of feedback interventions that show the message recipient that their performance has fallen below an explicit performance goal, assigned independently of institutional peer performance. The goal loss causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Social Worse"
+   "Social Worse"
     },
     "description": {
       "@value": "The causal pathway \"social worse\" describes the influence of feedback interventions informing the recipient that their performance is worse than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

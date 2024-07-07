@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Goal Gain"
+   "Goal Gain"
     },
     "description": {
       "@value": "The goal gain causal pathway describes the influence of feedback interventions that show the recipient that their performance is better than that of an explicit goal, such as the performance threshold set by MPOG. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

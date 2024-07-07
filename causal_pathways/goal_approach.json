@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Goal Approach"
+   "Goal Approach"
     },
     "description": {
       "@value": "The pathway \"goal approach\" describes the influence of feedback interventions that show the message recipient that their performance is improving, and is approaching an explicit performance goal. This goal is institutional, and invariate with changes to peer performance. The goal approach causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

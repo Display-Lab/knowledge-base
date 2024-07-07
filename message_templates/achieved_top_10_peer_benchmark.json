@@ -71,8 +71,7 @@
     "@id": "https://repo.metadatacenter.org/template-instances/46d968d8-762f-4870-bb05-3321a9b69f14",
     "schema:name": "social gain"
   },
-  "Name": {
-    "@value": "Achieved Top 10 Peer Benchmark"
+   "Achieved Top 10 Peer Benchmark"
   },
   "Message text": [
     {

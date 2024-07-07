@@ -71,8 +71,7 @@
     "@id": "https://repo.metadatacenter.org/template-instances/d3159028-f58f-4bc2-bc44-8279263db82b",
     "schema:name": "goal loss"
   },
-  "Name": {
-    "@value": "Drop Below Goal"
+   "Drop Below Goal"
   },
   "Message text": [
     {

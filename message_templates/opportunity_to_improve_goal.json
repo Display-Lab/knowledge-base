@@ -62,8 +62,7 @@
     "@id": "http://example.com/goal_worse_temporary",
     "schema:name": "goal worse"
   },
-  "Name": {
-    "@value": "Opportunity to Improve Goal"
+   "Opportunity to Improve Goal"
   },
   "Message text": [
     {

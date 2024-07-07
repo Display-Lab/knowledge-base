@@ -47,8 +47,7 @@
   "type": {
     "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
   },
-  "name": {
-    "@value": "social loss"
+   "social loss"
   },
   "description": {
     "@value": "The causal pathway \"social loss\" describes the influence of feedback interventions that show the recipient that their performance has become worse than that of a social comparator, such as a top performer benchmark or peer average. Example messages that use the social loss pathway are \"Your performance dropped below the peer average.\" and \"You are no longer a top performer.\""

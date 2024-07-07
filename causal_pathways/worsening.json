@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Worsening"
+   "Worsening"
     },
     "description": {
       "@value": "The pathway \"worsening\" describes the influence of feedback interventions informing the recipient that their performance is worse than that of the prior month. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

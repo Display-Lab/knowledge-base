@@ -55,8 +55,7 @@
     "@id": "https://repo.metadatacenter.org/template-instances/f20f522c-3c0d-4eea-b459-95b8404051d5",
     "schema:name": "worsening"
   },
-  "Name": {
-    "@value": "Getting Worse"
+   "Getting Worse"
   },
   "Message text": [
     {

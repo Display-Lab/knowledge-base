@@ -47,8 +47,7 @@
     "type": {
       "@value": "http://purl.obolibrary.org/obo/cpo_0000029"
     },
-    "name": {
-      "@value": "Goal Worse"
+   "Goal Worse"
     },
     "description": {
       "@value": "The causal pathway \"goal worse\" describes the influence of feedback interventions informing the recipient that their performance is worse than that of a goal comparator. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes."

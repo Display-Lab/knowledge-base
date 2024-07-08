@@ -53,7 +53,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/f20f522c-3c0d-4eea-b459-95b8404051d5",
-    "schema:name": "worsening"
+    "schema:name": "Worsening"
   },
   "Name": {
     "@value": "Getting Worse"

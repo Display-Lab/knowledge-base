@@ -69,7 +69,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/88f49c3d-9f82-4134-9237-ac6eb0dec69f",
-    "schema:name": "social loss"
+    "schema:name": "Social Loss"
   },
   "Name": {
     "@value": "Drop Below Peer Average"

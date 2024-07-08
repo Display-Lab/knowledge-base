@@ -90,7 +90,7 @@ To generate precision feedback, MPOG sends de-identified performance and prefere
 The knowledge base contains the following components: Causal pathways, message templates, and performance measures.
 
 ### Social Better Causal Pathway
-The causal pathway "social better" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
+The causal pathway "Social Better" describes the influence of feedback interventions that show the recipient that their performance is better than that of a social comparator, such as a top performer benchmark or peer average. The causal pathway model is made up of preconditions, moderators, mechanisms, and outcomes.
 
 ### Preconditions
 Preconditions for social better are factors that are necessary for the success of feedback intervention using this pathway. The social better pathway has the following preconditions:

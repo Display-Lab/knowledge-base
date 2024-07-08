@@ -69,7 +69,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/46d968d8-762f-4870-bb05-3321a9b69f14",
-    "schema:name": "social gain"
+    "schema:name": "Social Gain"
   },
   "Name": {
     "@value": "Achieved Top 10 Peer Benchmark"

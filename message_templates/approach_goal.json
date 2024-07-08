@@ -64,7 +64,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/66c607b6-800b-4071-8a0a-627110f698e2",
-    "schema:name": "goal approach"
+    "schema:name": "Goal Approach"
   },
   "Name": {
     "@value": "Approach Goal"

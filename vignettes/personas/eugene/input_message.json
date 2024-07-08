@@ -52,17 +52,17 @@
     "Utilities": {
     "Message_Format": 
       {
-        "Social gain":"5",
+        "Social Gain":"5",
         "Social stayed better":"-16",
         "Worsening":"5",
         "Improving":"6",
-        "Social loss":"2",
+        "Social Loss":"2",
         "Social stayed worse":"-13",
-        "Social better":"4",
-        "Social worse":"5",
-        "Social approach":"2",
-        "Goal gain":"5",
-        "Goal approach":"2"
+        "Social Better":"4",
+        "Social Worse":"5",
+        "Social Approach":"2",
+        "Goal Gain":"5",
+        "Goal Approach":"2"
       },
     "Display_Format":
       {

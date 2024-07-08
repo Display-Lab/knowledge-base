@@ -92,7 +92,7 @@
       }
     ],
     "schema:isBasedOn": "https://repo.metadatacenter.org/templates/2c8ca8b3-868b-4b65-aabf-1ed955b024c2",
-    "schema:name": "goal worse",
+    "schema:name": "Goal Worse",
     "schema:description": "This is a temporary causal path way, the actual one is going to be created by CEDAR.",
     "pav:createdOn": "2023-07-31T15:10:38-07:00",
     "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",

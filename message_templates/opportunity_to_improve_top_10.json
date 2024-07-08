@@ -62,7 +62,7 @@
   "has_causal_pathway": 
   {
     "@id": "https://repo.metadatacenter.org/template-instances/f4006042-5750-4f6c-a039-fe0a88466464",
-    "schema:name": "social worse"
+    "schema:name": "Social Worse"
   },
   "Name": {
     "@value": "Opportunity to Improve Top 10 Peer Benchmark"

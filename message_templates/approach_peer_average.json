@@ -59,6 +59,10 @@
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000120",
       "rdfs:label": "positive performance trend set"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000202",
+      "rdfs:label": "approach set"
     }
   ],
   "has_causal_pathway": 

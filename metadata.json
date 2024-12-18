@@ -67,9 +67,9 @@
             },
             "koio:hasDocumentation": [
                 {
-                    "@id": "prioritization_algorithms/README.md",
+                    "@id": "prioritization_algorithms/readme.md",
                     "@type": "koio:Documentation",
-                    "dc:title": "README.md",
+                    "dc:title": "readme.md",
                     "dc:description": "read me file."                }
             ]
         },
@@ -107,9 +107,9 @@
             "dc:description": "The Precision Feedback Knowledge Base has a collection of vignettes that illustrate how the knowledge base can be used by a precision feedback system to prioritize motivating performance information and tailor feedback messages. Each vignette uses a fictional context and providers, called personas, who are representative of some population of providers. The vignette includes narrative description of the function of a precision feedback system, as well as computer-interpretable code and files that can be used to test out the function of the precision feedback system. The narrative part of each vignette is written for clinical feedback system stakeholders, focusing primarily on a researchers and feedback system developers for feedback systems in health care organizations. The purpose of the vignettes is also to increase the findability and transparency of the precision feedback system software to all stakeholders, including healthcare professionals, patients, and communities."
         },
         {
-          "@id": "README.md",
+          "@id": "readme.md",
           "@type": "koio:Documentation",
-          "dc:title": "README.md",
+          "dc:title": "readme.md",
           "dc:description": "read me file."
         }
 

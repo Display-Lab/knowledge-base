@@ -17,10 +17,11 @@
     },
     "dc:publisher": "DISPLAY Lab",
     "dc:license": "LICENSE.txt",
+    
     "koio:hasKnowledge": [
         {
             "@id": "causal_pathways",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "causal_pathways",
                 "@type": "Dataset"
@@ -32,7 +33,7 @@
         },
         {
             "@id": "message_templates",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "message_templates",
                 "@type": "Dataset"
@@ -44,7 +45,7 @@
         },
         {
             "@id": "performance_measures",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "performance_measures/measures.json",
                 "@type": "DataFile"
@@ -56,7 +57,7 @@
         },
         {
             "@id": "prioritization_algorithms",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "prioritization_algorithms/motivational_potential_model.csv",
                 "@type": "DataFile"
@@ -75,7 +76,7 @@
         },
         {
             "@id": "comparators.json",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "comparators.json",
                 "@type": "DataFile"
@@ -87,7 +88,7 @@
         },
         {
             "@id": "preferences.json",
-            "@type": "Knowledge",
+            "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "preferences.json",
                 "@type": "DataFile"

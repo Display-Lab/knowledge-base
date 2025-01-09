@@ -112,6 +112,18 @@
           "@type": "koio:Documentation",
           "dc:title": "readme.md",
           "dc:description": "read me file."
+        },
+        {
+          "@id": "index.html",
+          "@type": "koio:Documentation",
+          "dc:title": "Knowledge Object Information Page.",
+          "dc:description": "Knowledge Object Information Page."
+        },
+        {
+          "@id": "manifest.yaml",
+          "@type": "koio:Documentation",
+          "dc:title": "manifest",
+          "dc:description": "Knowledgebase manifest"
         }
 
     ]

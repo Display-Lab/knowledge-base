@@ -70,8 +70,8 @@
                 {
                     "@id": "prioritization_algorithms/readme.md",
                     "@type": "koio:Documentation",
-                    "dc:title": "readme.md",
-                    "dc:description": "read me file."                }
+                    "dc:title": "prioritization algorithms",
+                    "dc:description": "prioritization algorithms documentation."                }
             ]
         },
         {
@@ -111,7 +111,7 @@
           "@id": "readme.md",
           "@type": "koio:Documentation",
           "dc:title": "readme.md",
-          "dc:description": "read me file."
+          "dc:description": "Knowledge base readme file."
         },
         {
           "@id": "index.html",
@@ -123,7 +123,7 @@
           "@id": "manifest.yaml",
           "@type": "koio:Documentation",
           "dc:title": "manifest",
-          "dc:description": "Knowledgebase manifest"
+          "dc:description": "Knowledge base manifest."
         }
 
     ]

@@ -1,5 +1,5 @@
 ---
-https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/message_templates/: 
+https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/message_templates/: 
   - achieved_peer_average.json
   - achieved_top_10_peer_benchmark.json
   - approach_goal.json
@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/message_templa
   - reached_goal.json
   - top_performer.json
 
-https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/causal_pathways/: 
+https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/causal_pathways/: 
   - goal_approach.json
   - goal_gain.json
   - goal_loss.json
@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/causal_pathway
   - social_loss.json
   - social_worse.json 
   - worsening.json
-https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/performance_measures/: 
+https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/performance_measures/: 
   - measures.json
-https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/: 
+https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/: 
   - comparators.json

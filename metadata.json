@@ -5,7 +5,7 @@
     "@type": "koio:KnowledgeObject",
     "dc:title": "Precision Feedback Knowledge Base",
     "dc:identifier": "ark:PrecisionFeedbackKnowledgeBase (PFKB)",
-    "dc:version": "v1.0",
+    "dc:version": "v1.5",
     "dc:date": "2024-12-14",
     "dc:description": "PFKB is a collection of computable biomedical knowledge for the purpose of processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.",
     "schema:creator": {

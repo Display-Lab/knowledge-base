@@ -6,6 +6,11 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
+        "@value": "goal comparator content"
+      }
+    ],
+    "http://example.com/slowmo#DisplayName": [
+      {
         "@value": "Goal Value"
       }
     ]
@@ -17,6 +22,11 @@
       "http://purl.obolibrary.org/obo/PSDO_0000095"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "peer average comparator"
+      }
+    ],
+    "http://example.com/slowmo#DisplayName": [
       {
         "@value": "Peer Average"
       }
@@ -30,6 +40,11 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
+        "@value": "peer 75th percentile benchmark"
+      }
+    ],
+    "http://example.com/slowmo#DisplayName": [
+      {
         "@value": "Peer Top 25%"
       }
     ]
@@ -41,6 +56,11 @@
       "http://purl.obolibrary.org/obo/PSDO_0000095"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "peer 90th percentile benchmark"
+      }
+    ],
+    "http://example.com/slowmo#DisplayName": [
       {
         "@value": "Peer Top 10%"
       }

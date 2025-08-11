@@ -1,9 +1,5 @@
-# Precision Feedback Knowledge Base
-Healthcare professionals must learn continuously as a core part of their work. However, as health and biomedical knowledge continue to be produced at an increasing rate, better tools to support healthcare professionals' continuous learning are needed. Tools for learning from clinical data are widely available in the form of clinical quality dashboards and feedback reports, but these seem to be infrequently used. A key challenge for health systems in using feedback reports and dashboards is to recognize when clinical data are useful as feedback for healthcare professional learning. 
-
-Feedback takes many different forms. Precision feedback is an approach to enhance performance feedback reports and dashboards with brief feedback messages for the purposes of coaching and appreciation. Coaching feedback motivates performance improvement, while appreciation feedback motivates performance sustainment, to support healthcare professionals in providing better care that results in better health for patients. 
-
-We developed the Precision Feedback Knowledge Base (PFKB) as a computable knowledge foundation for a precision feedback system. PFKB is a collection of computable biomedical knowledge for the purpose of processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.
+# Precision Feedback Knowledge Base (PFKB)
+PFKB is a collection of models and algorithms for the purpose of generating precision feedback. It is designed to be used by [SCAFFOLD](https://github.com/Display-Lab/scaffold) (Scalable Coaching and Appreciation Feedback For Optimal Learning and Decision-making), a precision feedback system. processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.
 
 
 ## Elements of the Knowledge Base

@@ -55,6 +55,10 @@
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000046",
       "rdfs:label": "goal comparator element"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000039",
+      "rdfs:label": "desired increase"
     }
   ],
   "has_causal_pathway": 

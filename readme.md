@@ -51,7 +51,7 @@ The knowledge base contains files on a spectrum of developmental states, from ro
 
 |Release Pair| Knowledge Base Version | Software Pipeline Version | 
 |-|-|-|
-| 2/12/25 | v1.8 | v2.1 |
+| 2/12/25 | ![Knowledge-Base](https://img.shields.io/badge/version-v1.8-blue) | ![SCAFFOLD](https://img.shields.io/badge/version-v2.1-blue) |
 
 
 

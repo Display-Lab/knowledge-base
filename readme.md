@@ -1,4 +1,6 @@
 # Precision Feedback Knowledge Base (PFKB)
+![](https://img.shields.io/badge/stable_version-v1.8-blue)
+
 PFKB is a collection of models and algorithms for the purpose of generating precision feedback. It is designed to be used by [SCAFFOLD](https://github.com/Display-Lab/scaffold) (Scalable Coaching and Appreciation Feedback For Optimal Learning and Decision-making), a precision feedback system. processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.
 
 
@@ -49,11 +51,9 @@ The knowledge base contains files on a spectrum of developmental states, from ro
 
 |Release Pair| Knowledge Base Version | Software Pipeline Version | 
 |-|-|-|
-| deprecated | 1.0.1 | 1.2.2 |
-| 6/14/23 | 1.1.0 | *todo* |
+| 2/12/25 | v1.8 | v2.1 |
 
-## Version
-1.1.1
+
 
 
 

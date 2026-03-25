@@ -1,0 +1,1 @@
+This package implements a random candidate selector as a simple example for prioritization algorithm

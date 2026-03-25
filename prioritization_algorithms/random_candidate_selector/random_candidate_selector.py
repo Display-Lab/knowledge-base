@@ -7,6 +7,7 @@ class RandomCandidateSelector:
     def __init__(self):
         pass
     
+    @staticmethod
     def select_candidate(performer_graph: Graph) -> Resource:
         """
         randomly selects a candidate.

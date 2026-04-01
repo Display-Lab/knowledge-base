@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "esteemer"
+version = "0.1.0"
+description = "The original prioritization algorithm of SCAFFOLD used for MPOG trial."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12,<3.14"
+random-candidate-selector = {url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/random_candidate_selector/dist/random_candidate_selector-0.2.0-py3-none-any.whl"}
+scaffold = {path = "/home/faridsei/dev/code/scaffold/dist/scaffold-2.1-py3-none-any.whl"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

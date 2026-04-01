@@ -1,0 +1,88 @@
+{
+  "@context": "https://kgrid.org/koio/2.1/context.jsonld",
+  "@id": "https://github.com/Display-Lab/knowledge-base/tree/main/prioritization_algorithms/random_candidate_selector",
+  "versionInfo": "2.1",
+  "@type": "KnowledgeObject",
+  "dc:title": "Random Candidate Selector",
+  "dc:identifier": ["https://github.com/Display-Lab/knowledge-base/tree/main/prioritization_algorithms/random_candidate_selector"],
+  "dc:version": "3.0",
+  "dc:date": "2026-04-01",
+  "schema:funder": "Display Lab, University of Michigan",
+  "dc:description": "This package implements a random candidate selector as a simple example for prioritization algorithm.",
+  "schema:creator": [
+    {
+      "@id": "https://display.lab.medicine.umich.edu/",
+      "@type": "schema:Organization",
+      "schema:name": "Display Lab",
+      "schema:affiliation": "Department of Learning Health Sciences, University of Michigan"
+    }
+  ],
+  "koio:hasKnowledge": [
+    {
+      "@id": "Random_candidate_selector",
+      "dc:title": "Algorithm that randomly selectes a candidate from a set of candidates",
+      "dc:identifier": "1",
+      "dc:version": "1.0",
+      "dc:date": "2026-04-01",
+      "dc:description": "This algorithm encodes the knowledge of randomized candidate selection from a structured RDF graph. It identifies all resources of type slowmo:Candidate that are considered valid by having at least one slowmo:AcceptableBy relationship, and then randomly selects one of these valid candidates. The selected candidate is annotated in the graph with a slowmo:Selected property set to True, effectively recording the choice within the RDF data. This knowledge captures both the criteria for candidate eligibility and the mechanism for non-deterministic selection, allowing systems to make controlled yet probabilistic decisions while preserving the provenance of the choice in the graph.",
+      "@type": "koio:Knowledge",
+      "implementedBy": {
+        "@id": "Random_candidate_selector.py",
+        "@type": [
+          "Script",
+          "Functions",
+          "Python",
+          "Functions Script",
+          "Function description"
+        ]
+      }
+    }
+  ],
+  "koio:hasService": [
+    {
+      "@id": "Library_service",
+      "@type": [
+        "Service",
+        "library"
+      ],
+      "dc:description": "Default invocation for RandomCandidateSelector class",
+      "hasInterface": "random_candidate_selector.py",
+      "dependsOn": [
+        "Random_candidate_selector"
+      ]
+    }
+  ],
+  "koio:hasTest": [
+    {
+      "@id": "test_random_candidate_selector",
+      "@type": "koio:Test",
+      "dc:title": "Tests for the candidate selector algorithm",
+      "dc:description": "Tests to confirm knowledge and services work",
+      "implementedBy": {
+        "@id": "tests/test_random_candidate_selector.py",
+        "@type": [
+          "Script",
+          "Functions",
+          "Python"
+        ]
+      },
+      "koio:hasDocumentation": [
+        {
+          "@id": "tests/README.md",
+          "@type": "InformationArtifact",
+          "dc:title": "Test documentation",
+          "dc:description": "Describes the tests for the random candidate selector algorithm"
+        }
+      ]
+    }
+  ],
+  "koio:hasDocumentation": [
+    {
+      "@id": "README.md",
+      "@type": [
+        "InformationArtifact"      ],
+      "dc:title": "RandomCandidateSelector Documentation",
+      "dc:description": "Describes how the `RandomCandidateSelector` is a utility class responsible for selecting a valid candidate from an RDF graph at random and marking it as selected."
+    }
+  ]
+}

@@ -27,7 +27,7 @@
       "dc:description": "This algorithm encodes the knowledge of randomized candidate selection from a structured RDF graph. It identifies all resources of type slowmo:Candidate that are considered valid by having at least one slowmo:AcceptableBy relationship, and then randomly selects one of these valid candidates. The selected candidate is annotated in the graph with a slowmo:Selected property set to True, effectively recording the choice within the RDF data. This knowledge captures both the criteria for candidate eligibility and the mechanism for non-deterministic selection, allowing systems to make controlled yet probabilistic decisions while preserving the provenance of the choice in the graph.",
       "@type": "koio:Knowledge",
       "implementedBy": {
-        "@id": "Random_candidate_selector.py",
+        "@id": "random_candidate_selector.py",
         "@type": [
           "Script",
           "Functions",
@@ -48,7 +48,7 @@
       "dc:description": "Default invocation for RandomCandidateSelector class",
       "hasInterface": "random_candidate_selector.py",
       "dependsOn": [
-        "Random_candidate_selector"
+        "random_candidate_selector"
       ]
     }
   ],

@@ -1566,12 +1566,12 @@ jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
 name = "scaffold"
-version = "2.1.1"
+version = "2.1.2"
 description = ""
 optional = false
 python-versions = ">=3.12,<3.14"
 files = [
-    {file = "scaffold-2.1.1-py3-none-any.whl", hash = "sha256:a177ef646824200b527dbe8ac4a11b06bb765d00b44451667d8d78d1b16d591e"},
+    {file = "scaffold-2.1.2-py3-none-any.whl", hash = "sha256:d41c0ccb500d0baa69bdbb640bbf9849cc7641d53ef52ea36116830fbe754929"},
 ]
 
 [package.dependencies]
@@ -1580,7 +1580,7 @@ fastapi = ">=0.115.12,<0.116.0"
 gunicorn = ">=23.0.0,<24.0.0"
 loguru = ">=0.7.3,<0.8.0"
 matplotlib = ">=3.10.1,<4.0.0"
-mpm_prioritization = {url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/mpm_prioritization/dist/mpm_prioritization-0.1.0-py3-none-any.whl"}
+mpm_prioritization = {url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/mpm_prioritization/dist/mpm_prioritization-0.2.0-py3-none-any.whl"}
 orjson = ">=3.10.18,<4.0.0"
 pandas = ">=2.2.3,<3.0.0"
 psutil = ">=7.0.0,<8.0.0"
@@ -1593,7 +1593,7 @@ uvicorn = ">=0.34.2,<0.35.0"
 
 [package.source]
 type = "url"
-url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1.1-py3-none-any.whl"
+url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1.2-py3-none-any.whl"
 
 [[package]]
 name = "shellingham"
@@ -1739,4 +1739,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12,<3.14"
-content-hash = "a8a21456d809ea592c3d9f479d9efbb69bb3428bfaa168fb8af74298c98e841b"
+content-hash = "0a52a15148f5252341f3330876c23627c042f98abbba6bde18181741acb77866"

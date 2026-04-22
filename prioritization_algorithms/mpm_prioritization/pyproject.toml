@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "mpm-prioritization"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = ["Farid Seifi <farid.seifi@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12,<3.14"
-scaffold = {url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1.1-py3-none-any.whl"}
+scaffold = {url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1.2-py3-none-any.whl"}
 
 
 [tool.poetry.group.dev.dependencies]

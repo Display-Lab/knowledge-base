@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mpm-prioritization"
+version = "0.1.0"
+description = ""
+authors = ["Farid Seifi <farid.seifi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12,<3.14"
+scaffold = {url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1-py3-none-any.whl?i=2"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

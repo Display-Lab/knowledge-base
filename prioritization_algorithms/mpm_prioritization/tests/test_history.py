@@ -4,7 +4,7 @@ from typing import List
 import pytest
 from rdflib import RDF, XSD, BNode, Graph, Literal, URIRef
 
-from esteemer.signals import History
+from mpm_prioritization.signals import History
 from scaffold.utils import SLOWMO
 
 TEMPLATE_A = "https://repo.metadatacenter.org/template-instances/9e71ec9e-26f3-442a-8278-569bcd58e708"

@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 from rdflib import XSD, Literal, URIRef
 
-from esteemer.signals import History
+from mpm_prioritization.signals import History
 
 TEMPLATE_A = "https://repo.metadatacenter.org/template-instances/9e71ec9e-26f3-442a-8278-569bcd58e708"
 

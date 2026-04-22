@@ -31,13 +31,13 @@ trio = ["trio (>=0.32.0)"]
 
 [[package]]
 name = "certifi"
-version = "2026.2.25"
+version = "2026.4.22"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "certifi-2026.2.25-py3-none-any.whl", hash = "sha256:027692e4402ad994f1c42e52a4997a9763c646b73e4096e4d5d6db8af1d6f0fa"},
-    {file = "certifi-2026.2.25.tar.gz", hash = "sha256:e887ab5cee78ea814d3472169153c2d12cd43b14bd03329a39a9c6e2e80bfba7"},
+    {file = "certifi-2026.4.22-py3-none-any.whl", hash = "sha256:3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a"},
+    {file = "certifi-2026.4.22.tar.gz", hash = "sha256:8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580"},
 ]
 
 [[package]]
@@ -308,6 +308,19 @@ files = [
 [package.extras]
 docs = ["ipython", "matplotlib", "numpydoc", "sphinx"]
 tests = ["pytest", "pytest-cov", "pytest-xdist"]
+
+[[package]]
+name = "dotenv"
+version = "0.9.9"
+description = "Deprecated package"
+optional = false
+python-versions = "*"
+files = [
+    {file = "dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9"},
+]
+
+[package.dependencies]
+python-dotenv = "*"
 
 [[package]]
 name = "fastapi"
@@ -1369,6 +1382,20 @@ files = [
 ]
 
 [[package]]
+name = "python-dotenv"
+version = "1.2.2"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "python_dotenv-1.2.2-py3-none-any.whl", hash = "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a"},
+    {file = "python_dotenv-1.2.2.tar.gz", hash = "sha256:2c371a91fbd7ba082c2c1dc1f8bf89ca22564a087c2c287cd9b662adde799cf3"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "pytz"
 version = "2026.1.post1"
 description = "World timezone definitions, modern and historical"
@@ -1462,20 +1489,6 @@ files = [
 ]
 
 [[package]]
-name = "random-candidate-selector"
-version = "0.2.0"
-description = ""
-optional = false
-python-versions = ">=3.11,<4.0"
-files = [
-    {file = "random_candidate_selector-0.2.0-py3-none-any.whl", hash = "sha256:230400e95da582568c6007c36f80a3f9653d980d4a1cd01725f84c8de550cf23"},
-]
-
-[package.source]
-type = "url"
-url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/random_candidate_selector/dist/random_candidate_selector-0.2.0-py3-none-any.whl"
-
-[[package]]
 name = "rdflib"
 version = "7.6.0"
 description = "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information."
@@ -1553,25 +1566,26 @@ jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
 name = "scaffold"
-version = "2.1"
+version = "2.1.1"
 description = ""
 optional = false
 python-versions = ">=3.12,<3.14"
 files = [
-    {file = "scaffold-2.1-py3-none-any.whl", hash = "sha256:cf82c61f9d1fc90fa8d93e1605377a962dfb587e7e36c8b99fe0936072163546"},
+    {file = "scaffold-2.1.1-py3-none-any.whl", hash = "sha256:a177ef646824200b527dbe8ac4a11b06bb765d00b44451667d8d78d1b16d591e"},
 ]
 
 [package.dependencies]
+dotenv = ">=0.9.9,<0.10.0"
 fastapi = ">=0.115.12,<0.116.0"
 gunicorn = ">=23.0.0,<24.0.0"
 loguru = ">=0.7.3,<0.8.0"
 matplotlib = ">=3.10.1,<4.0.0"
+mpm_prioritization = {url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/mpm_prioritization/dist/mpm_prioritization-0.1.0-py3-none-any.whl"}
 orjson = ">=3.10.18,<4.0.0"
 pandas = ">=2.2.3,<3.0.0"
 psutil = ">=7.0.0,<8.0.0"
 python-decouple = ">=3.8,<4.0"
 pyyaml = ">=6.0.2,<7.0.0"
-random_candidate_selector = {url = "https://github.com/Display-Lab/knowledge-base/raw/refs/heads/main/prioritization_algorithms/random_candidate_selector/dist/random_candidate_selector-0.2.0-py3-none-any.whl"}
 rdflib = ">=7.1.4,<8.0.0"
 requests-file = ">=2.1.0,<3.0.0"
 typer = ">=0.15.2,<0.16.0"
@@ -1579,7 +1593,7 @@ uvicorn = ">=0.34.2,<0.35.0"
 
 [package.source]
 type = "url"
-url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1-py3-none-any.whl?i=2"
+url = "https://github.com/Display-Lab/scaffold/raw/refs/heads/main/dist/scaffold-2.1.1-py3-none-any.whl"
 
 [[package]]
 name = "shellingham"
@@ -1725,4 +1739,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12,<3.14"
-content-hash = "c200427f66d82fec35c326249476b9630a6a26467de0f88544a4947e09a1d6e1"
+content-hash = "a8a21456d809ea592c3d9f479d9efbb69bb3428bfaa168fb8af74298c98e841b"

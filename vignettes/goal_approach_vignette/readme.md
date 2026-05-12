@@ -219,7 +219,7 @@ $$\text{Achievement or loss recency, } t_{\text{event}}$$
 $$\text{Feedback history, } t_{\text{message}} \text{ and } N_{\text{received}}$$
 $$\text{Individual feedack preferences, } F_{\text{pref}}$$
 
-The overall algortihm can be represented as:
+The overall algorithm can be represented as:
 $$F_{\text{pref}} \Biggl[ C_{\text{data}} \biggl( \Bigl( X_s \| \Delta_{\text{performance}}  \| \Bigr) + \Bigl( X_{gs} \| G_{\text{performance}} \| \Bigr) \biggr) \\
     + \\
     C_{\text{history}} \Bigl( \bigl(X_e \cdot t_{\text{event}}\bigr) + \bigl(X_m \cdot t_{\text{message}}\bigr) + \bigl(X_N \cdot N_{\text{received}}\bigr) \Bigr) \Biggr]$$

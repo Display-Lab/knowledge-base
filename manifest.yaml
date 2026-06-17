@@ -40,3 +40,8 @@ performance_measures/:
   - measures.json
 .: 
   - comparators.json
+
+plugins:
+  scaffold.esteemer:
+    name: mpm_candidate_selector
+    version: "1.0.0"

@@ -32,3 +32,8 @@ https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/performance_me
   - measures.json
 https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.5/: 
   - comparators.json
+
+plugins:
+  scaffold.esteemer:
+    name: mpm_candidate_selector
+    version: "1.0.0"

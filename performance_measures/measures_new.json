@@ -1,0 +1,509 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "Measure": "fhir:Measure",
+    "identifier": "fhir:Measure.identifier",
+    "name": "fhir:Measure.name",
+    "title": "fhir:Measure.title",
+    "group": "fhir:Measure.group",
+    "type": "fhir:Measure.group.type",
+    "improvementNotation": "fhir:Measure.group.improvementNotation"
+  },
+  "@graph": [
+    {
+      "@id": "_:ABX01",
+      "@type": "Measure",
+      "identifier": "ABX01",
+      "name": "ABX01",
+      "title": "ABX-01-OB: Antibiotic Timing for Cesarean Delivery",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:ABX02",
+      "@type": "Measure",
+      "identifier": "ABX02",
+      "name": "ABX02",
+      "title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:ABX03",
+      "@type": "Measure",
+      "identifier": "ABX03",
+      "name": "ABX03",
+      "title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BRAIN01",
+      "@type": "Measure",
+      "identifier": "BRAIN01",
+      "name": "BRAIN01",
+      "title": "BRAIN-01: Benzodiazepine use in the geriatric population",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP01",
+      "@type": "Measure",
+      "identifier": "BP01",
+      "name": "BP01",
+      "title": "BP-01: Low MAP Prevention < 55 (20 minutes)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP02",
+      "@type": "Measure",
+      "identifier": "BP02",
+      "name": "BP02",
+      "title": "BP-02: Avoiding Monitoring Gaps",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP03",
+      "@type": "Measure",
+      "identifier": "BP03",
+      "name": "BP03",
+      "title": "BP-03: Low MAP Prevention < 65 (15 minutes)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP04",
+      "@type": "Measure",
+      "identifier": "BP04",
+      "name": "BP04",
+      "title": "BP-04-OB: SBP < 90 in Cesarean Deliveries",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP05",
+      "@type": "Measure",
+      "identifier": "BP05",
+      "name": "BP05",
+      "title": "BP-05: Low MAP Avoidance < 55, Induction",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:BP06",
+      "@type": "Measure",
+      "identifier": "BP06",
+      "name": "BP06",
+      "title": "BP-06: Low MAP Prevention < 55 (10 minutes)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:FLUID01",
+      "@type": "Measure",
+      "identifier": "FLUID01",
+      "name": "FLUID01",
+      "title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:FLUID01_NC",
+      "@type": "Measure",
+      "identifier": "FLUID01_NC",
+      "name": "FLUID01_NC",
+      "title": "FLUID-01-NC: Minimizing Colloid Use, Non-Cardiac",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:FLUID02",
+      "@type": "Measure",
+      "identifier": "FLUID02",
+      "name": "FLUID02",
+      "title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:FLUID02_C",
+      "@type": "Measure",
+      "identifier": "FLUID02_C",
+      "name": "FLUID02_C",
+      "title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU01",
+      "@type": "Measure",
+      "identifier": "GLU01",
+      "name": "GLU01",
+      "title": "GLU-01: Hyperglycemia Management, Intraop (>200mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU02",
+      "@type": "Measure",
+      "identifier": "GLU02",
+      "name": "GLU02",
+      "title": "GLU-02: Hypoglycemia Management, Intraop (<60 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU03",
+      "@type": "Measure",
+      "identifier": "GLU03",
+      "name": "GLU03",
+      "title": "GLU-03: Hyperglycemia Management, Periop (>200 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU04",
+      "@type": "Measure",
+      "identifier": "GLU04",
+      "name": "GLU04",
+      "title": "GLU-04: Hypoglycemia Management, Periop (<60 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU05",
+      "@type": "Measure",
+      "identifier": "GLU05",
+      "name": "GLU05",
+      "title": "GLU-05: Hyperglycemia Treatment, Periop (>200 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU06",
+      "@type": "Measure",
+      "identifier": "GLU06",
+      "name": "GLU06",
+      "title": "GLU-06-C: Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU08",
+      "@type": "Measure",
+      "identifier": "GLU08",
+      "name": "GLU08",
+      "title": "GLU-08-C: Hyperglycemia Treatment, Open Cardiac (>180mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU09",
+      "@type": "Measure",
+      "identifier": "GLU09",
+      "name": "GLU09",
+      "title": "GLU-09: Hyperglycemia Management, Intraop (>180mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU10",
+      "@type": "Measure",
+      "identifier": "GLU10",
+      "name": "GLU10",
+      "title": "GLU-10: Hyperglycemia Management, Periop (>180mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU11",
+      "@type": "Measure",
+      "identifier": "GLU11",
+      "name": "GLU11",
+      "title": "GLU-11: Hyperglycemia Treatment, Periop (>180 mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU12",
+      "@type": "Measure",
+      "identifier": "GLU12",
+      "name": "GLU12",
+      "title": "GLU-12: Hypoglycemia Management, Intraop (<70mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:GLU13",
+      "@type": "Measure",
+      "identifier": "GLU13",
+      "name": "GLU13",
+      "title": "GLU-13: Hypoglycemia Management, Periop (<70mg/dL)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:NMB01",
+      "@type": "Measure",
+      "identifier": "NMB01",
+      "name": "NMB01",
+      "title": "NMB-01: Train of Four Taken",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:NMB02",
+      "@type": "Measure",
+      "identifier": "NMB02",
+      "name": "NMB02",
+      "title": "NMB-02: Reversal Administered",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:NMB03",
+      "@type": "Measure",
+      "identifier": "NMB03",
+      "name": "NMB03",
+      "title": "NMB-03-Peds: NMB Dosing, Pediatrics",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:OPIOID",
+      "@type": "Measure",
+      "identifier": "OPIOID",
+      "name": "OPIOID",
+      "title": "OPIOID: Opioid Equivalency",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PAIN01",
+      "@type": "Measure",
+      "identifier": "PAIN01",
+      "name": "PAIN01",
+      "title": "PAIN-01-Peds: Multimodal Analgesia, Pediatrics",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PAIN02",
+      "@type": "Measure",
+      "identifier": "PAIN02",
+      "name": "PAIN02",
+      "title": "PAIN-02: Multimodal Analgesia",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PONV01",
+      "@type": "Measure",
+      "identifier": "PONV01",
+      "name": "PONV01",
+      "title": "PONV-01: PONV Prophylaxis: Adults (Old)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PONV04",
+      "@type": "Measure",
+      "identifier": "PONV04",
+      "name": "PONV04",
+      "title": "PONV-04-Peds: PONV Prophylaxis: Pediatrics",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PONV05",
+      "@type": "Measure",
+      "identifier": "PONV05",
+      "name": "PONV05",
+      "title": "PONV-05: PONV Prophylaxis: Adults",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PUL01",
+      "@type": "Measure",
+      "identifier": "PUL01",
+      "name": "PUL01",
+      "title": "PUL-01: Protective Tidal Volume, 10 mL/kg PBW",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PUL02",
+      "@type": "Measure",
+      "identifier": "PUL02",
+      "name": "PUL02",
+      "title": "PUL-02: Protective Tidal Volume, 8 mL/kg PBW",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:PUL03",
+      "@type": "Measure",
+      "identifier": "PUL03",
+      "name": "PUL03",
+      "title": "PUL-03: Administration of PEEP",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SMOK01",
+      "@type": "Measure",
+      "identifier": "SMOK01",
+      "name": "SMOK01",
+      "title": "SMOK-01: Smoking Tobacco Status Documentation",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SMOK02",
+      "@type": "Measure",
+      "identifier": "SMOK02",
+      "name": "SMOK02",
+      "title": "SMOK-02: Smoking Tobacco Cessation Intervention",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS01",
+      "@type": "Measure",
+      "identifier": "SUS01",
+      "name": "SUS01",
+      "title": "SUS-01: Fresh Gas Flow, less than or equal to 3L/min",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS02",
+      "@type": "Measure",
+      "identifier": "SUS02",
+      "name": "SUS02",
+      "title": "SUS-02: Global Warming Footprint, Maintenance",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS03",
+      "@type": "Measure",
+      "identifier": "SUS03",
+      "name": "SUS03",
+      "title": "SUS-03: Global Warming Footprint, Induction",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS04",
+      "@type": "Measure",
+      "identifier": "SUS04",
+      "name": "SUS04",
+      "title": "SUS-04: Fresh Gas Flow, less than or equal to 2L/min",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS05",
+      "@type": "Measure",
+      "identifier": "SUS05",
+      "name": "SUS05",
+      "title": "SUS-05-Peds: Nitrous Avoided, Induction",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS06",
+      "@type": "Measure",
+      "identifier": "SUS06",
+      "name": "SUS06",
+      "title": "SUS-06-Peds: Low Fresh Gas Flow, Pediatric Induction",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:SUS07",
+      "@type": "Measure",
+      "identifier": "SUS07",
+      "name": "SUS07",
+      "title": "SUS-07: Nitrous Oxide Avoided",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TEMP01",
+      "@type": "Measure",
+      "identifier": "TEMP01",
+      "name": "TEMP01",
+      "title": "TEMP-01: Thermoregulation Vigilance - Active Warming",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TEMP02",
+      "@type": "Measure",
+      "identifier": "TEMP02",
+      "name": "TEMP02",
+      "title": "TEMP-02: Thermoregulation Monitoring - Core Temperature",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TEMP04",
+      "@type": "Measure",
+      "identifier": "TEMP04",
+      "name": "TEMP04",
+      "title": "TEMP-04-Peds: Intraoperative Normothermia, Pediatrics",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TOC01",
+      "@type": "Measure",
+      "identifier": "TOC01",
+      "name": "TOC01",
+      "title": "TOC-01: Transfer of Care- Intraoperative",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TOC02",
+      "@type": "Measure",
+      "identifier": "TOC02",
+      "name": "TOC02",
+      "title": "TOC-02: Transfer of Care to PACU (Postop)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TOC03",
+      "@type": "Measure",
+      "identifier": "TOC03",
+      "name": "TOC03",
+      "title": "TOC-03: Transfer of Care to ICU (Postop)",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TRAN01",
+      "@type": "Measure",
+      "identifier": "TRAN01",
+      "name": "TRAN01",
+      "title": "TRAN-01: Transfusion Management Vigilance",
+      "type": "process",
+      "improvementNotation": "increase"
+    },
+    {
+      "@id": "_:TRAN03",
+      "@type": "Measure",
+      "identifier": "TRAN03",
+      "name": "TRAN03",
+      "title": "TRAN-03-Peds: Transfusion Vigilance, Pediatrics",
+      "type": "process",
+      "improvementNotation": "increase"
+    }
+  ]
+}
